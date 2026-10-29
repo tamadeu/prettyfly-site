@@ -84,26 +84,26 @@ const socialLinks = [
 ];
 
 const defaultAnnouncements = [
-  'Welcome to our store →',
-  'Free shipping on orders over $150 →',
-  'New arrivals just dropped →',
+  'Boas-vindas à nossa loja →',
+  'Frete grátis em pedidos acima de US$ 150 →',
+  'Acabaram de chegar novidades →',
 ];
 
 const currencies = [
-  'Bangladesh USD $',
-  'Canada USD $',
-  'Germany USD $',
-  'Netherlands USD $',
-  'Norway USD $',
-  'United Kingdom USD $',
-  'United States USD $',
+  'Bangladesh — USD $',
+  'Canadá — USD $',
+  'Alemanha — USD $',
+  'Países Baixos — USD $',
+  'Noruega — USD $',
+  'Reino Unido — USD $',
+  'Estados Unidos — USD $',
 ];
 
 const languages = [
-  'English',
+  'Português (Brasil)',
   'Español',
-  'Português (brasil)',
   'Français',
+  'English',
 ];
 
 /* ──────────────────────────────────
@@ -237,7 +237,7 @@ export function GroceryAnnouncementBar({ backgroundColor = 'rgb(27, 128, 87)', t
   const [currencyOpen, setCurrencyOpen] = useState(false);
   const [languageOpen, setLanguageOpen] = useState(false);
   const [selectedCurrency, setSelectedCurrency] = useState('Bangladesh USD $');
-  const [selectedLanguage, setSelectedLanguage] = useState('English');
+  const [selectedLanguage, setSelectedLanguage] = useState('Português (Brasil)');
 
   const toggleCurrency = useCallback(() => {
     setCurrencyOpen((p) => !p);
@@ -283,7 +283,7 @@ export function GroceryAnnouncementBar({ backgroundColor = 'rgb(27, 128, 87)', t
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
           <button
             onClick={goPrev}
-            aria-label="Previous announcement"
+            aria-label="Aviso anterior"
             style={{ background: 'none', border: 'none', color: textColor, cursor: 'pointer', display: 'flex', padding: 0, flexShrink: 0 }}
             onMouseEnter={(e) => { e.currentTarget.style.color = '#F15B41'; }}
             onMouseLeave={(e) => { e.currentTarget.style.color = textColor; }}
@@ -323,7 +323,7 @@ export function GroceryAnnouncementBar({ backgroundColor = 'rgb(27, 128, 87)', t
 
           <button
             onClick={goNext}
-            aria-label="Next announcement"
+            aria-label="Próximo aviso"
             style={{ background: 'none', border: 'none', color: textColor, cursor: 'pointer', display: 'flex', padding: 0, flexShrink: 0 }}
             onMouseEnter={(e) => { e.currentTarget.style.color = '#F15B41'; }}
             onMouseLeave={(e) => { e.currentTarget.style.color = textColor; }}

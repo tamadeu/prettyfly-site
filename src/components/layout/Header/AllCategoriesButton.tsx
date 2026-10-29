@@ -51,40 +51,40 @@ interface CategoryEntry {
 
 export const ALL_CATEGORIES: CategoryEntry[] = [
   {
-    id: 'seafood', label: 'Fresh Seafood',
+    id: 'seafood', label: 'Frutos do mar frescos',
     icon: '/grocery-shop/categories-slider/categories-slider5.webp',
     href: '/grocery/shop',
     megaColumns: [
-      { heading: 'Fresh Organic',    items: [{ label: 'Ripe Bananas', href: '/grocery/shop' }, { label: 'Strawberries', href: '/grocery/shop' }, { label: 'Cherry Tomatoes', href: '/grocery/shop' }, { label: 'Sweet Potatoes', href: '/grocery/shop' }, { label: 'Baby Carrots', href: '/grocery/shop' }] },
-      { heading: 'Green Seedless',   items: [{ label: 'Whole Milk', href: '/grocery/shop' }, { label: 'Salted Butter', href: '/grocery/shop' }, { label: 'Ground Beef', href: '/grocery/shop' }, { label: 'Chicken Breast', href: '/grocery/shop' }, { label: 'Boneless Pork', href: '/grocery/shop' }] },
-      { heading: 'Broccoli Florets', items: [{ label: 'Turkey Bacon', href: '/grocery/shop' }, { label: 'Salmon Fillets', href: '/grocery/shop' }, { label: 'Jumbo Shrimp', href: '/grocery/shop' }, { label: 'Chicken Drumsticks', href: '/grocery/shop' }, { label: 'Potatoes', href: '/grocery/shop' }] },
-      { heading: 'Navel Oranges',    items: [{ label: 'Bell peppers', href: '/grocery/shop' }, { label: 'Cookies', href: '/grocery/shop' }, { label: 'Ice cream', href: '/grocery/shop' }, { label: 'Frozen pizza', href: '/grocery/shop' }, { label: 'Orange juice', href: '/grocery/shop' }] },
-      { heading: 'Sweet Potatoes',   items: [{ label: 'Bottled water', href: '/grocery/shop' }, { label: 'Beef broth', href: '/grocery/shop' }, { label: 'Chicken broth', href: '/grocery/shop' }, { label: 'Canned beans', href: '/grocery/shop' }, { label: 'Mayonnaise', href: '/grocery/shop' }] },
-      { heading: 'Fresh Ginger',     items: [{ label: 'Vegetable oil', href: '/grocery/shop' }, { label: 'Olive oil', href: '/grocery/shop' }, { label: 'Black pepper', href: '/grocery/shop' }, { label: 'Peanut butter', href: '/grocery/shop' }, { label: 'Canned tuna', href: '/grocery/shop' }] },
+      { heading: 'Orgânicos frescos', items: [{ label: 'Bananas maduras', href: '/grocery/shop' }, { label: 'Morangos', href: '/grocery/shop' }, { label: 'Tomates-cereja', href: '/grocery/shop' }, { label: 'Batatas-doces', href: '/grocery/shop' }, { label: 'Cenouras baby', href: '/grocery/shop' }] },
+      { heading: 'Verdes sem sementes', items: [{ label: 'Leite integral', href: '/grocery/shop' }, { label: 'Manteiga com sal', href: '/grocery/shop' }, { label: 'Carne moída', href: '/grocery/shop' }, { label: 'Peito de frango', href: '/grocery/shop' }, { label: 'Carne suína sem osso', href: '/grocery/shop' }] },
+      { heading: 'Floretes de brócolis', items: [{ label: 'Bacon de peru', href: '/grocery/shop' }, { label: 'Filés de salmão', href: '/grocery/shop' }, { label: 'Camarões grandes', href: '/grocery/shop' }, { label: 'Coxas de frango', href: '/grocery/shop' }, { label: 'Batatas', href: '/grocery/shop' }] },
+      { heading: 'Laranjas-baía', items: [{ label: 'Pimentões', href: '/grocery/shop' }, { label: 'Biscoitos', href: '/grocery/shop' }, { label: 'Sorvete', href: '/grocery/shop' }, { label: 'Pizza congelada', href: '/grocery/shop' }, { label: 'Suco de laranja', href: '/grocery/shop' }] },
+      { heading: 'Batatas-doces', items: [{ label: 'Água engarrafada', href: '/grocery/shop' }, { label: 'Caldo de carne', href: '/grocery/shop' }, { label: 'Caldo de frango', href: '/grocery/shop' }, { label: 'Feijão enlatado', href: '/grocery/shop' }, { label: 'Maionese', href: '/grocery/shop' }] },
+      { heading: 'Gengibre fresco', items: [{ label: 'Óleo vegetal', href: '/grocery/shop' }, { label: 'Azeite de oliva', href: '/grocery/shop' }, { label: 'Pimenta-do-reino', href: '/grocery/shop' }, { label: 'Pasta de amendoim', href: '/grocery/shop' }, { label: 'Atum enlatado', href: '/grocery/shop' }] },
     ],
   },
   {
-    id: 'milk', label: 'Whole Milk',
+    id: 'milk', label: 'Leite integral',
     icon: '/grocery-shop/categories-slider/categories-slider3.webp',
     href: '/grocery/shop',
     subItems: [
-      { label: 'Fresh Organic',    href: '/grocery/shop', children: [{ label: 'Whole Milk', href: '/grocery/shop' }, { label: 'Salted Butter', href: '/grocery/shop' }, { label: 'Ground Beef', href: '/grocery/shop' }, { label: 'Chicken Breast', href: '/grocery/shop' }, { label: 'Boneless Pork', href: '/grocery/shop' }] },
-      { label: 'Green Seedless',   href: '/grocery/shop', children: [{ label: 'Whole Milk', href: '/grocery/shop' }, { label: 'Salted Butter', href: '/grocery/shop' }, { label: 'Ground Beef', href: '/grocery/shop' }, { label: 'Chicken Breast', href: '/grocery/shop' }, { label: 'Boneless Pork', href: '/grocery/shop' }] },
-      { label: 'Broccoli Florets', href: '/grocery/shop', children: [{ label: 'Turkey Bacon', href: '/grocery/shop' }, { label: 'Salmon Fillets', href: '/grocery/shop' }, { label: 'Jumbo Shrimp', href: '/grocery/shop' }, { label: 'Chicken Drumsticks', href: '/grocery/shop' }, { label: 'Potatoes', href: '/grocery/shop' }] },
-      { label: 'Navel Oranges',    href: '/grocery/shop', children: [{ label: 'Bell peppers', href: '/grocery/shop' }, { label: 'Cookies', href: '/grocery/shop' }, { label: 'Ice cream', href: '/grocery/shop' }, { label: 'Frozen pizza', href: '/grocery/shop' }, { label: 'Orange juice', href: '/grocery/shop' }] },
-      { label: 'Sweet Potatoes',   href: '/grocery/shop', children: [{ label: 'Bottled water', href: '/grocery/shop' }, { label: 'Beef broth', href: '/grocery/shop' }, { label: 'Chicken broth', href: '/grocery/shop' }] },
-      { label: 'Fresh Ginger',     href: '/grocery/shop', children: [{ label: 'Vegetable oil', href: '/grocery/shop' }, { label: 'Olive oil', href: '/grocery/shop' }, { label: 'Black pepper', href: '/grocery/shop' }] },
+      { label: 'Orgânicos frescos', href: '/grocery/shop', children: [{ label: 'Leite integral', href: '/grocery/shop' }, { label: 'Manteiga com sal', href: '/grocery/shop' }, { label: 'Carne moída', href: '/grocery/shop' }, { label: 'Peito de frango', href: '/grocery/shop' }, { label: 'Carne suína sem osso', href: '/grocery/shop' }] },
+      { label: 'Verdes sem sementes', href: '/grocery/shop', children: [{ label: 'Leite integral', href: '/grocery/shop' }, { label: 'Manteiga com sal', href: '/grocery/shop' }, { label: 'Carne moída', href: '/grocery/shop' }, { label: 'Peito de frango', href: '/grocery/shop' }, { label: 'Carne suína sem osso', href: '/grocery/shop' }] },
+      { label: 'Floretes de brócolis', href: '/grocery/shop', children: [{ label: 'Bacon de peru', href: '/grocery/shop' }, { label: 'Filés de salmão', href: '/grocery/shop' }, { label: 'Camarões grandes', href: '/grocery/shop' }, { label: 'Coxas de frango', href: '/grocery/shop' }, { label: 'Batatas', href: '/grocery/shop' }] },
+      { label: 'Laranjas-baía', href: '/grocery/shop', children: [{ label: 'Pimentões', href: '/grocery/shop' }, { label: 'Biscoitos', href: '/grocery/shop' }, { label: 'Sorvete', href: '/grocery/shop' }, { label: 'Pizza congelada', href: '/grocery/shop' }, { label: 'Suco de laranja', href: '/grocery/shop' }] },
+      { label: 'Batatas-doces', href: '/grocery/shop', children: [{ label: 'Água engarrafada', href: '/grocery/shop' }, { label: 'Caldo de carne', href: '/grocery/shop' }, { label: 'Caldo de frango', href: '/grocery/shop' }] },
+      { label: 'Gengibre fresco', href: '/grocery/shop', children: [{ label: 'Óleo vegetal', href: '/grocery/shop' }, { label: 'Azeite de oliva', href: '/grocery/shop' }, { label: 'Pimenta-do-reino', href: '/grocery/shop' }] },
     ],
   },
-  { id: 'beef',       label: 'Ground Beef',   icon: '/grocery-shop/categories-slider/categories-slider4.webp', href: '/grocery/shop' },
-  { id: 'vegetables', label: 'Vegetables',     icon: '/grocery-shop/categories-slider/categories-slider4.webp', href: '/grocery/shop' },
-  { id: 'grocery',    label: 'Grocery',        icon: '/grocery-shop/categories-slider/categories-slider3.webp', href: '/grocery/shop' },
-  { id: 'chicken',    label: 'Chicken Breast', icon: '/grocery-shop/categories-slider/categories-slider1.webp', href: '/grocery/shop' },
-  { id: 'meat',       label: 'Fresh Meat',     icon: '/grocery-shop/categories-slider/categories-slider4.webp', href: '/grocery/shop' },
-  { id: 'jam',        label: 'Strawberry Jam', icon: '/grocery-shop/categories-slider/categories-slider2.webp', href: '/grocery/shop' },
-  { id: 'pepper',     label: 'Black Pepper',   icon: '/grocery-shop/categories-slider/categories-slider5.webp', href: '/grocery/shop' },
-  { id: 'broccoli',   label: 'Broccoli',       icon: '/grocery-shop/categories-slider/categories-slider4.webp', href: '/grocery/shop' },
-  { id: 'foodstore',  label: 'Food Store',     icon: '/grocery-shop/categories-slider/categories-slider3.webp', href: '/grocery/shop' },
+  { id: 'beef',       label: 'Carne moída', icon: '/grocery-shop/categories-slider/categories-slider4.webp', href: '/grocery/shop' },
+  { id: 'vegetables', label: 'Vegetais', icon: '/grocery-shop/categories-slider/categories-slider4.webp', href: '/grocery/shop' },
+  { id: 'grocery',    label: 'Mercearia', icon: '/grocery-shop/categories-slider/categories-slider3.webp', href: '/grocery/shop' },
+  { id: 'chicken',    label: 'Peito de frango', icon: '/grocery-shop/categories-slider/categories-slider1.webp', href: '/grocery/shop' },
+  { id: 'meat',       label: 'Carnes frescas', icon: '/grocery-shop/categories-slider/categories-slider4.webp', href: '/grocery/shop' },
+  { id: 'jam',        label: 'Geleia de morango', icon: '/grocery-shop/categories-slider/categories-slider2.webp', href: '/grocery/shop' },
+  { id: 'pepper',     label: 'Pimenta-do-reino', icon: '/grocery-shop/categories-slider/categories-slider5.webp', href: '/grocery/shop' },
+  { id: 'broccoli',   label: 'Brócolis', icon: '/grocery-shop/categories-slider/categories-slider4.webp', href: '/grocery/shop' },
+  { id: 'foodstore',  label: 'Loja de alimentos', icon: '/grocery-shop/categories-slider/categories-slider3.webp', href: '/grocery/shop' },
 ];
 
 const BASE_CATS  = ALL_CATEGORIES.slice(0, 9);
@@ -146,7 +146,7 @@ export function AllCategoriesButton() {
             <div className="acb-mega-banner">
               <Image
                 src="/grocery-shop/all-categories-submenu/all-categories-submenu1.webp"
-                alt="Grocery specials"
+                alt="Ofertas de mercearia"
                 fill
                 style={{ objectFit: 'cover', objectPosition: 'center' }}
                 sizes="220px"
@@ -200,7 +200,7 @@ export function AllCategoriesButton() {
         className="acb-btn"
       >
         <IconHamburger />
-        <span>All Categories</span>
+        <span>Todas as categorias</span>
       </button>
 
       {open && (

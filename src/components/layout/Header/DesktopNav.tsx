@@ -16,6 +16,7 @@ import navigationToys from '@/data/navigation-toys.json';
 import navigationSocks from '@/data/navigation-socks.json';
 import navigationPod from '@/data/navigation-pod.json';
 import { getStorefrontFromPath } from '@/utils/storefront';
+import { localizeNavigationText } from '@/utils/localizeNavigation';
 import { singleProductProducts } from '@/data/single-product-products';
 import { activeWearProducts } from '@/data/active-wear-products';
 import type { SliderProduct } from './MegaMenu';
@@ -217,7 +218,7 @@ export function DesktopNav() {
               if (activeMenu !== item.id) e.currentTarget.style.color = navColor;
             }}
           >
-            {item.label}
+            {localizeNavigationText(item.label)}
             {(item.type === 'dropdown' || item.type === 'megamenu') && (
               <span
                 style={{

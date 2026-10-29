@@ -7,179 +7,179 @@ export interface BlogBodyContent {
 export const blogBodyMap: { [slug: string]: BlogBodyContent } = {
   'fashion-kids-sunglasses': {
     intro:
-      "Keep your little ones stylish and protected with these trendy vintage round sunglasses, designed for both boys and girls. These sunglasses blend fashion and function, offering a retro-inspired look that's perfect for kids who love to stand out.",
+      "Mantenha os pequenos estilosos e protegidos com estes óculos de sol redondos vintage, feitos para meninas e meninos. O modelo combina moda e funcionalidade em um visual retrô perfeito para crianças que gostam de se destacar.",
     bullets: [
       {
         label: 'Design',
-        text: 'Featuring a classic round frame, these sunglasses give off a cool, vintage vibe while complementing any outfit.',
+        text: 'A armação redonda clássica dá aos óculos um estilo vintage moderno que combina com qualquer look.',
       },
       {
-        label: 'Durable Construction',
-        text: "Made with high-quality, child-friendly materials that are lightweight yet sturdy, ensuring they can withstand daily wear and tear.",
+        label: 'Estrutura resistente',
+        text: 'Feitos com materiais de alta qualidade, leves e adequados para crianças, eles resistem ao uso diário.',
       },
       {
-        label: 'UV Protection',
-        text: "Equipped with UV400 lenses, these sunglasses effectively block out harmful UVA and UVB rays, keeping your child's eyes safe during outdoor activities.",
+        label: 'Proteção UV',
+        text: 'As lentes UV400 bloqueiam os raios UVA e UVB nocivos, protegendo os olhos das crianças durante atividades ao ar livre.',
       },
       {
-        label: 'Comfortable Fit',
-        text: 'Designed with an ergonomic shape that ensures a comfortable fit for kids, allowing them to enjoy all-day wear without discomfort.',
+        label: 'Ajuste confortável',
+        text: 'O formato ergonômico oferece um ajuste confortável para as crianças usarem os óculos durante todo o dia.',
       },
       {
-        label: 'Versatile Colors',
-        text: "Available in a variety of fun, vibrant colors to match your child's unique personality and style.",
+        label: 'Cores versáteis',
+        text: 'Disponíveis em várias cores alegres e vibrantes para combinar com a personalidade e o estilo da criança.',
       },
       {
-        label: 'Age Range',
-        text: 'Suitable for children ages 3 to 10.',
+        label: 'Faixa etária',
+        text: 'Indicados para crianças de 3 a 10 anos.',
       },
     ],
     outro:
-      'Whether for a day at the beach, a playdate at the park, or simply adding a touch of flair to their everyday outfits, these vintage round sunglasses are the perfect accessory for your little fashionistas.',
+      'Para um dia na praia, uma brincadeira no parque ou para dar um toque especial ao look do dia a dia, estes óculos redondos vintage são o acessório ideal para os pequenos apaixonados por moda.',
   },
 
   'young-woman-red-glasses': {
     intro:
-      'Elevate your everyday look with our stunning collection of bold red-framed glasses that combine confident style with all-day comfort. Designed for the modern woman who wants to make a statement, these glasses are a versatile accessory for any occasion.',
+      'Transforme seu visual do dia a dia com nossa coleção de óculos de armação vermelha, que combina estilo marcante e conforto durante todo o dia. Feitos para mulheres modernas que gostam de expressar sua personalidade, eles são versáteis para qualquer ocasião.',
     bullets: [
       {
-        label: 'Frame Material',
-        text: 'Crafted from premium lightweight acetate for durability and a comfortable feel throughout the day.',
+        label: 'Material da armação',
+        text: 'Produzida em acetato leve de alta qualidade, a armação é resistente e confortável para usar o dia todo.',
       },
       {
-        label: 'Lens Quality',
-        text: 'High-quality lenses with UV400 protection to shield your eyes from harmful UVA and UVB rays.',
+        label: 'Qualidade das lentes',
+        text: 'Lentes de alta qualidade com proteção UV400 contra os raios UVA e UVB nocivos.',
       },
       {
-        label: 'Style Versatility',
-        text: 'The bold red frame pairs beautifully with casual, business, and formal attire, making it a truly versatile accessory.',
+        label: 'Versatilidade de estilo',
+        text: 'A armação vermelha combina com roupas casuais, profissionais e sociais, tornando-se um acessório muito versátil.',
       },
       {
-        label: 'Comfortable Fit',
-        text: 'Adjustable nose pads and flexible temple arms provide a customizable, secure fit for all-day wear.',
+        label: 'Ajuste confortável',
+        text: 'As plaquetas ajustáveis e as hastes flexíveis proporcionam um encaixe seguro e personalizado para usar o dia todo.',
       },
       {
-        label: 'Color Options',
-        text: 'Available in classic red, rose gold, and burgundy to complement a range of skin tones and personal styles.',
+        label: 'Opções de cores',
+        text: 'Disponíveis em vermelho clássico, rosé e bordô para combinar com diferentes tons de pele e estilos pessoais.',
       },
     ],
     outro:
-      "Whether you're heading to the office, meeting friends for brunch, or exploring the city, these glasses are the perfect finishing touch to any outfit. A bold red frame is a timeless investment in your personal style.",
+      'Para ir ao trabalho, encontrar amigos para um brunch ou passear pela cidade, estes óculos são o toque final perfeito para qualquer look. Uma armação vermelha é um investimento atemporal no seu estilo pessoal.',
   },
 
   'cotton-floral-print': {
     intro:
-      "Embrace effortless femininity with our Cotton Floral Print Off-Shoulder Smocked Wristband Top. This beautifully crafted piece combines a timeless floral pattern with a modern silhouette, creating a top that's both stylish and comfortable for any warm-weather occasion.",
+      'Descubra a feminilidade descomplicada da nossa blusa de algodão com estampa floral, decote ombro a ombro e mangas com punhos franzidos. A peça combina uma estampa atemporal com uma silhueta moderna, oferecendo estilo e conforto em dias quentes.',
     bullets: [
       {
         label: 'Material',
-        text: 'Made from 100% premium cotton that is soft, breathable, and perfect for warm weather wear.',
+        text: 'Confeccionada em algodão premium 100%, macio e respirável, ideal para dias quentes.',
       },
       {
-        label: 'Floral Design',
-        text: 'Features a charming all-over floral print that adds a touch of romance and femininity to any outfit.',
+        label: 'Estampa floral',
+        text: 'A delicada estampa floral acrescenta um toque romântico e feminino a qualquer look.',
       },
       {
-        label: 'Off-Shoulder Cut',
-        text: 'The elegant off-shoulder neckline highlights the collarbone and shoulders for a flattering, feminine silhouette.',
+        label: 'Decote ombro a ombro',
+        text: 'O decote elegante valoriza a região do colo e dos ombros, criando uma silhueta feminina.',
       },
       {
-        label: 'Smocked Detail',
-        text: 'Elastic smocking at the bust ensures a secure, comfortable fit that adapts beautifully to your body shape.',
+        label: 'Detalhe franzido',
+        text: 'O franzido elástico no busto oferece um ajuste seguro e confortável que acompanha o formato do corpo.',
       },
       {
-        label: 'Wristband Sleeves',
-        text: 'Delicate 3/4 peplum sleeves with wristband cuffs add a refined, polished finish to this charming piece.',
+        label: 'Mangas com punhos',
+        text: 'As mangas 3/4 com punhos franzidos dão um acabamento refinado e delicado à peça.',
       },
     ],
     outro:
-      'This versatile top pairs perfectly with high-waisted jeans for a casual day out, or with a flowy skirt for a more romantic, feminine look. A must-have addition to any spring or summer wardrobe.',
+      'Combine esta blusa versátil com uma calça jeans de cintura alta para um passeio descontraído ou com uma saia fluida para um visual romântico e feminino. Uma peça indispensável para a primavera e o verão.',
   },
 
   'summer-collection-trends': {
     intro:
-      "Summer is here and it's bringing with it an exciting wave of fashion trends that are both stylish and practical. From vibrant color palettes to breathable fabrics, this season's collection has something beautiful for everyone.",
+      'O verão chegou trazendo tendências de moda que unem estilo e praticidade. De paletas de cores vibrantes a tecidos leves e respiráveis, a coleção desta estação tem opções para todos os gostos.',
     bullets: [
       {
-        label: 'Color Palette',
-        text: 'Bold, saturated hues like coral, turquoise, and sunflower yellow dominate this season, bringing energy and optimism to every look.',
+        label: 'Paleta de cores',
+        text: 'Tons intensos como coral, turquesa e amarelo girassol marcam a estação e trazem energia e otimismo para os looks.',
       },
       {
-        label: 'Fabric Choices',
-        text: 'Lightweight linen, breathable cotton, and moisture-wicking blends keep you cool and comfortable in the summer heat.',
+        label: 'Escolha de tecidos',
+        text: 'Linho leve, algodão respirável e tecidos que absorvem a umidade ajudam você a se manter fresca e confortável no calor.',
       },
       {
-        label: 'Key Silhouettes',
-        text: 'Flowy midi dresses, wide-leg trousers, and relaxed-fit tops are the standout shapes defining summer style.',
+        label: 'Silhuetas em destaque',
+        text: 'Vestidos midi fluidos, calças de pernas largas e blusas de caimento solto são as peças que definem o estilo do verão.',
       },
       {
-        label: 'Accessories',
-        text: 'Oversized sunglasses, woven straw bags, and strappy sandals complete the perfect summer look effortlessly.',
+        label: 'Acessórios',
+        text: 'Óculos de sol grandes, bolsas de palha trançada e sandálias de tiras completam o look perfeito para o verão.',
       },
       {
-        label: 'Sustainable Fashion',
-        text: "Many of this season's top picks are crafted from eco-friendly materials, supporting a greener, more conscious approach to style.",
+        label: 'Moda sustentável',
+        text: 'Muitas das peças favoritas da estação são feitas com materiais ecológicos, promovendo um estilo mais consciente e sustentável.',
       },
     ],
     outro:
-      "Embrace the season with confidence by incorporating these key trends into your wardrobe. Whether you're heading to the beach, a garden party, or a summer evening out, these trends will keep you looking effortlessly chic.",
+      'Aproveite a estação e incorpore essas tendências ao seu guarda-roupa. Seja para ir à praia, a uma festa no jardim ou a um passeio em uma noite de verão, elas ajudam você a criar looks elegantes sem esforço.',
   },
 
   'minimal-accessories-guide': {
     intro:
-      "Less is more when it comes to creating a chic, polished look. Mastering the art of minimal accessorizing can elevate even the simplest outfits into something truly special, letting your personal style — and confidence — take center stage.",
+      'Na hora de criar um visual elegante e bem-acabado, menos é mais. Aprender a usar poucos acessórios pode transformar até os looks mais simples em produções especiais, deixando seu estilo e sua confiança em evidência.',
     bullets: [
       {
-        label: 'Choose Quality Over Quantity',
-        text: 'Invest in a few high-quality pieces that will stand the test of time rather than accumulating many inexpensive accessories.',
+        label: 'Prefira qualidade à quantidade',
+        text: 'Invista em alguns acessórios de alta qualidade e duráveis, em vez de acumular muitas peças baratas.',
       },
       {
-        label: 'The Power of One Statement Piece',
-        text: 'Let one bold accessory take center stage — a striking necklace, an elegant watch, or a beautifully crafted bag.',
+        label: 'Destaque um acessório',
+        text: 'Deixe uma única peça marcante brilhar: um colar chamativo, um relógio elegante ou uma bolsa bem-acabada.',
       },
       {
-        label: 'Metallic Tones',
-        text: 'Gold and silver accessories are timeless and versatile, working seamlessly with almost every color palette and occasion.',
+        label: 'Tons metálicos',
+        text: 'Acessórios dourados e prateados são atemporais e versáteis, combinando com quase todas as paletas de cores e ocasiões.',
       },
       {
-        label: 'Layering Subtly',
-        text: 'When layering multiple pieces, keep them in the same metal tone and vary by length for a harmonious, intentional look.',
+        label: 'Sobreposições delicadas',
+        text: 'Ao sobrepor acessórios, escolha peças do mesmo tom metálico e varie os comprimentos para criar uma composição harmoniosa.',
       },
       {
-        label: 'Consider Proportion',
-        text: 'Match accessory scale to your outfit — delicate pieces for casual looks, bolder ones for formal or evening occasions.',
+        label: 'Considere as proporções',
+        text: 'Equilibre o tamanho dos acessórios com o look: peças delicadas para ocasiões casuais e opções marcantes para eventos formais ou noturnos.',
       },
     ],
     outro:
-      'The beauty of minimal styling is that it puts the focus on you, not your accessories. Start with a clean canvas, choose pieces that truly speak to your personality, and let your natural confidence shine through every outfit.',
+      'A beleza do estilo minimalista é deixar você — e não os acessórios — em destaque. Comece com uma base simples, escolha peças que expressem sua personalidade e deixe sua confiança aparecer em cada look.',
   },
 
   'winter-wardrobe-essentials': {
     intro:
-      "As temperatures drop, it's time to refresh your wardrobe with pieces that are both warm and stylish. Building the perfect winter wardrobe doesn't require a complete overhaul — just a few key essentials that can be mixed and matched effortlessly throughout the season.",
+      'Quando as temperaturas caem, é hora de renovar o guarda-roupa com peças quentes e estilosas. Para montar o guarda-roupa de inverno ideal, não é preciso mudar tudo: bastam alguns itens essenciais que podem ser combinados com facilidade ao longo da estação.',
     bullets: [
       {
-        label: 'Classic Wool Coat',
-        text: 'A well-tailored wool coat in a neutral color is the cornerstone of any winter wardrobe and never goes out of style.',
+        label: 'Casaco clássico de lã',
+        text: 'Um casaco de lã bem cortado, em uma cor neutra, é a base de qualquer guarda-roupa de inverno e nunca sai de moda.',
       },
       {
-        label: 'Cashmere Sweaters',
-        text: "Invest in at least one or two quality cashmere sweaters — they're incredibly soft, warm, and instantly elevate any outfit.",
+        label: 'Suéteres de cashmere',
+        text: 'Invista em um ou dois suéteres de cashmere de qualidade: eles são muito macios e quentes e valorizam qualquer look.',
       },
       {
-        label: 'Thermal Layering',
-        text: 'High-quality thermal base layers are essential for staying warm without adding excessive bulk to your overall look.',
+        label: 'Camadas térmicas',
+        text: 'Peças térmicas de qualidade são essenciais para manter o corpo aquecido sem adicionar volume excessivo ao visual.',
       },
       {
-        label: 'Ankle Boots',
-        text: 'A versatile pair of ankle boots works with everything from jeans to dresses, keeping your feet warm and your look polished.',
+        label: 'Botas de cano curto',
+        text: 'Um par versátil de botas de cano curto combina com tudo, de jeans a vestidos, mantém os pés aquecidos e deixa o look elegante.',
       },
       {
-        label: 'Statement Scarf',
-        text: 'A luxurious scarf in a beautiful pattern or texture can instantly elevate a simple outfit while keeping you cozy all day.',
+        label: 'Cachecol marcante',
+        text: 'Um cachecol luxuoso, com estampa ou textura especial, transforma um look simples e mantém você aquecida o dia todo.',
       },
     ],
     outro:
-      'The key to a successful winter wardrobe is versatility. Choose pieces that work well together and complement what you already own, creating a capsule collection that takes you seamlessly from the office to weekend adventures.',
+      'A versatilidade é a chave para um guarda-roupa de inverno funcional. Escolha peças que combinem entre si e com o que você já tem, criando uma seleção prática para ir do trabalho aos passeios de fim de semana.',
   },
 };

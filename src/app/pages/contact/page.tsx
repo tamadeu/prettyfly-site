@@ -38,41 +38,41 @@ export default function ContactPage() {
       {/* Page Header */}
       <div className="fa-contact-page-header">
         <div className="container-main">
-          <h1 className="fa-contact-h1">Contact</h1>
+          <h1 className="fa-contact-h1">Contato</h1>
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', fontSize: '14px' }}>
-            <Link href="/" style={{ color: '#777', textDecoration: 'underline', textUnderlineOffset: '3px' }}>Home</Link>
+            <Link href="/" style={{ color: '#777', textDecoration: 'underline', textUnderlineOffset: '3px' }}>Início</Link>
             <span style={{ color: '#bbb' }}>/</span>
-            <span style={{ color: '#222' }}>Contact</span>
+            <span style={{ color: '#222' }}>Contato</span>
           </div>
         </div>
       </div>
 
       {/* Section 1 — Form + Contact Info */}
       <div className="container-main fa-contact-section">
-        <h2 className="fa-contact-h2">Get in touch</h2>
+        <h2 className="fa-contact-h2">Entre em contato</h2>
         <div className="fa-contact-grid">
           {/* Form */}
           <div className="fa-contact-form-card">
             <form>
               <div className="fa-contact-form-row">
                 <div>
-                  <label className="fa-contact-label">Name *</label>
-                  <input type="text" placeholder="Name" className="fa-contact-input" />
+                  <label className="fa-contact-label">Nome *</label>
+                  <input type="text" placeholder="Nome" className="fa-contact-input" />
                 </div>
                 <div>
-                  <label className="fa-contact-label">Email *</label>
-                  <input type="email" placeholder="Email" className="fa-contact-input" />
+                  <label className="fa-contact-label">E-mail *</label>
+                  <input type="email" placeholder="E-mail" className="fa-contact-input" />
                 </div>
               </div>
               <div style={{ marginBottom: '20px' }}>
-                <label className="fa-contact-label">Phone number *</label>
-                <input type="tel" placeholder="Phone number" className="fa-contact-input" />
+                <label className="fa-contact-label">Telefone *</label>
+                <input type="tel" placeholder="Telefone" className="fa-contact-input" />
               </div>
               <div style={{ marginBottom: '28px' }}>
-                <label className="fa-contact-label">Comment *</label>
-                <textarea placeholder="Comment" rows={5} className="fa-contact-input fa-contact-textarea" />
+                <label className="fa-contact-label">Comentário *</label>
+                <textarea placeholder="Comentário" rows={5} className="fa-contact-input fa-contact-textarea" />
               </div>
-              <button type="submit" className="fa-contact-send-btn">Send</button>
+              <button type="submit" className="fa-contact-send-btn">Enviar</button>
             </form>
           </div>
 
@@ -81,7 +81,7 @@ export default function ContactPage() {
             <div style={{ marginBottom: '32px' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
                 <span style={{ color: '#222' }}><IconPhone /></span>
-                <h3 style={{ fontSize: '24px', fontWeight: 700, color: '#222' }}>Phone</h3>
+                <h3 style={{ fontSize: '24px', fontWeight: 700, color: '#222' }}>Telefone</h3>
               </div>
               <div style={{ paddingLeft: '32px' }}>
                 <p style={{ fontSize: '17px', color: '#666', lineHeight: 1.7 }}>(372) 587-2335</p>
@@ -91,7 +91,7 @@ export default function ContactPage() {
             <div style={{ marginBottom: '32px' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
                 <span style={{ color: '#222' }}><IconEmail /></span>
-                <h3 style={{ fontSize: '24px', fontWeight: 700, color: '#222' }}>Email</h3>
+                <h3 style={{ fontSize: '24px', fontWeight: 700, color: '#222' }}>E-mail</h3>
               </div>
               <div style={{ paddingLeft: '32px' }}>
                 <p style={{ fontSize: '17px', color: '#666', lineHeight: 1.7 }}>example@gmail.com</p>
@@ -101,7 +101,7 @@ export default function ContactPage() {
             <div style={{ marginBottom: '32px' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
                 <span style={{ color: '#222' }}><IconAddress /></span>
-                <h3 style={{ fontSize: '24px', fontWeight: 700, color: '#222' }}>Address</h3>
+                <h3 style={{ fontSize: '24px', fontWeight: 700, color: '#222' }}>Endereço</h3>
               </div>
               <div style={{ paddingLeft: '32px' }}>
                 <p style={{ fontSize: '17px', color: '#666', lineHeight: 1.7 }}>123 MOUNT STREET</p>
@@ -110,7 +110,7 @@ export default function ContactPage() {
               </div>
             </div>
             <div>
-              <h3 style={{ fontSize: '24px', fontWeight: 700, color: '#222', marginBottom: '14px' }}>Follow Us</h3>
+              <h3 style={{ fontSize: '24px', fontWeight: 700, color: '#222', marginBottom: '14px' }}>Siga-nos</h3>
               <div style={{ display: 'flex', gap: '10px' }}>
                 <IconSocial>
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" /></svg>
@@ -145,16 +145,16 @@ export default function ContactPage() {
           referrerPolicy="no-referrer-when-downgrade"
         />
         <div className="fa-contact-map-overlay">
-          <h3 style={{ fontSize: '24px', fontWeight: 700, color: '#222', marginBottom: '14px' }}>Find Our Store</h3>
-          <p style={{ fontSize: '13px', fontWeight: 600, color: '#222', marginBottom: '6px' }}>Address</p>
+          <h3 style={{ fontSize: '24px', fontWeight: 700, color: '#222', marginBottom: '14px' }}>Encontre nossa loja</h3>
+          <p style={{ fontSize: '13px', fontWeight: 600, color: '#222', marginBottom: '6px' }}>Endereço</p>
           <p style={{ fontSize: '13px', color: '#666', lineHeight: 1.6, marginBottom: '16px' }}>South Street road,<br />SUITE Connaught Street Suite 232.</p>
-          <p style={{ fontSize: '13px', fontWeight: 600, color: '#222', marginBottom: '6px' }}>Opening hours</p>
+          <p style={{ fontSize: '13px', fontWeight: 600, color: '#222', marginBottom: '6px' }}>Horário de funcionamento</p>
           <p style={{ fontSize: '13px', color: '#666', lineHeight: 1.6, marginBottom: '20px' }}>
-            Mon - Fri, 7:00am - 04:00pm<br />
-            Saturday, 8:30am - 06:30pm<br />
-            Sunday, 10:00am - 6:00pm
+            Seg. a sex., 7h às 16h<br />
+            Sábado, 8h30 às 18h30<br />
+            Domingo, 10h às 18h
           </p>
-          <button className="fa-contact-direction-btn">GET DIRECTION</button>
+          <button className="fa-contact-direction-btn">COMO CHEGAR</button>
         </div>
       </div>
 

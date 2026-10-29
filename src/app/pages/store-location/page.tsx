@@ -32,7 +32,7 @@ function ContactInfo() {
       <div>
         <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '10px' }}>
           <span style={{ color: '#222' }}><IconAddress /></span>
-          <h3 style={{ fontSize: '24px', fontWeight: 700, color: '#222' }}>Address</h3>
+          <h3 style={{ fontSize: '24px', fontWeight: 700, color: '#222' }}>Endereço</h3>
         </div>
         <p style={{ fontSize: '16px', color: '#666', lineHeight: 1.7, paddingLeft: '36px' }}>
           123 Stree New York City , United States Of America NY 750065.
@@ -42,7 +42,7 @@ function ContactInfo() {
       <div>
         <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '10px' }}>
           <span style={{ color: '#222' }}><IconPhone /></span>
-          <h3 style={{ fontSize: '24px', fontWeight: 700, color: '#222' }}>Phone</h3>
+          <h3 style={{ fontSize: '24px', fontWeight: 700, color: '#222' }}>Telefone</h3>
         </div>
         <div style={{ paddingLeft: '36px' }}>
           <p style={{ fontSize: '16px', color: '#666', lineHeight: 1.7 }}>(372) 587-2335</p>
@@ -53,7 +53,7 @@ function ContactInfo() {
       <div>
         <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '10px' }}>
           <span style={{ color: '#222' }}><IconEmail /></span>
-          <h3 style={{ fontSize: '24px', fontWeight: 700, color: '#222' }}>Email</h3>
+          <h3 style={{ fontSize: '24px', fontWeight: 700, color: '#222' }}>E-mail</h3>
         </div>
         <div style={{ paddingLeft: '36px' }}>
           <p style={{ fontSize: '16px', color: '#666', lineHeight: 1.7 }}>info@example.com</p>
@@ -74,15 +74,15 @@ function MapEmbed({ src }: { src: string }) {
 
 const locations = [
   {
-    name: 'New York Warehouse',
+    name: 'Centro de distribuição de Nova York',
     mapSrc: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215!2d-73.9857!3d40.7484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1',
   },
   {
-    name: 'Germany Warehouse',
+    name: 'Centro de distribuição da Alemanha',
     mapSrc: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2428.0!2d13.405!3d52.52!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e373f035901%3A0x42120465b5e3b70!2sBerlin!5e0!3m2!1sen!2sde!4v1',
   },
   {
-    name: 'Franch Warehouse',
+    name: 'Centro de distribuição da França',
     mapSrc: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9541.0!2d-6.2603!3d53.3498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e80ea27ac2f%3A0xa00c7a9973171a0!2sDublin!5e0!3m2!1sen!2sie!4v1',
   },
 ];
@@ -93,11 +93,11 @@ export default function StoreLocationPage() {
       {/* Page Header */}
       <div className="fa-sl-page-header">
         <div className="container-main">
-          <h1 className="fa-sl-h1">Store Location</h1>
+          <h1 className="fa-sl-h1">Localização da loja</h1>
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', fontSize: '14px' }}>
-            <Link href="/" style={{ color: '#777', textDecoration: 'underline', textUnderlineOffset: '3px' }}>Home</Link>
+            <Link href="/" style={{ color: '#777', textDecoration: 'underline', textUnderlineOffset: '3px' }}>Início</Link>
             <span style={{ color: '#bbb' }}>/</span>
-            <span style={{ color: '#222' }}>Store Location</span>
+            <span style={{ color: '#222' }}>Localização da loja</span>
           </div>
         </div>
       </div>

@@ -75,38 +75,38 @@ export default function FAQPage() {
       {/* Page Header */}
       <div className="fa-faq-page-header">
         <div className="container-main">
-          <h1 className="fa-faq-h1">FAQ</h1>
+          <h1 className="fa-faq-h1">Perguntas frequentes</h1>
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', fontSize: '14px' }}>
-            <Link href="/" style={{ color: '#777', textDecoration: 'underline', textUnderlineOffset: '3px' }}>Home</Link>
+            <Link href="/" style={{ color: '#777', textDecoration: 'underline', textUnderlineOffset: '3px' }}>Início</Link>
             <span style={{ color: '#bbb' }}>/</span>
-            <span style={{ color: '#222' }}>FAQ</span>
+            <span style={{ color: '#222' }}>Perguntas frequentes</span>
           </div>
         </div>
       </div>
 
       {/* Section 1 — Shopping Information */}
       <div className="container-main fa-faq-section">
-        <h2 className="fa-faq-section-h2">Shopping Information</h2>
+        <h2 className="fa-faq-section-h2">Informações sobre compras</h2>
         <div className="fa-faq-grid">
           <div>
             <FaqAccordion
               defaultOpen={null}
               items={[
                 {
-                  question: 'How can I place an order?',
-                  answer: 'To place an order, simply browse our online store and add the desired items to your shopping cart. Proceed to the checkout page, where you\'ll enter your shipping and payment details. Once confirmed, your order will be processed, and you\'ll receive a confirmation email.',
+                  question: 'Como faço um pedido?',
+                  answer: 'Navegue pela loja e adicione os produtos desejados ao carrinho. Depois, vá para a finalização da compra e informe seus dados de entrega e pagamento. Após a confirmação, processaremos o pedido e enviaremos um e-mail de confirmação.',
                 },
                 {
-                  question: 'What payment methods do you accept?',
-                  answer: 'We accept Visa, Mastercard, American Express, PayPal, and other major payment methods. All transactions are secured with SSL encryption.',
+                  question: 'Quais formas de pagamento vocês aceitam?',
+                  answer: 'Aceitamos Visa, Mastercard, American Express, PayPal e outras formas de pagamento importantes. Todas as transações são protegidas por criptografia SSL.',
                 },
                 {
-                  question: 'Do you offer international shipping?',
-                  answer: 'Yes, we offer international shipping to most countries. Shipping rates and delivery times vary by location. Please check our shipping page for more details.',
+                  question: 'Vocês fazem entregas internacionais?',
+                  answer: 'Sim, fazemos entregas internacionais para a maioria dos países. O frete e o prazo variam conforme o destino. Consulte nossa página de envios para mais informações.',
                 },
                 {
-                  question: 'What are your shipping times?',
-                  answer: 'Domestic orders typically arrive within 3-7 business days. International orders may take 7-21 business days depending on the destination.',
+                  question: 'Quais são os prazos de entrega?',
+                  answer: 'Pedidos nacionais geralmente chegam em 3 a 7 dias úteis. Pedidos internacionais podem levar de 7 a 21 dias úteis, dependendo do destino.',
                 },
               ]}
             />
@@ -114,7 +114,7 @@ export default function FAQPage() {
           <div className="fa-faq-img-wrap">
             <Image
               src="/fashion/faq/faq2.webp"
-              alt="Shopping Information"
+              alt="Informações sobre compras"
               fill
               style={{ objectFit: 'contain', objectPosition: 'center' }}
               sizes="(max-width: 991px) 100vw, 50vw"
@@ -126,27 +126,27 @@ export default function FAQPage() {
       {/* Section 2 — Payment Information */}
       <div className="fa-faq-section-2">
         <div className="container-main fa-faq-section">
-          <h2 className="fa-faq-section-h2">Payment Information</h2>
+          <h2 className="fa-faq-section-h2">Informações sobre pagamentos</h2>
           <div className="fa-faq-grid">
             <div>
               <FaqAccordion
                 defaultOpen={null}
                 items={[
                   {
-                    question: 'What payment methods do you accept?',
-                    answer: 'We accept a wide range of payment methods including Visa, Mastercard, American Express, PayPal, Apple Pay, and Google Pay. All transactions are processed securely.',
+                    question: 'Quais formas de pagamento vocês aceitam?',
+                    answer: 'Aceitamos diversas formas de pagamento, incluindo Visa, Mastercard, American Express, PayPal, Apple Pay e Google Pay. Todas as transações são processadas com segurança.',
                   },
                   {
-                    question: 'Is my payment information secure?',
-                    answer: '1. Yes, we take the security of your payment information seriously. Our website uses encrypted connections (SSL) to protect your personal and payment details, ensuring a safe and secure transaction.\n\n2.',
+                    question: 'Meus dados de pagamento estão seguros?',
+                    answer: 'Sim. Levamos a segurança dos seus dados de pagamento a sério. Nosso site usa conexões criptografadas (SSL) para proteger suas informações pessoais e de pagamento durante a transação.',
                   },
                   {
-                    question: 'Do you accept payment in multiple currencies?',
-                    answer: 'Yes, we accept payments in multiple currencies. The available currencies will be displayed at checkout based on your location.',
+                    question: 'Vocês aceitam pagamentos em várias moedas?',
+                    answer: 'Sim, aceitamos pagamentos em várias moedas. As opções disponíveis serão exibidas na finalização da compra, de acordo com sua localização.',
                   },
                   {
-                    question: 'Can I request a refund for my payment?',
-                    answer: 'Yes, if you are not satisfied with your purchase, you can request a refund within 30 days of delivery. Please contact our support team for assistance.',
+                    question: 'Posso solicitar o reembolso do pagamento?',
+                    answer: 'Sim. Se você não estiver satisfeito com a compra, poderá solicitar um reembolso em até 30 dias após a entrega. Entre em contato com nossa equipe de suporte para receber ajuda.',
                   },
                 ]}
               />
@@ -154,7 +154,7 @@ export default function FAQPage() {
             <div className="fa-faq-img-wrap">
               <Image
                 src="/fashion/faq/faq1.webp"
-                alt="Payment Information"
+                alt="Informações sobre pagamentos"
                 fill
                 style={{ objectFit: 'contain', objectPosition: 'center' }}
                 sizes="(max-width: 991px) 100vw, 50vw"
@@ -166,26 +166,26 @@ export default function FAQPage() {
 
       {/* Section 3 — Order & Returns */}
       <div className="container-main fa-faq-section">
-        <h2 className="fa-faq-section-h2">Order &amp; Returns</h2>
+        <h2 className="fa-faq-section-h2">Pedidos e devoluções</h2>
         <div className="fa-faq-full-width">
           <FaqAccordion
             defaultOpen={null}
             items={[
               {
-                question: 'How long does it take to process an order?',
-                answer: 'Orders are typically processed within 1-3 business days. Once your order is shipped, you will receive a tracking number via email to monitor your delivery.',
+                question: 'Quanto tempo leva para processar um pedido?',
+                answer: 'Os pedidos geralmente são processados em 1 a 3 dias úteis. Assim que o pedido for enviado, você receberá um código de rastreamento por e-mail para acompanhar a entrega.',
               },
               {
-                question: 'Do you offer international shipping?',
-                answer: 'Yes, we offer international shipping to most countries. Shipping rates and delivery times vary depending on the destination. Please check our shipping page for detailed information.',
+                question: 'Vocês fazem entregas internacionais?',
+                answer: 'Sim, fazemos entregas internacionais para a maioria dos países. O frete e o prazo variam conforme o destino. Consulte nossa página de envios para mais informações.',
               },
               {
-                question: 'What is your return policy?',
-                answer: 'Our return policy allows you to return eligible items within a specified period from the date of delivery. To be eligible for a return, the item must be in its original condition, unused, and in the original packaging. Certain items, such as personalized or intimate goods, may not be eligible for return due to hygiene reasons.',
+                question: 'Qual é a política de devolução?',
+                answer: 'Nossa política permite devolver produtos elegíveis dentro do prazo informado após a entrega. Para que a devolução seja aceita, o item deve estar sem uso, em sua condição e embalagem originais. Alguns produtos personalizados ou íntimos podem não ser elegíveis por motivos de higiene.',
               },
               {
-                question: 'Can I exchange an item instead of returning it?',
-                answer: 'Yes, we offer exchanges for items of equal or lesser value. Please contact our customer support team to initiate an exchange within 30 days of receiving your order.',
+                question: 'Posso trocar um produto em vez de devolvê-lo?',
+                answer: 'Sim, oferecemos trocas por produtos de valor igual ou menor. Entre em contato com nossa equipe de suporte para iniciar a troca em até 30 dias após o recebimento do pedido.',
               },
             ]}
           />

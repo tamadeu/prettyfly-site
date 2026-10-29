@@ -86,26 +86,26 @@ const socialLinks = [
 ];
 
 const defaultAnnouncements = [
-  'Welcome to our store →',
-  'Free shipping on orders over $150 →',
-  'New arrivals just dropped →',
+  'Boas-vindas à nossa loja →',
+  'Frete grátis em pedidos acima de US$ 150 →',
+  'Acabaram de chegar novidades →',
 ];
 
 const currencies = [
-  'Bangladesh USD $',
-  'Canada USD $',
-  'Germany USD $',
-  'Netherlands USD $',
-  'Norway USD $',
-  'United Kingdom USD $',
-  'United States USD $',
+  'Bangladesh — USD $',
+  'Canadá — USD $',
+  'Alemanha — USD $',
+  'Países Baixos — USD $',
+  'Noruega — USD $',
+  'Reino Unido — USD $',
+  'Estados Unidos — USD $',
 ];
 
 const languages = [
-  'English',
+  'Português (Brasil)',
   'Español',
-  'Português (brasil)',
   'Français',
+  'English',
 ];
 
 /* ──────────────────────────────────
@@ -288,7 +288,9 @@ function AnnouncementBarView({ topbar, ...props }: AnnouncementBarProps & { topb
   const [currencyOpen, setCurrencyOpen] = useState(false);
   const [languageOpen, setLanguageOpen] = useState(false);
   const [selectedCurrency, setSelectedCurrency] = useState(currencyOptions[0] ?? '');
-  const [selectedLanguage, setSelectedLanguage] = useState(languageOptions[0] ?? '');
+  const [selectedLanguage, setSelectedLanguage] = useState(
+    () => languageOptions.find((language) => language.toLocaleLowerCase().includes('portugu')) ?? languageOptions[0] ?? '',
+  );
 
   const toggleCurrency = useCallback(() => {
     setCurrencyOpen((p) => !p);
@@ -334,7 +336,7 @@ function AnnouncementBarView({ topbar, ...props }: AnnouncementBarProps & { topb
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
           <button
             onClick={goPrev}
-            aria-label="Previous announcement"
+            aria-label="Aviso anterior"
             style={{ background: 'none', border: 'none', color: textColor, cursor: 'pointer', display: 'flex', padding: 0, flexShrink: 0 }}
             onMouseEnter={(e) => { e.currentTarget.style.color = '#F15B41'; }}
             onMouseLeave={(e) => { e.currentTarget.style.color = textColor; }}
@@ -374,7 +376,7 @@ function AnnouncementBarView({ topbar, ...props }: AnnouncementBarProps & { topb
 
           <button
             onClick={goNext}
-            aria-label="Next announcement"
+            aria-label="Próximo aviso"
             style={{ background: 'none', border: 'none', color: textColor, cursor: 'pointer', display: 'flex', padding: 0, flexShrink: 0 }}
             onMouseEnter={(e) => { e.currentTarget.style.color = '#F15B41'; }}
             onMouseLeave={(e) => { e.currentTarget.style.color = textColor; }}

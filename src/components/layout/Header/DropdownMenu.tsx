@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import type { NavigationChild } from '@/types/common';
+import { localizeNavigationText } from '@/utils/localizeNavigation';
 
 interface DropdownMenuProps {
   items: NavigationChild[];
@@ -42,7 +43,7 @@ export function DropdownMenu({ items, bg = '#fff', textColor = '#444', borderCol
           onMouseEnter={(e) => { e.currentTarget.style.color = hoverColor; }}
           onMouseLeave={(e) => { e.currentTarget.style.color = textColor; }}
         >
-          {item.label}
+          {localizeNavigationText(item.label)}
         </Link>
       ))}
     </div>

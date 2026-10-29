@@ -12,6 +12,7 @@ import { PriceRangeSlider } from './PriceRangeSlider';
 import { GroceryFeaturedSlider } from '@/features/grocery-shop/components/GroceryFeaturedSlider';
 import { GroceryShopFAQ } from '@/features/grocery-shop/components/GroceryShopFAQ';
 import { SORT_OPTIONS, PRODUCTS_PER_PAGE } from '@/lib/constants';
+import { localizeNavigationText } from '@/utils/localizeNavigation';
 import type { FiltersData } from '@/types/common';
 import type { Product } from '@/types/product';
 
@@ -530,12 +531,12 @@ export function ShopPageContent({
           ...(heroImage ? { backgroundImage: `linear-gradient(90deg, rgba(0,0,0,0.45), rgba(0,0,0,0.05)), url("${heroImage}")`, backgroundSize: 'cover', backgroundPosition: 'center' } : {}),
         }}>
           <div style={heroImage ? { color: '#fff' } : undefined}>
-            <h1 style={{ fontSize: '36px', fontWeight: 700, color: heroImage ? '#fff' : theme.textColor, marginBottom: '6px' }}>{title}</h1>
-            {subtitle && <p style={{ fontSize: '16px', marginBottom: '10px', maxWidth: '520px', color: heroImage ? '#fff' : theme.mutedColor }}>{subtitle}</p>}
+            <h1 style={{ fontSize: '36px', fontWeight: 700, color: heroImage ? '#fff' : theme.textColor, marginBottom: '6px' }}>{localizeNavigationText(title)}</h1>
+            {subtitle && <p style={{ fontSize: '16px', marginBottom: '10px', maxWidth: '520px', color: heroImage ? '#fff' : theme.mutedColor }}>{localizeNavigationText(subtitle)}</p>}
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '15px' }}>
-              <Link href={homeHref} style={{ color: heroImage ? '#fff' : theme.mutedColor, textDecoration: 'underline', textUnderlineOffset: '3px' }}>{homeLabel}</Link>
+              <Link href={homeHref} style={{ color: heroImage ? '#fff' : theme.mutedColor, textDecoration: 'underline', textUnderlineOffset: '3px' }}>{localizeNavigationText(homeLabel)}</Link>
               <span style={{ color: '#bbb' }}>/</span>
-              <span style={{ color: heroImage ? '#fff' : theme.textColor }}>{breadcrumbLabel}</span>
+              <span style={{ color: heroImage ? '#fff' : theme.textColor }}>{localizeNavigationText(breadcrumbLabel)}</span>
             </div>
           </div>
         </div>

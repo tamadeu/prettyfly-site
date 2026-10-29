@@ -130,27 +130,27 @@ const Q = (cat: string) => `/megastore/shop?category=${encodeURIComponent(cat)}`
 
 const SHARED_MEGA_COLUMNS: MegaColumn[] = [
   {
-    heading: 'Electronics',
+    heading: 'Eletrônicos',
     items: [
-      { label: 'Wireless Charger', href: SHOP },
-      { label: 'Power Bank', href: SHOP },
+      { label: 'Carregador sem fio', href: SHOP },
+      { label: 'Bateria externa', href: SHOP },
       { label: 'Smartphone', href: SHOP },
-      { label: 'Desktop Computer', href: SHOP },
-      { label: 'Digital Camera', href: SHOP },
+      { label: 'Computador desktop', href: SHOP },
+      { label: 'Câmera digital', href: SHOP },
     ],
   },
   {
-    heading: 'Accessories',
+    heading: 'Acessórios',
     items: [
-      { label: 'Gaming Console', href: SHOP },
+      { label: 'Console de videogame', href: SHOP },
       { label: 'Monitor', href: SHOP },
-      { label: 'Smart Glasses', href: SHOP },
-      { label: 'Bluetooth Mouse', href: SHOP },
+      { label: 'Óculos inteligentes', href: SHOP },
+      { label: 'Mouse Bluetooth', href: SHOP },
       { label: 'MP3 Player', href: SHOP },
     ],
   },
   {
-    heading: 'Headphones',
+    heading: 'Fones de ouvido',
     items: [
       { label: 'Apple AirPods', href: SHOP },
       { label: 'Bose QuietComfort', href: SHOP },
@@ -160,7 +160,7 @@ const SHARED_MEGA_COLUMNS: MegaColumn[] = [
     ],
   },
   {
-    heading: 'Smart Watch',
+    heading: 'Relógio inteligente',
     items: [
       { label: 'Fitbit Watch', href: SHOP },
       { label: 'Apple Watch', href: SHOP },
@@ -170,7 +170,7 @@ const SHARED_MEGA_COLUMNS: MegaColumn[] = [
     ],
   },
   {
-    heading: 'Smart Phone',
+    heading: 'Smartphone',
     items: [
       { label: 'Apple iPhone', href: SHOP },
       { label: 'Huawei P40', href: SHOP },
@@ -184,7 +184,7 @@ const SHARED_MEGA_COLUMNS: MegaColumn[] = [
     items: [
       { label: 'Apple HomePod', href: SHOP },
       { label: 'Bose SoundLink', href: SHOP },
-      { label: 'Home Speaker', href: SHOP },
+      { label: 'Caixa de som para casa', href: SHOP },
       { label: 'Sound Touch', href: SHOP },
       { label: 'Sonos Play', href: SHOP },
     ],
@@ -201,73 +201,73 @@ const SHARED_SUB_ITEMS: L2Item[] = SHARED_MEGA_COLUMNS.map((col) => ({
 export const MEGASTORE_CATEGORIES: CategoryEntry[] = [
   {
     id: 'laptop-computers',
-    label: 'Laptop & Computers',
+    label: 'Notebooks e computadores',
     iconNode: <IconMonitor />,
     href: Q('Laptop'),
     megaColumns: SHARED_MEGA_COLUMNS,
   },
   {
     id: 'wireless-camera',
-    label: 'Wireless Camera',
+    label: 'Câmera sem fio',
     iconNode: <IconCamera />,
     href: Q('Wireless Camera'),
     subItems: SHARED_SUB_ITEMS,
   },
   {
     id: 'gaming-keyboard',
-    label: 'Gaming Keyboard',
+    label: 'Teclado gamer',
     iconNode: <IconKeyboard />,
     href: Q('Gaming Keyboard'),
     subItems: SHARED_SUB_ITEMS.slice(0, 4),
   },
   {
     id: 'smart-phones',
-    label: 'Smart Phones',
+    label: 'Smartphones',
     iconNode: <IconPhone />,
     href: Q('Smart Phones'),
     subItems: SHARED_SUB_ITEMS.slice(2, 6),
   },
   {
     id: 'wearable-camera',
-    label: 'Wearable Camera',
+    label: 'Câmera vestível',
     iconNode: <IconCamera />,
     href: Q('Camera'),
   },
   {
     id: 'smartwatch',
-    label: 'Smartwatch',
+    label: 'Relógio inteligente',
     iconNode: <IconWatch />,
     href: Q('Smart Watch'),
   },
   {
     id: 'wireless-router',
-    label: 'Wireless Router',
+    label: 'Roteador sem fio',
     iconNode: <IconWifi />,
     href: Q('Wireless Router'),
   },
   {
     id: 'headphone-audios',
-    label: 'Headphone & Audios',
+    label: 'Fones de ouvido e áudio',
     iconNode: <IconHeadphone />,
     href: Q('Headphones'),
     subItems: SHARED_SUB_ITEMS.slice(0, 3),
   },
   {
     id: 'ipad-tablet',
-    label: 'iPad & Tablet',
+    label: 'iPad e tablet',
     iconNode: <IconTablet />,
     href: Q('Tablet'),
   },
   /* Extra (revealed by "All Categories +") */
   {
     id: 'speakers',
-    label: 'Speakers & Audio',
+    label: 'Caixas de som e áudio',
     iconNode: <IconHeadphone />,
     href: Q('Speaker'),
   },
   {
     id: 'accessories-extra',
-    label: 'Accessories',
+    label: 'Acessórios',
     iconNode: <IconKeyboard />,
     href: Q('Accessories'),
   },
@@ -390,7 +390,7 @@ export function MegastoreAllCategoriesButton() {
         className="mscb-btn"
       >
         <IconHamburger />
-        <span>All Categories</span>
+        <span>Todas as categorias</span>
       </button>
 
       {open && (
@@ -409,7 +409,7 @@ export function MegastoreAllCategoriesButton() {
           >
             <span className="mscb-expand-icon"><IconFlash /></span>
             <span className="mscb-expand-label">
-              {showExtra ? 'Hide Categories –' : 'All Categories +'}
+              {showExtra ? 'Ocultar categorias –' : 'Todas as categorias +'}
             </span>
           </button>
         </div>

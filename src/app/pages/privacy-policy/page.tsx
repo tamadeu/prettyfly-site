@@ -9,11 +9,11 @@ export default function PrivacyPolicyPage() {
       <div className="fa-pp-page-header">
         <div className="container-main">
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', fontSize: '14px', marginBottom: '12px' }}>
-            <Link href="/" style={{ color: '#777', textDecoration: 'underline', textUnderlineOffset: '3px' }}>Home</Link>
+            <Link href="/" style={{ color: '#777', textDecoration: 'underline', textUnderlineOffset: '3px' }}>Início</Link>
             <span style={{ color: '#bbb' }}>/</span>
-            <span style={{ color: '#222' }}>Privacy policy</span>
+            <span style={{ color: '#222' }}>Política de privacidade</span>
           </div>
-          <h1 className="fa-pp-h1">Privacy policy</h1>
+          <h1 className="fa-pp-h1">Política de privacidade</h1>
         </div>
       </div>
 
@@ -23,97 +23,97 @@ export default function PrivacyPolicyPage() {
 
           <p style={para}><em>Last updated: August 31, 2024</em></p>
 
-          <p style={para}>This Privacy Policy describes how Ambaz (the &ldquo;Site&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;, or &ldquo;our&rdquo;) collects, uses, and discloses your personal information when you visit, use our services, or make a purchase from our store (the &ldquo;Site&rdquo;) or otherwise communicate with us regarding the Site (collectively, the &ldquo;Services&rdquo;). For purposes of this Privacy Policy, &ldquo;you&rdquo; and &ldquo;your&rdquo; means you as the user of the Services, whether you are a customer, website visitor, or another individual whose information we have collected pursuant to this Privacy Policy.</p>
+          <p style={para}>Esta Política de Privacidade descreve como a Ambaz (o &ldquo;Site&rdquo;, &ldquo;nós&rdquo; ou &ldquo;nosso&rdquo;) coleta, usa e divulga suas informações pessoais quando você visita ou utiliza nossos serviços, faz uma compra em nossa loja ou se comunica conosco sobre o Site (em conjunto, os &ldquo;Serviços&rdquo;). Nesta Política, &ldquo;você&rdquo; se refere a qualquer usuário dos Serviços, seja cliente, visitante do site ou outra pessoa cujas informações tenhamos coletado conforme esta Política de Privacidade.</p>
 
-          <p style={para}>Please read this Privacy Policy carefully.</p>
+          <p style={para}>Leia esta Política de Privacidade com atenção.</p>
 
-          <h2 className="fa-pp-h2">Changes to This Privacy Policy</h2>
-          <p style={para}>We may update this Privacy Policy from time to time, including to reflect changes to our practices or for other operational, legal, or regulatory reasons. We will post the revised Privacy Policy on the Site, update the &ldquo;Last updated&rdquo; date and take any other steps required by applicable law.</p>
+          <h2 className="fa-pp-h2">Alterações nesta Política de Privacidade</h2>
+          <p style={para}>Podemos atualizar esta Política de Privacidade periodicamente para refletir mudanças em nossas práticas ou por motivos operacionais, legais ou regulatórios. Publicaremos a versão revisada no Site, atualizaremos a data de &ldquo;Última atualização&rdquo; e adotaremos outras medidas exigidas pela legislação aplicável.</p>
 
-          <h2 className="fa-pp-h2">How We Collect and Use Your Personal Information</h2>
-          <p style={para}>To provide the Services, we collect and have collected over the past 12 months personal information about you from a variety of sources, as set out below. The information that we collect and use varies depending on how you interact with us.</p>
-          <p style={para}>In addition to the specific uses set out below, we may use information we collect about you to communicate with you, provide or improve the Services, comply with any applicable legal obligations, enforce any applicable terms of service, and to protect or defend the Services, our rights, and the rights of our users or others.</p>
+          <h2 className="fa-pp-h2">Como coletamos e usamos suas informações pessoais</h2>
+          <p style={para}>Para fornecer os Serviços, coletamos e, nos últimos 12 meses, coletamos informações pessoais sobre você de diversas fontes, conforme descrito abaixo. As informações coletadas e utilizadas variam de acordo com a forma como você interage conosco.</p>
+          <p style={para}>Além dos usos específicos descritos abaixo, podemos usar as informações coletadas para nos comunicarmos com você, fornecer ou aprimorar os Serviços, cumprir obrigações legais, fazer valer os termos de serviço aplicáveis e proteger ou defender os Serviços, nossos direitos e os direitos de nossos usuários ou de outras pessoas.</p>
 
-          <h2 className="fa-pp-h2">What Personal Information We Collect</h2>
-          <p style={para}>The types of personal information we obtain about you depends on how you interact with our Site and use our Services. When we use the term &ldquo;personal information&rdquo;, we are referring to information that identifies, relates to, describes or can be associated with you. The following sections describe the categories and specific types of personal information we collect.</p>
+          <h2 className="fa-pp-h2">Quais informações pessoais coletamos</h2>
+          <p style={para}>Os tipos de informações pessoais que obtemos dependem de como você interage com nosso Site e utiliza os Serviços. O termo &ldquo;informações pessoais&rdquo; se refere a informações que identificam, descrevem ou podem ser associadas a você. As seções a seguir descrevem as categorias e os tipos específicos de informações pessoais que coletamos.</p>
 
-          <h2 className="fa-pp-h2">Information We Collect Directly from You</h2>
-          <p style={para}>Information that you directly submit to us through our Services may include:</p>
+          <h2 className="fa-pp-h2">Informações que coletamos diretamente de você</h2>
+          <p style={para}>As informações que você nos envia diretamente por meio dos Serviços podem incluir:</p>
           <ul style={list}>
-            <li>Contact details including your name, address, phone number, and email.</li>
-            <li>Order information including your name, billing address, shipping address, payment confirmation, email address, and phone number.</li>
-            <li>Account information including your username, password, security questions and other information used for account security purposes.</li>
-            <li>Customer support information including the information you choose to include in communications with us, for example, when sending a message through the Services.</li>
+            <li>Dados de contato, como nome, endereço, telefone e e-mail.</li>
+            <li>Informações do pedido, como nome, endereço de cobrança, endereço de entrega, confirmação de pagamento, e-mail e telefone.</li>
+            <li>Informações da conta, como nome de usuário, senha, perguntas de segurança e outros dados utilizados para proteger a conta.</li>
+            <li>Informações de atendimento ao cliente que você decide incluir em suas comunicações conosco, por exemplo, ao enviar uma mensagem pelos Serviços.</li>
           </ul>
-          <p style={para}>Some features of the Services may require you to directly provide us with certain information about yourself. You may elect not to provide this information, but doing so may prevent you from using or accessing these features.</p>
+          <p style={para}>Alguns recursos dos Serviços podem exigir que você forneça determinadas informações pessoais. Você pode optar por não fornecê-las, mas isso poderá impedir o uso ou o acesso a esses recursos.</p>
 
-          <h2 className="fa-pp-h2">Information We Collect about Your Usage</h2>
-          <p style={para}>We may also automatically collect certain information about your interaction with the Services (&ldquo;Usage Data&rdquo;). To do this, we may use cookies, pixels and similar technologies (&ldquo;Cookies&rdquo;). Usage Data may include information about how you access and use our Site and your account, including device information, browser information, information about your network connection, your IP address and other information regarding your interaction with the Services.</p>
+          <h2 className="fa-pp-h2">Informações que coletamos sobre o uso</h2>
+          <p style={para}>Também podemos coletar automaticamente determinadas informações sobre sua interação com os Serviços (&ldquo;Dados de uso&rdquo;). Para isso, podemos utilizar cookies, pixels e tecnologias semelhantes (&ldquo;Cookies&rdquo;). Os Dados de uso podem incluir informações sobre como você acessa e utiliza o Site e sua conta, como dados do dispositivo e do navegador, informações sobre sua conexão de rede, endereço IP e outros dados relacionados à sua interação com os Serviços.</p>
 
-          <h2 className="fa-pp-h2">Information We Obtain from Third Parties</h2>
-          <p style={para}>Finally, we may obtain information about you from third parties, including from vendors and service providers who may collect information on our behalf, such as:</p>
+          <h2 className="fa-pp-h2">Informações obtidas de terceiros</h2>
+          <p style={para}>Também podemos obter informações sobre você de terceiros, incluindo fornecedores e prestadores de serviços que coletam dados em nosso nome, como:</p>
           <ul style={list}>
-            <li>Companies who support our Site and Services.</li>
-            <li>Our payment processors, who collect payment information (e.g., bank account, credit or debit card information, billing address) to process your payment in order to fulfill your orders and provide you with products or services you have requested, in order to perform our contract with you.</li>
-            <li>When you visit our Site, open or click on emails we send you, or interact with our Services or advertisements, we, or third parties we work with, may automatically collect certain information using online tracking technologies such as pixels, web beacons, software developer kits, third-party libraries, and cookies.</li>
+            <li>Empresas que dão suporte ao Site e aos Serviços.</li>
+            <li>Nossos processadores de pagamento, que coletam dados de pagamento (por exemplo, conta bancária, dados do cartão de crédito ou débito e endereço de cobrança) para processar pagamentos, atender pedidos e fornecer os produtos ou serviços solicitados, conforme nosso contrato com você.</li>
+            <li>Quando você visita o Site, abre ou clica em e-mails enviados por nós ou interage com os Serviços ou anúncios, nós ou terceiros com quem trabalhamos podemos coletar automaticamente determinadas informações por meio de tecnologias de rastreamento on-line, como pixels, web beacons, kits de desenvolvimento de software, bibliotecas de terceiros e cookies.</li>
           </ul>
-          <p style={para}>Any information we obtain from third parties will be treated in accordance with this Privacy Policy. Also see the section below, Third Party Websites and Links.</p>
+          <p style={para}>Todas as informações obtidas de terceiros serão tratadas conforme esta Política de Privacidade. Consulte também a seção &ldquo;Sites e links de terceiros&rdquo;, abaixo.</p>
 
-          <h2 className="fa-pp-h2">How We Use Your Personal Information</h2>
-          <p style={para}><strong>Providing Products and Services.</strong> We use your personal information to provide you with the Services in order to perform our contract with you, including to process your payments, fulfill your orders, to send notifications to you related to your account, purchases, returns, exchanges or other transactions, to create, maintain and otherwise manage your account, to arrange for shipping, facilitate any returns and exchanges and other features and functionalities related to your account.</p>
-          <p style={para}><strong>Marketing and Advertising.</strong> We may use your personal information for marketing and promotional purposes, such as to send marketing, advertising and promotional communications by email, text message or postal mail, and to show you advertisements for products or services. This may include using your personal information to better tailor the Services and advertising on our Site and other websites.</p>
-          <p style={para}><strong>Security and Fraud Prevention.</strong> We use your personal information to detect, investigate or take action regarding possible fraudulent, illegal or malicious activity. If you choose to use the Services and register an account, you are responsible for keeping your account credentials safe. We highly recommend that you do not share your username, password, or other access details with anyone else. If you believe your account has been compromised, please contact us immediately.</p>
-          <p style={para}><strong>Communicating with You and Service Improvement.</strong> We use your personal information to provide you with customer support and improve our Services. This is in our legitimate interests in order to be responsive to you, to provide effective services to you, and to maintain our business relationship with you.</p>
+          <h2 className="fa-pp-h2">Como usamos suas informações pessoais</h2>
+          <p style={para}><strong>Fornecimento de produtos e serviços.</strong> Usamos suas informações pessoais para fornecer os Serviços e cumprir nosso contrato com você, incluindo processar pagamentos, atender pedidos, enviar notificações relacionadas à sua conta, compras, devoluções, trocas ou outras transações, criar e administrar sua conta, organizar entregas e facilitar devoluções, trocas e outros recursos relacionados à conta.</p>
+          <p style={para}><strong>Marketing e publicidade.</strong> Podemos usar suas informações pessoais para fins de marketing e promoção, como enviar comunicações por e-mail, mensagem de texto ou correspondência e exibir anúncios de produtos ou serviços. Isso pode incluir o uso dessas informações para personalizar os Serviços e os anúncios exibidos em nosso Site e em outros sites.</p>
+          <p style={para}><strong>Segurança e prevenção a fraudes.</strong> Usamos suas informações pessoais para detectar, investigar ou tomar medidas contra possíveis atividades fraudulentas, ilegais ou maliciosas. Se você utilizar os Serviços e criar uma conta, será responsável por manter suas credenciais seguras. Recomendamos que não compartilhe seu nome de usuário, senha ou outros dados de acesso. Se acreditar que sua conta foi comprometida, entre em contato conosco imediatamente.</p>
+          <p style={para}><strong>Comunicação e melhoria dos Serviços.</strong> Usamos suas informações pessoais para oferecer atendimento ao cliente e aprimorar os Serviços. Isso atende aos nossos interesses legítimos de responder às suas solicitações, prestar um serviço eficaz e manter nosso relacionamento comercial com você.</p>
 
           <h2 className="fa-pp-h2">Cookies</h2>
-          <p style={para}>Like many websites, we use Cookies on our Site. We use Cookies to power and improve our Site and our Services (including to remember your actions and preferences), to run analytics and better understand user interaction with the Services. We may also permit third parties and services providers to use Cookies on our Site to better tailor the services, products and advertising on our Site and other websites.</p>
-          <p style={para}>Most browsers automatically accept Cookies by default, but you can choose to set your browser to remove or reject Cookies through your browser controls. Please keep in mind that removing or blocking Cookies can negatively impact your user experience and may cause some of the Services, including certain features and general functionality, to work incorrectly or no longer be available. Additionally, blocking Cookies may not completely prevent how we share information with third parties such as our advertising partners.</p>
+          <p style={para}>Como muitos sites, utilizamos Cookies no Site para viabilizar e aprimorar o Site e os Serviços (inclusive para lembrar suas ações e preferências), realizar análises e entender melhor como as pessoas interagem com os Serviços. Também podemos permitir que terceiros e prestadores de serviços utilizem Cookies no Site para personalizar serviços, produtos e anúncios em nosso Site e em outros sites.</p>
+          <p style={para}>A maioria dos navegadores aceita Cookies automaticamente, mas você pode configurá-los para removê-los ou recusá-los. A remoção ou o bloqueio de Cookies pode prejudicar sua experiência e fazer com que alguns Serviços, recursos ou funcionalidades deixem de funcionar corretamente ou fiquem indisponíveis. Além disso, o bloqueio de Cookies pode não impedir completamente o compartilhamento de informações com terceiros, como nossos parceiros de publicidade.</p>
 
-          <h2 className="fa-pp-h2">How We Disclose Personal Information</h2>
-          <p style={para}>In certain circumstances, we may disclose your personal information to third parties for contract fulfillment purposes, legitimate purposes and other reasons subject to this Privacy Policy. Such circumstances may include:</p>
+          <h2 className="fa-pp-h2">Como compartilhamos informações pessoais</h2>
+          <p style={para}>Em determinadas situações, podemos compartilhar suas informações pessoais com terceiros para cumprir contratos, atender a finalidades legítimas ou por outros motivos previstos nesta Política de Privacidade. Isso pode ocorrer:</p>
           <ul style={list}>
-            <li>With vendors or other third parties who perform services on our behalf (e.g., IT management, payment processing, data analytics, customer support, cloud storage, fulfillment and shipping).</li>
-            <li>With business and marketing partners to provide services and advertise to you.</li>
-            <li>When you direct, request us or otherwise consent to our disclosure of certain information to third parties, such as to ship you products or through your use of social media widgets or login integrations, with your consent.</li>
-            <li>With our affiliates or otherwise within our corporate group, in our legitimate interests to run a successful business.</li>
-            <li>In connection with a business transaction such as a merger or bankruptcy, to comply with any applicable legal obligations, to enforce any applicable terms of service, and to protect or defend the Services, our rights, and the rights of our users or others.</li>
+            <li>Com fornecedores ou terceiros que prestam serviços em nosso nome, como gestão de tecnologia da informação, processamento de pagamentos, análise de dados, atendimento ao cliente, armazenamento em nuvem, separação de pedidos e entrega.</li>
+            <li>Com parceiros comerciais e de marketing para prestar serviços e exibir anúncios.</li>
+            <li>Quando você solicitar ou autorizar o compartilhamento de determinadas informações, por exemplo, para entregar produtos ou ao utilizar recursos de redes sociais ou integrações de acesso.</li>
+            <li>Com empresas afiliadas ou integrantes do nosso grupo empresarial, no exercício de nossos interesses legítimos.</li>
+            <li>Em uma transação comercial, como fusão ou falência, para cumprir obrigações legais, fazer valer os termos de serviço aplicáveis ou proteger e defender os Serviços, nossos direitos e os direitos de usuários ou terceiros.</li>
           </ul>
 
-          <h2 className="fa-pp-h2">Third Party Websites and Links</h2>
-          <p style={para}>Our Site may provide links to websites or other online platforms operated by third parties. If you follow links to sites not affiliated or controlled by us, you should review their privacy and security policies and other terms and conditions. We do not guarantee and are not responsible for the privacy or security of such sites, including the accuracy, completeness, or reliability of information found on these sites. Information you provide on public or semi-public venues, including information you share on third-party social networking platforms may also be viewable by other users of the Services and/or users of those third-party platforms without limitation as to its use by us or by a third party. Our inclusion of such links does not, by itself, imply any endorsement of the content on such platforms or of their owners or operators, except as disclosed on the Services.</p>
+          <h2 className="fa-pp-h2">Sites e links de terceiros</h2>
+          <p style={para}>O Site pode conter links para sites ou plataformas on-line operados por terceiros. Ao acessar sites que não sejam afiliados ou controlados por nós, leia as respectivas políticas de privacidade e segurança e os termos e condições. Não garantimos nem nos responsabilizamos pela privacidade ou segurança desses sites, nem pela precisão, integridade ou confiabilidade das informações neles disponíveis. Informações publicadas em espaços públicos ou semipúblicos, inclusive em redes sociais de terceiros, também podem ser vistas por outros usuários dos Serviços ou dessas plataformas, sem restrições quanto ao uso por nós ou por terceiros. A inclusão desses links não significa, por si só, que endossamos o conteúdo, os proprietários ou os operadores das plataformas, salvo indicação nos Serviços.</p>
 
-          <h2 className="fa-pp-h2">Children&apos;s Data</h2>
-          <p style={para}>The Services are not intended to be used by children, and we do not knowingly collect any personal information about children. If you are the parent or guardian of a child who has provided us with their personal information, you may contact us using the contact details set out below to request that it be deleted.</p>
+          <h2 className="fa-pp-h2">Dados de crianças</h2>
+          <p style={para}>Os Serviços não se destinam a crianças e não coletamos intencionalmente informações pessoais de crianças. Se você for responsável por uma criança que nos forneceu informações pessoais, poderá solicitar a exclusão desses dados pelos canais de contato indicados abaixo.</p>
 
-          <h2 className="fa-pp-h2">Security and Retention of Your Information</h2>
-          <p style={para}>Please be aware that no security measures are perfect or impenetrable, and we cannot guarantee &ldquo;perfect security.&rdquo; In addition, any information you send to us may not be secure while in transit. We recommend that you do not use insecure channels to communicate sensitive or confidential information to us.</p>
-          <p style={para}>How long we retain your personal information depends on different factors, such as whether we need the information to maintain your account, to provide the Services, comply with legal obligations, resolve disputes or enforce other applicable contracts and policies.</p>
+          <h2 className="fa-pp-h2">Segurança e retenção das informações</h2>
+          <p style={para}>Nenhuma medida de segurança é perfeita ou inviolável, portanto não podemos garantir segurança absoluta. Além disso, as informações enviadas a nós podem não estar seguras durante a transmissão. Recomendamos que você não utilize canais inseguros para enviar informações confidenciais ou sensíveis.</p>
+          <p style={para}>O período de retenção das suas informações pessoais depende de diversos fatores, como a necessidade de manter sua conta, prestar os Serviços, cumprir obrigações legais, resolver disputas ou fazer valer contratos e políticas aplicáveis.</p>
 
-          <h2 className="fa-pp-h2">Your Rights</h2>
-          <p style={para}>Depending on where you live, you may have some or all of the rights listed below in relation to your personal information. However, these rights are not absolute, may apply only in certain circumstances and, in certain cases, we may decline your request as permitted by law.</p>
+          <h2 className="fa-pp-h2">Seus direitos</h2>
+          <p style={para}>Dependendo de onde você mora, poderá ter alguns ou todos os direitos abaixo em relação às suas informações pessoais. Esses direitos não são absolutos, podem se aplicar somente em determinadas situações e, em alguns casos, poderemos recusar uma solicitação conforme permitido por lei.</p>
           <ul style={list}>
-            <li><strong>Right to Access / Know:</strong> You may have a right to request access to personal information that we hold about you, including details relating to the ways in which we use and share your information.</li>
-            <li><strong>Right to Delete:</strong> You may have a right to request that we delete personal information we maintain about you.</li>
-            <li><strong>Right to Correct:</strong> You may have a right to request that we correct inaccurate personal information we maintain about you.</li>
-            <li><strong>Right of Portability:</strong> You may have a right to receive a copy of the personal information we hold about you and to request that we transfer it to a third party, in certain circumstances and with certain exceptions.</li>
-            <li><strong>Right to Opt out of Sale or Sharing or Targeted Advertising:</strong> You may have a right to direct us not to &ldquo;sell&rdquo; or &ldquo;share&rdquo; your personal information or to opt out of the processing of your personal information for purposes considered to be &ldquo;targeted advertising&rdquo;, as defined in applicable privacy laws.</li>
-            <li><strong>Restriction of Processing:</strong> You may have the right to ask us to stop or restrict our processing of personal information.</li>
-            <li><strong>Withdrawal of Consent:</strong> Where we rely on consent to process your personal information, you may have the right to withdraw this consent.</li>
-            <li><strong>Appeal:</strong> You may have a right to appeal our decision if we decline to process your request. You can do so by replying directly to our denial.</li>
-            <li><strong>Managing Communication Preferences:</strong> We may send you promotional emails, and you may opt out of receiving these at any time by using the unsubscribe option displayed in our emails to you. If you opt out, we may still send you non-promotional emails, such as those about your account or orders that you have made.</li>
+            <li><strong>Direito de acesso e confirmação:</strong> Você pode solicitar acesso às informações pessoais que mantemos sobre você, inclusive detalhes sobre como as utilizamos e compartilhamos.</li>
+            <li><strong>Direito de exclusão:</strong> Você pode solicitar a exclusão das informações pessoais que mantemos.</li>
+            <li><strong>Direito de correção:</strong> Você pode solicitar a correção de informações pessoais incorretas que mantemos.</li>
+            <li><strong>Direito à portabilidade:</strong> Em determinadas situações e sujeito a exceções, você pode solicitar uma cópia das informações pessoais que mantemos e pedir que sejam transferidas a terceiros.</li>
+            <li><strong>Direito de oposição a venda, compartilhamento ou publicidade direcionada:</strong> Você pode solicitar que não vendamos nem compartilhemos suas informações pessoais ou se opor ao tratamento para fins de &ldquo;publicidade direcionada&rdquo;, conforme definido pelas leis de privacidade aplicáveis.</li>
+            <li><strong>Restrição do tratamento:</strong> Você pode solicitar que interrompamos ou restrinjamos o tratamento de suas informações pessoais.</li>
+            <li><strong>Revogação do consentimento:</strong> Quando o tratamento se basear no seu consentimento, você poderá revogá-lo.</li>
+            <li><strong>Recurso:</strong> Você pode recorrer de uma decisão que recuse sua solicitação, respondendo diretamente à nossa comunicação de recusa.</li>
+            <li><strong>Preferências de comunicação:</strong> Podemos enviar e-mails promocionais, mas você pode cancelar o recebimento a qualquer momento pela opção de descadastramento disponível nas mensagens. Mesmo após o cancelamento, poderemos enviar e-mails não promocionais sobre sua conta ou seus pedidos.</li>
           </ul>
-          <p style={para}>You may exercise any of these rights where indicated on our Site or by contacting us using the contact details provided below.</p>
-          <p style={para}>We will not discriminate against you for exercising any of these rights. We may need to collect information from you to verify your identity, such as your email address or account information, before providing a substantive response to the request. In accordance with applicable laws, you may designate an authorized agent to make requests on your behalf to exercise your rights. Before accepting such a request from an agent, we will require that the agent provide proof you have authorized them to act on your behalf, and we may need you to verify your identity directly with us. We will respond to your request in a timely manner as required under applicable law.</p>
+          <p style={para}>Você pode exercer esses direitos quando indicado no Site ou entrando em contato conosco pelos dados informados abaixo.</p>
+          <p style={para}>Não discriminaremos você por exercer qualquer um desses direitos. Antes de responder à solicitação, talvez precisemos coletar informações para confirmar sua identidade, como seu e-mail ou dados da conta. Conforme a legislação aplicável, você pode indicar um representante autorizado para fazer a solicitação em seu nome. Antes de aceitá-la, poderemos exigir um comprovante dessa autorização e solicitar que você confirme sua identidade diretamente conosco. Responderemos dentro do prazo previsto pela legislação aplicável.</p>
 
-          <h2 className="fa-pp-h2">Complaints</h2>
-          <p style={para}>If you have complaints about how we process your personal information, please contact us using the contact details provided below. If you are not satisfied with our response to your complaint, depending on where you live you may have the right to appeal our decision by contacting us using the contact details set out below, or lodge your complaint with your local data protection authority.</p>
+          <h2 className="fa-pp-h2">Reclamações</h2>
+          <p style={para}>Se tiver uma reclamação sobre como tratamos suas informações pessoais, entre em contato pelos dados indicados abaixo. Se não ficar satisfeito com nossa resposta, dependendo de onde você mora, poderá recorrer da decisão entrando em contato conosco ou apresentar uma reclamação à autoridade local de proteção de dados.</p>
 
-          <h2 className="fa-pp-h2">International Users</h2>
-          <p style={para}>Please note that we may transfer, store and process your personal information outside the country you live in. Your personal information is also processed by staff and third party service providers and partners in these countries.</p>
-          <p style={para}>If we transfer your personal information out of Europe, we will rely on recognized transfer mechanisms like the European Commission&apos;s Standard Contractual Clauses, or any equivalent contracts issued by the relevant competent authority of the UK, as relevant, unless the data transfer is to a country that has been determined to provide an adequate level of protection.</p>
+          <h2 className="fa-pp-h2">Usuários internacionais</h2>
+          <p style={para}>Suas informações pessoais podem ser transferidas, armazenadas e tratadas fora do país onde você mora. Funcionários, prestadores de serviços e parceiros nesses países também poderão tratar essas informações.</p>
+          <p style={para}>Se transferirmos suas informações pessoais para fora da Europa, utilizaremos mecanismos de transferência reconhecidos, como as Cláusulas Contratuais Padrão da Comissão Europeia ou contratos equivalentes emitidos pela autoridade competente do Reino Unido, conforme aplicável, exceto quando a transferência ocorrer para um país reconhecido como oferecendo nível adequado de proteção.</p>
 
-          <h2 className="fa-pp-h2">Contact</h2>
-          <p style={{ marginBottom: '0' }}>Should you have any questions about our privacy practices or this Privacy Policy, or if you would like to exercise any of the rights available to you, please email us at support@ambaz.com or contact us at our office address.</p>
+          <h2 className="fa-pp-h2">Contato</h2>
+          <p style={{ marginBottom: '0' }}>Se tiver dúvidas sobre nossas práticas de privacidade ou esta Política, ou se quiser exercer algum dos direitos disponíveis, escreva para support@ambaz.com ou entre em contato conosco pelo endereço comercial.</p>
 
         </div>
       </div>

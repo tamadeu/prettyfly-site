@@ -8,6 +8,7 @@ import { Drawer } from '@/components/ui/Drawer';
 import { useUIStore } from '@/store/uiStore';
 import { useWishlistStore } from '@/store/wishlistStore';
 import { getStorefrontFromPath, isGrocerySlug, isPetFoodSlug, isNutritionSlug, isMegastoreSlug, isPhoneCaseSlug, isSmartWatchesSlug, type Storefront } from '@/utils/storefront';
+import { localizeNavigationText } from '@/utils/localizeNavigation';
 import { ALL_CATEGORIES } from './AllCategoriesButton';
 import { MEGASTORE_CATEGORIES } from './MegastoreAllCategoriesButton';
 
@@ -446,7 +447,7 @@ export function MobileNav() {
               return (
                 <div key={item.id}>
                   <AccordionRow
-                    label={item.label}
+                    label={localizeNavigationText(item.label)}
                     href={linkHref}
                     isOpen={isTopOpen}
                     onToggle={() => toggleTop(item.id)}
@@ -464,7 +465,7 @@ export function MobileNav() {
                         return (
                           <div key={colKey}>
                             <AccordionRow
-                              label={col.title}
+                              label={localizeNavigationText(col.title)}
                               isOpen={isColOpen}
                               onToggle={() => toggleCol(colKey)}
                               onNavigate={close}
@@ -488,7 +489,7 @@ export function MobileNav() {
                                     }}
                                     style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '14px 52px', fontSize: '14px', fontWeight: 500, color: accent.text, textDecoration: 'none', borderBottom: '1px solid #f0f0f0', cursor: l.comingSoon ? 'default' : undefined }}
                                   >
-                                    {l.label}
+                                    {localizeNavigationText(l.label)}
                                     {l.comingSoon && (
                                       <span style={{ fontSize: '10px', fontWeight: 600, color: '#fff', backgroundColor: 'rgba(107, 114, 128, 0.8)', padding: '2px 6px', borderRadius: '4px', letterSpacing: '0.3px', lineHeight: 1.4, flexShrink: 0 }}>
                                         Em breve
@@ -508,7 +509,7 @@ export function MobileNav() {
                           onClick={close}
                           style={{ display: 'block', padding: '14px 36px', fontSize: '14px', fontWeight: 500, color: accent.text, textDecoration: 'none', borderBottom: '1px solid #f0f0f0' }}
                         >
-                          {c.label}
+                          {localizeNavigationText(c.label)}
                         </Link>
                       ))}
                       {categoryCards.map((c) => (
@@ -518,7 +519,7 @@ export function MobileNav() {
                           onClick={close}
                           style={{ display: 'block', padding: '14px 36px', fontSize: '14px', fontWeight: 500, color: accent.text, textDecoration: 'none', borderBottom: '1px solid #f0f0f0' }}
                         >
-                          {c.label}
+                          {localizeNavigationText(c.label)}
                         </Link>
                       ))}
                     </Collapse>

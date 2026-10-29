@@ -1,14 +1,14 @@
 'use client';
 
 const items = [
-  'All outlets are open. Additionally, our online activities are open and operational',
+  'Todas as lojas estão abertas, assim como nossas operações on-line',
   'Smartphones',
-  'Electronics Store',
-  'Laptop & Computers',
-  'Wireless Camera',
-  'Headphone & Audios',
-  'iPad & Tablet',
-  'Welcome to our store',
+  'Loja de eletrônicos',
+  'Notebooks e computadores',
+  'Câmera sem fio',
+  'Fones de ouvido e áudio',
+  'iPad e tablet',
+  'Boas-vindas à nossa loja',
 ];
 
 export function MegastoreCategoriesMarquee() {

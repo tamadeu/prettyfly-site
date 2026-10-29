@@ -14,8 +14,8 @@ export default function Custom404Page() {
 
       {/* Content */}
       <div style={{ textAlign: 'center', padding: '120px 0 200px' }}>
-        <h2 style={{ fontSize: '40px', fontWeight: 700, color: '#222', marginBottom: '16px' }}>Oops! Page not found</h2>
-        <p style={{ fontSize: '16px', color: '#777', marginBottom: '36px' }}>The page you requested does not exist.</p>
+        <h2 style={{ fontSize: '40px', fontWeight: 700, color: '#222', marginBottom: '16px' }}>Ops! Página não encontrada</h2>
+        <p style={{ fontSize: '16px', color: '#777', marginBottom: '36px' }}>A página que você solicitou não existe.</p>
         <Link
           href="/shop"
           style={{
@@ -27,7 +27,7 @@ export default function Custom404Page() {
           onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = '#F15B41'; }}
           onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = '#222'; }}
         >
-          Return to shop
+          Voltar à loja
         </Link>
       </div>
     </>

@@ -7,6 +7,7 @@ import type { MegaMenuColumn, MegaCategoryCard } from '@/types/common';
 import productsData from '@/data/products.json';
 import type { Product } from '@/types/product';
 import { formatPrice } from '@/utils/formatPrice';
+import { localizeNavigationText } from '@/utils/localizeNavigation';
 
 /* ── Remix Icon arrows for product slider ── */
 
@@ -79,7 +80,7 @@ function MegaMenuColumns({ columns, t }: { columns: MegaMenuColumn[]; t: Require
               marginBottom: '18px',
             }}
           >
-            {column.title}
+            {localizeNavigationText(column.title)}
           </h4>
           <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '18px' }}>
             {column.links.map((link) => (
@@ -106,7 +107,7 @@ function MegaMenuColumns({ columns, t }: { columns: MegaMenuColumn[]; t: Require
                   onMouseEnter={(e) => { if (!link.comingSoon) e.currentTarget.style.color = t.linkHoverColor; }}
                   onMouseLeave={(e) => { e.currentTarget.style.color = t.linkColor; }}
                 >
-                  {link.label}
+                  {localizeNavigationText(link.label)}
                   {link.comingSoon && (
                     <span
                       style={{
@@ -316,7 +317,7 @@ export function MegaMenu({ columns, promoImage, showProductSlider, categoryCards
                 >
                   <Image
                     src={card.image}
-                    alt={card.label}
+                    alt={localizeNavigationText(card.label)}
                     fill
                     style={{ objectFit: 'cover', transition: 'transform 400ms ease' }}
                     sizes="(max-width: 1200px) 33vw, 20vw"
@@ -335,7 +336,7 @@ export function MegaMenu({ columns, promoImage, showProductSlider, categoryCards
                     lineHeight: 1.3,
                   }}
                 >
-                  {card.label}
+                  {localizeNavigationText(card.label)}
                 </span>
 
                 {card.itemCount !== undefined && (
@@ -423,15 +424,15 @@ export function MegaMenu({ columns, promoImage, showProductSlider, categoryCards
               <div style={{ position: 'relative', width: '100%', aspectRatio: '1 / 1', backgroundColor: t.cardBg, borderRadius: '4px', overflow: 'hidden' }}>
                 <Image
                   src={promoImage.src}
-                  alt={promoImage.alt}
+                alt={localizeNavigationText(promoImage.alt)}
                   fill
                   style={{ objectFit: 'cover' }}
                   sizes="280px"
                 />
               </div>
               <div style={{ textAlign: 'center', paddingTop: '16px' }}>
-                <p style={{ fontSize: '16px', fontWeight: 700, color: t.promoTitleColor, letterSpacing: '1px' }}>{promoImage.title}</p>
-                <p style={{ fontSize: '13px', color: t.promoSubtitleColor, marginTop: '4px', letterSpacing: '1px' }}>{promoImage.subtitle}</p>
+                <p style={{ fontSize: '16px', fontWeight: 700, color: t.promoTitleColor, letterSpacing: '1px' }}>{localizeNavigationText(promoImage.title)}</p>
+                <p style={{ fontSize: '13px', color: t.promoSubtitleColor, marginTop: '4px', letterSpacing: '1px' }}>{localizeNavigationText(promoImage.subtitle)}</p>
               </div>
             </div>
           </div>

@@ -17,19 +17,19 @@ function VideoBannerSection() {
         {/* Left — Content */}
         <div className="fa-ab-vb-content">
           <div>
-            <h2 className="fa-ab-vb-h2">Video banner</h2>
+            <h2 className="fa-ab-vb-h2">Banner de vídeo</h2>
             <p style={{ fontSize: '17px', color: '#777', lineHeight: 1.7, marginBottom: '34px' }}>
-              Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.
+              Combine texto e imagem para destacar um produto, uma coleção ou uma publicação do blog. Inclua informações sobre disponibilidade e estilo ou compartilhe uma avaliação.
             </p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-              {['Heading', 'Heading', 'Heading'].map((item, i) => (
+              {['Destaque', 'Qualidade', 'Nossa comunidade'].map((item, i) => (
                 <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '14px' }}>
                   <div style={{ width: '32px', height: '32px', borderRadius: '50%', border: '1.5px solid #222', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, marginTop: '2px' }}>
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#222" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12" /></svg>
                   </div>
                   <div>
                     <p style={{ fontSize: '18px', fontWeight: 600, color: '#222', marginBottom: '4px' }}>{item}</p>
-                    <p style={{ fontSize: '15px', color: '#777', lineHeight: 1.6 }}>Pair text with an icon to focus on your store&apos;s features.</p>
+                    <p style={{ fontSize: '15px', color: '#777', lineHeight: 1.6 }}>Conheça os detalhes e diferenciais da nossa loja.</p>
                   </div>
                 </div>
               ))}
@@ -41,7 +41,7 @@ function VideoBannerSection() {
         <div className="fa-ab-vb-video">
           {!playing ? (
             <>
-              <Image src="/fashion/tab/tab1.webp" alt="Video thumbnail" fill style={{ objectFit: 'cover' }} sizes="50vw" />
+              <Image src="/fashion/tab/tab1.webp" alt="Miniatura do vídeo" fill style={{ objectFit: 'cover' }} sizes="50vw" />
               <button
                 onClick={() => setPlaying(true)}
                 className="about-play-btn"
@@ -64,7 +64,7 @@ function VideoBannerSection() {
           ) : (
             <iframe
               src="https://www.youtube.com/embed/a2zZzAr1e_c?autoplay=1&rel=0"
-              title="Video"
+              title="Vídeo"
               allow="autoplay; encrypted-media"
               allowFullScreen
               style={{ width: '100%', height: '100%', border: 'none' }}
@@ -85,11 +85,11 @@ export default function AboutPage() {
       <div className="fa-ab-page-header">
         <div className="container-main">
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', fontSize: '14px', marginBottom: '16px' }}>
-            <Link href="/" style={{ color: '#777', textDecoration: 'underline', textUnderlineOffset: '3px' }}>Home</Link>
+            <Link href="/" style={{ color: '#777', textDecoration: 'underline', textUnderlineOffset: '3px' }}>Início</Link>
             <span style={{ color: '#bbb' }}>/</span>
-            <span style={{ color: '#222' }}>About us</span>
+            <span style={{ color: '#222' }}>Sobre nós</span>
           </div>
-          <h1 className="fa-ab-h1">About us</h1>
+          <h1 className="fa-ab-h1">Sobre nós</h1>
         </div>
       </div>
 
@@ -101,7 +101,7 @@ export default function AboutPage() {
           {/* Left — Image with rotating badge */}
           <div style={{ position: 'relative' }}>
             <div className="fa-ab-hero-img">
-              <Image src="/fashion/about/about4.webp" alt="About Ambaz" fill style={{ objectFit: 'cover', objectPosition: 'top center' }} sizes="50vw" />
+              <Image src="/fashion/about/about4.webp" alt="Sobre a Ambaz" fill style={{ objectFit: 'cover', objectPosition: 'top center' }} sizes="50vw" />
             </div>
             <div className="fa-ab-hero-badge">
               <svg viewBox="0 0 100 100" width="140" height="140" style={{ animation: 'aboutRotateText 10s linear infinite' }}>
@@ -109,7 +109,7 @@ export default function AboutPage() {
                   <path id="aboutCirclePath" d="M 50,50 m -40,0 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0" />
                 </defs>
                 <text fontSize="9" fontWeight="600" fill="#222" letterSpacing="5.5">
-                  <textPath href="#aboutCirclePath">RotatingTextHello Rotating</textPath>
+                  <textPath href="#aboutCirclePath">Feito para você • estilo e qualidade •</textPath>
                 </text>
               </svg>
               <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', color: '#222' }}>
@@ -122,12 +122,12 @@ export default function AboutPage() {
 
           {/* Right — Text content */}
           <div className="fa-ab-hero-text">
-            <h2 className="fa-ab-hero-h2">Trends Defining the Season</h2>
+            <h2 className="fa-ab-hero-h2">Tendências que definem a estação</h2>
             <p style={{ fontSize: '17px', color: '#666', lineHeight: 1.8, marginBottom: '32px' }}>
-              Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.
+              Combine texto e imagem para destacar um produto, uma coleção ou uma publicação do blog. Inclua informações sobre disponibilidade e estilo ou compartilhe uma avaliação.
             </p>
             <Link href="/shop" className="fa-ab-hero-cta">
-              Shop Now
+              Compre agora
               <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z" /></svg>
             </Link>
           </div>
@@ -138,12 +138,12 @@ export default function AboutPage() {
           3. MULTICOLUMN — 3 Feature Cards
          ══════════════════════════════════ */}
       <div className="container-main fa-ab-multi-section">
-        <h2 className="fa-ab-multi-h2">Multicolumn</h2>
+        <h2 className="fa-ab-multi-h2">Nossos diferenciais</h2>
         <div className="fa-ab-multi-grid">
           {[
-            { img: '/fashion/about/about1.webp', title: 'Fashion Featured', desc: 'At our core, we are a people-first company. Our goal is to grow together, inspire one another, and celebrate our differences.' },
-            { img: '/fashion/about/about2.webp', title: 'Fashion Trending', desc: 'At our core, we are a people-first company. Our goal is to grow together, inspire one another, and celebrate our differences.' },
-            { img: '/fashion/about/about3.webp', title: 'Fashion new', desc: 'At our core, we are a people-first company. Our goal is to grow together, inspire one another, and celebrate our differences.' },
+            { img: '/fashion/about/about1.webp', title: 'Estilo em destaque', desc: 'Somos uma empresa que coloca as pessoas em primeiro lugar. Nosso objetivo é crescer juntos, inspirar uns aos outros e celebrar nossas diferenças.' },
+            { img: '/fashion/about/about2.webp', title: 'Tendências da estação', desc: 'Somos uma empresa que coloca as pessoas em primeiro lugar. Nosso objetivo é crescer juntos, inspirar uns aos outros e celebrar nossas diferenças.' },
+            { img: '/fashion/about/about3.webp', title: 'Novidades', desc: 'Somos uma empresa que coloca as pessoas em primeiro lugar. Nosso objetivo é crescer juntos, inspirar uns aos outros e celebrar nossas diferenças.' },
           ].map((card) => (
             <div key={card.title} style={{ textAlign: 'center' }}>
               <div style={{ position: 'relative', width: '100%', aspectRatio: '1 / 1', overflow: 'hidden', marginBottom: '20px', backgroundColor: '#f5f5f5' }}>
@@ -172,7 +172,7 @@ export default function AboutPage() {
           6. MARQUEE
          ══════════════════════════════════ */}
       <div className="about-marquee-wrap">
-        <Marquee text="Welcome to store" />
+        <Marquee text="Boas-vindas à nossa loja" />
       </div>
 
       <div style={{ height: '80px', backgroundColor: '#fff' }} />
@@ -181,7 +181,7 @@ export default function AboutPage() {
           7. GALLERY
          ══════════════════════════════════ */}
       <div className="about-gallery-wrap" style={{ marginBottom: '80px' }}>
-        <InstagramFeed title="Gallery" subtitle="" />
+        <InstagramFeed title="Galeria" subtitle="" />
       </div>
 
       <style>{`

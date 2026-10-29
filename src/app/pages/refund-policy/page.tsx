@@ -8,39 +8,39 @@ export default function RefundPolicyPage() {
       <div className="fa-rp-page-header">
         <div className="container-main">
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', fontSize: '14px', marginBottom: '12px' }}>
-            <Link href="/" style={{ color: '#777', textDecoration: 'underline', textUnderlineOffset: '3px' }}>Home</Link>
+            <Link href="/" style={{ color: '#777', textDecoration: 'underline', textUnderlineOffset: '3px' }}>Início</Link>
             <span style={{ color: '#bbb' }}>/</span>
-            <span style={{ color: '#222' }}>Refund policy</span>
+            <span style={{ color: '#222' }}>Política de reembolso</span>
           </div>
-          <h1 className="fa-rp-h1">Refund policy</h1>
+          <h1 className="fa-rp-h1">Política de reembolso</h1>
         </div>
       </div>
 
       <div className="container-main fa-rp-content-wrap">
         <div className="fa-rp-prose">
 
-          <p style={para}>We have a 30-day return policy, which means you have 30 days after receiving your item to request a return.</p>
-          <p style={para}>To be eligible for a return, your item must be in the same condition that you received it, unworn or unused, with tags, and in its original packaging. You&apos;ll also need the receipt or proof of purchase.</p>
-          <p style={para}>To start a return, you can contact us at support@ambaz.com. Please note that returns will need to be sent to the following address: [INSERT RETURN ADDRESS]</p>
-          <p style={para}>If your return is accepted, we&apos;ll send you a return shipping label, as well as instructions on how and where to send your package. Items sent back to us without first requesting a return will not be accepted.</p>
-          <p style={para}>You can always contact us for any return question at support@ambaz.com.</p>
+          <p style={para}>Nossa política permite solicitar uma devolução em até 30 dias após o recebimento do produto.</p>
+          <p style={para}>Para que a devolução seja aceita, o produto deve estar nas mesmas condições em que foi recebido: sem uso, com as etiquetas e na embalagem original. Também será necessário apresentar o recibo ou comprovante de compra.</p>
+          <p style={para}>Para iniciar uma devolução, entre em contato pelo e-mail support@ambaz.com. Os produtos devolvidos devem ser enviados para o seguinte endereço: [INSERIR ENDEREÇO PARA DEVOLUÇÃO]</p>
+          <p style={para}>Se a devolução for aprovada, enviaremos uma etiqueta de envio e instruções sobre como e para onde enviar o pacote. Produtos enviados sem uma solicitação prévia de devolução não serão aceitos.</p>
+          <p style={para}>Em caso de dúvidas sobre devoluções, entre em contato pelo e-mail support@ambaz.com.</p>
 
-          <h2 className="fa-rp-h2">Damages and issues</h2>
-          <p style={para}>Please inspect your order upon reception and contact us immediately if the item is defective, damaged or if you receive the wrong item, so that we can evaluate the issue and make it right.</p>
+          <h2 className="fa-rp-h2">Avarias e problemas</h2>
+          <p style={para}>Confira seu pedido assim que recebê-lo e entre em contato imediatamente se o produto estiver com defeito, danificado ou se você tiver recebido o item errado. Assim, poderemos avaliar o problema e encontrar uma solução.</p>
 
-          <h2 className="fa-rp-h2">Exceptions / non-returnable items</h2>
-          <p style={para}>Certain types of items cannot be returned, like perishable goods (such as food, flowers, or plants), custom products (such as special orders or personalized items), and personal care goods (such as beauty products). We also do not accept returns for hazardous materials, flammable liquids, or gases. Please get in touch if you have questions or concerns about your specific item.</p>
-          <p style={para}>Unfortunately, we cannot accept returns on sale items or gift cards.</p>
+          <h2 className="fa-rp-h2">Exceções e itens não retornáveis</h2>
+          <p style={para}>Alguns tipos de produto não podem ser devolvidos, como itens perecíveis (por exemplo, alimentos, flores ou plantas), produtos personalizados ou feitos sob encomenda e itens de cuidados pessoais (como cosméticos). Também não aceitamos devoluções de materiais perigosos, líquidos inflamáveis ou gases. Entre em contato se tiver dúvidas sobre um produto específico.</p>
+          <p style={para}>Infelizmente, não aceitamos devoluções de produtos em oferta nem de cartões-presente.</p>
 
-          <h2 className="fa-rp-h2">Exchanges</h2>
-          <p style={para}>The fastest way to ensure you get what you want is to return the item you have, and once the return is accepted, make a separate purchase for the new item.</p>
+          <h2 className="fa-rp-h2">Trocas</h2>
+          <p style={para}>A maneira mais rápida de receber o produto desejado é devolver o item atual e, após a aprovação da devolução, fazer uma nova compra separadamente.</p>
 
-          <h2 className="fa-rp-h2">European Union 14 day cooling off period</h2>
-          <p style={para}>Notwithstanding the above, if the merchandise is being shipped into the European Union, you have the right to cancel or return your order within 14 days, for any reason and without a justification. As above, your item must be in the same condition that you received it, unworn or unused, with tags, and in its original packaging. You&apos;ll also need the receipt or proof of purchase.</p>
+          <h2 className="fa-rp-h2">Prazo de arrependimento de 14 dias na União Europeia</h2>
+          <p style={para}>Sem prejuízo do que foi informado acima, se o produto for enviado para a União Europeia, você tem o direito de cancelar ou devolver o pedido em até 14 dias, por qualquer motivo e sem justificativa. O produto deve estar nas mesmas condições em que foi recebido: sem uso, com as etiquetas e na embalagem original. Também será necessário apresentar o recibo ou comprovante de compra.</p>
 
-          <h2 className="fa-rp-h2">Refunds</h2>
-          <p style={para}>We will notify you once we&apos;ve received and inspected your return, and let you know if the refund was approved or not. If approved, you&apos;ll be automatically refunded on your original payment method within 10 business days. Please remember it can take some time for your bank or credit card company to process and post the refund too.</p>
-          <p style={{ marginBottom: '0' }}>If more than 15 business days have passed since we&apos;ve approved your return, please contact us at support@ambaz.com.</p>
+          <h2 className="fa-rp-h2">Reembolsos</h2>
+          <p style={para}>Avisaremos quando recebermos e inspecionarmos o produto devolvido e informaremos se o reembolso foi aprovado. Se aprovado, o valor será reembolsado automaticamente pelo método de pagamento original em até 10 dias úteis. O banco ou a operadora do cartão também pode levar algum tempo para processar e registrar o reembolso.</p>
+          <p style={{ marginBottom: '0' }}>Se tiverem passado mais de 15 dias úteis desde a aprovação da devolução, entre em contato pelo e-mail support@ambaz.com.</p>
 
         </div>
       </div>

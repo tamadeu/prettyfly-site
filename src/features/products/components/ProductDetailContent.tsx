@@ -1045,7 +1045,7 @@ export function ProductDetailContent({
           <div className="pdp-faq-right">
             <Image
               src={cardVariant === 'grocery' ? '/grocery-shop/faq/faq1.webp' : '/fashion/banners/banners9.webp'}
-              alt="FAQ section"
+              alt="Seção de perguntas frequentes"
               fill
               style={{ objectFit: 'cover', objectPosition: 'center' }}
               sizes="(max-width: 991px) 100vw, 50vw"
@@ -1056,7 +1056,7 @@ export function ProductDetailContent({
 
       {/* ── Recently Viewed ── */}
       <div className="container-main pdp-recently-section">
-        <h2 style={{ fontSize: 'clamp(22px, 2.4vw, 28px)', fontWeight: 600, color: '#222', textAlign: 'center', marginBottom: 'clamp(22px, 2.4vw, 30px)' }}>Recently viewed product</h2>
+        <h2 style={{ fontSize: 'clamp(22px, 2.4vw, 28px)', fontWeight: 600, color: '#222', textAlign: 'center', marginBottom: 'clamp(22px, 2.4vw, 30px)' }}>Produtos visualizados recentemente</h2>
         {relatedData && (
           <div className="pdp-recently-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 'clamp(14px, 1.8vw, 24px)' }}>
             {relatedData.products.slice(0, 4).map((p, i) => (
@@ -1108,22 +1108,22 @@ export function ProductDetailContent({
             </button>
 
             {/* Title */}
-            <h2 style={{ fontSize: '22px', fontWeight: 700, color: '#222', marginBottom: '16px' }}>Have a question?</h2>
-            <p style={{ fontSize: '14px', color: '#555', lineHeight: 1.6, marginBottom: '28px' }}>Thanks for contacting us. We&apos;ll get back to you as soon as possible.</p>
+            <h2 style={{ fontSize: '22px', fontWeight: 700, color: '#222', marginBottom: '16px' }}>Tem alguma dúvida?</h2>
+            <p style={{ fontSize: '14px', color: '#555', lineHeight: 1.6, marginBottom: '28px' }}>Agradecemos por entrar em contato. Responderemos o mais breve possível.</p>
 
             {/* Form */}
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
               {/* Name + Email row */}
               <div className="pdp-ask-fields-row" style={{ display: 'grid', gap: '14px' }}>
-                <input type="text" placeholder="Name *" className="pdp-ask-input" style={{ width: '100%', padding: '12px 14px', fontSize: '14px', border: '1px solid #ddd', outline: 'none', color: '#222', backgroundColor: '#fff', transition: 'border-color 200ms ease' }} />
-                <input type="email" placeholder="Email *" className="pdp-ask-input" style={{ width: '100%', padding: '12px 14px', fontSize: '14px', border: '1px solid #ddd', outline: 'none', color: '#222', backgroundColor: '#fff', transition: 'border-color 200ms ease' }} />
+                <input type="text" placeholder="Nome *" className="pdp-ask-input" style={{ width: '100%', padding: '12px 14px', fontSize: '14px', border: '1px solid #ddd', outline: 'none', color: '#222', backgroundColor: '#fff', transition: 'border-color 200ms ease' }} />
+                <input type="email" placeholder="E-mail *" className="pdp-ask-input" style={{ width: '100%', padding: '12px 14px', fontSize: '14px', border: '1px solid #ddd', outline: 'none', color: '#222', backgroundColor: '#fff', transition: 'border-color 200ms ease' }} />
               </div>
 
               {/* Phone */}
-              <input type="tel" placeholder="Phone *" className="pdp-ask-input" style={{ width: '100%', padding: '12px 14px', fontSize: '14px', border: '1px solid #ddd', outline: 'none', color: '#222', backgroundColor: '#fff', transition: 'border-color 200ms ease' }} />
+              <input type="tel" placeholder="Telefone *" className="pdp-ask-input" style={{ width: '100%', padding: '12px 14px', fontSize: '14px', border: '1px solid #ddd', outline: 'none', color: '#222', backgroundColor: '#fff', transition: 'border-color 200ms ease' }} />
 
               {/* Message */}
-              <textarea placeholder="Write Message *" rows={4} className="pdp-ask-input" style={{ width: '100%', padding: '12px 14px', fontSize: '14px', border: '1px solid #ddd', outline: 'none', color: '#222', backgroundColor: '#fff', resize: 'vertical', transition: 'border-color 200ms ease' }} />
+              <textarea placeholder="Escreva sua mensagem *" rows={4} className="pdp-ask-input" style={{ width: '100%', padding: '12px 14px', fontSize: '14px', border: '1px solid #ddd', outline: 'none', color: '#222', backgroundColor: '#fff', resize: 'vertical', transition: 'border-color 200ms ease' }} />
 
               {/* Send button */}
               <div>
@@ -1135,7 +1135,7 @@ export function ProductDetailContent({
                     cursor: 'pointer', transition: 'background-color 200ms ease',
                   }}
                 >
-                  Send
+                  Enviar
                 </button>
               </div>
             </div>
