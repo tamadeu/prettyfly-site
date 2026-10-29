@@ -308,3 +308,18 @@ export async function getFooterConfig(): Promise<FooterConfig | null> {
     return null;
   }
 }
+
+export interface SiteSettings {
+  title: string | null;
+  description: string | null;
+  favicon_url: string | null;
+}
+
+export async function getSiteSettings(): Promise<SiteSettings | null> {
+  try {
+    const result = await backendFetch<{ data: SiteSettings | null }>('/site/settings');
+    return result.data;
+  } catch {
+    return null;
+  }
+}

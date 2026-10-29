@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { Albert_Sans } from 'next/font/google';
 import './globals.css';
 import { Providers } from '@/lib/providers';
-import { getHeaderConfig, getFooterConfig } from '@/lib/backend';
+import { getHeaderConfig, getFooterConfig, getSiteSettings } from '@/lib/backend';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { MobileBottomNav } from '@/components/layout/MobileBottomNav';
@@ -21,20 +21,29 @@ const albertSans = Albert_Sans({
   variable: '--font-albert-sans',
 });
 
-export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? SITE_URL),
-  title: {
-    default: SITE_NAME,
-    template: `%s | ${SITE_NAME}`,
-  },
-  description: SITE_DESCRIPTION,
-  openGraph: {
-    type: 'website',
-    siteName: SITE_NAME,
-    title: SITE_NAME,
-    description: SITE_DESCRIPTION,
-  },
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const settings = await getSiteSettings();
+  const siteName = settings?.title || SITE_NAME;
+  const description = settings?.description || SITE_DESCRIPTION;
+
+  return {
+    metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? SITE_URL),
+    title: {
+      default: siteName,
+      template: `%s | ${siteName}`,
+    },
+    description,
+    icons: settings?.favicon_url
+      ? { icon: settings.favicon_url, shortcut: settings.favicon_url, apple: settings.favicon_url }
+      : { icon: '/favicon.ico' },
+    openGraph: {
+      type: 'website',
+      siteName,
+      title: siteName,
+      description,
+    },
+  };
+}
 
 export default async function RootLayout({
   children,

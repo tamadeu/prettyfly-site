@@ -13,7 +13,7 @@ import { ActiveWearVideoBanner } from '@/features/active-wear/components/ActiveW
 import { ActiveWearShopTheLook } from '@/features/active-wear/components/ActiveWearShopTheLook';
 import { ActiveWearInstagram } from '@/features/active-wear/components/ActiveWearInstagram';
 import { records, text, type CmsContent } from '@/features/active-wear/cms';
-import { getCmsPage, type CmsSection } from '@/lib/backend';
+import { getCmsPage, getSiteSettings, type CmsSection } from '@/lib/backend';
 import type { Testimonial } from '@/types/common';
 
 const DEFAULT_TITLE = 'Moda esportiva — Ambaz';
@@ -60,11 +60,11 @@ const RENDERERS: Record<string, (content: CmsContent) => ReactNode> = {
 };
 
 export async function generateMetadata(): Promise<Metadata> {
-  const page = await getCmsPage('home');
+  const [page, settings] = await Promise.all([getCmsPage('home'), getSiteSettings()]);
 
   return {
-    title: page?.title || DEFAULT_TITLE,
-    description: page?.meta_description || DEFAULT_DESCRIPTION,
+    title: settings?.title || page?.title || DEFAULT_TITLE,
+    description: page?.meta_description || settings?.description || DEFAULT_DESCRIPTION,
   };
 }
 
