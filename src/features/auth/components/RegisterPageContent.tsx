@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 
 const ACCENT = '#c96742';
@@ -33,7 +34,26 @@ function ArrowDiag() {
   );
 }
 
+async function submitAuth(url: string, body: Record<string, string>): Promise<string | null> {
+  try {
+    const response = await fetch(url, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(body),
+    });
+    if (response.ok) return null;
+    const json = await response.json().catch(() => ({}));
+    const first = json.errors ? Object.values(json.errors as Record<string, string[]>)[0]?.[0] : undefined;
+    return first ?? json.message ?? 'Não foi possível concluir.';
+  } catch {
+    return 'Sem conexão. Tente novamente.';
+  }
+}
+
 export function RegisterPageContent() {
+  const router = useRouter();
+  const [error, setError] = useState<string | null>(null);
+  const [loading, setLoading] = useState(false);
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
@@ -56,7 +76,17 @@ export function RegisterPageContent() {
             clique no link de descadastro em nossos e-mails.
           </p>
 
-          <form className="rg-form" onSubmit={(e) => e.preventDefault()}>
+          <form className="rg-form" onSubmit={async (e) => {
+            e.preventDefault();
+            setLoading(true);
+            setError(null);
+            const name = `${firstName} ${lastName}`.trim() || email.split('@')[0];
+            const message = await submitAuth('/api/auth/register', { name, email, password });
+            setLoading(false);
+            if (message) return setError(message);
+            router.push('/minha-conta');
+            router.refresh();
+          }}>
             <input
               type="text"
               placeholder="Nome"
@@ -98,7 +128,9 @@ export function RegisterPageContent() {
               </button>
             </div>
 
-            <button type="submit" className="rg-submit">Criar conta</button>
+            <p style={{ fontSize: '1.3rem', color: '#777', margin: 0 }}>A senha deve ter pelo menos 8 caracteres.</p>
+            {error && <p role="alert" style={{ color: '#c0392b', fontSize: '1.4rem', margin: 0 }}>{error}</p>}
+            <button type="submit" className="rg-submit" disabled={loading}>{loading ? 'Criando...' : 'Criar conta'}</button>
           </form>
 
           <div className="rg-login-row">

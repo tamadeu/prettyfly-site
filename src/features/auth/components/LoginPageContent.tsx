@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 
 const ACCENT = '#c96742';
@@ -33,7 +34,26 @@ function ArrowDiag() {
   );
 }
 
+async function submitAuth(url: string, body: Record<string, string>): Promise<string | null> {
+  try {
+    const response = await fetch(url, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(body),
+    });
+    if (response.ok) return null;
+    const json = await response.json().catch(() => ({}));
+    const first = json.errors ? Object.values(json.errors as Record<string, string[]>)[0]?.[0] : undefined;
+    return first ?? json.message ?? 'Não foi possível concluir.';
+  } catch {
+    return 'Sem conexão. Tente novamente.';
+  }
+}
+
 export function LoginPageContent() {
+  const router = useRouter();
+  const [error, setError] = useState<string | null>(null);
+  const [loading, setLoading] = useState(false);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
@@ -50,7 +70,16 @@ export function LoginPageContent() {
           {/* ── Left: Login form ── */}
           <section>
             <h2 className="li-heading">Entrar</h2>
-            <form className="li-form" onSubmit={(e) => e.preventDefault()}>
+            <form className="li-form" onSubmit={async (e) => {
+              e.preventDefault();
+              setLoading(true);
+              setError(null);
+              const message = await submitAuth('/api/auth/login', { email, password });
+              setLoading(false);
+              if (message) return setError(message);
+              router.push('/minha-conta');
+              router.refresh();
+            }}>
               <input
                 type="email"
                 placeholder="E-mail *"
@@ -84,8 +113,9 @@ export function LoginPageContent() {
                 </Link>
               </div>
 
+              {error && <p role="alert" style={{ color: '#c0392b', fontSize: '1.4rem', margin: 0 }}>{error}</p>}
               <div>
-                <button type="submit" className="li-submit">Entrar</button>
+                <button type="submit" className="li-submit" disabled={loading}>{loading ? 'Entrando...' : 'Entrar'}</button>
               </div>
             </form>
           </section>
