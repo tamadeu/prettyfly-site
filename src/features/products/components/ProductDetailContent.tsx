@@ -729,7 +729,7 @@ export function ProductDetailContent({
               </div>
 
               {/* Description */}
-              <p className="pdp-info-description" style={{ fontSize: '15px', color: '#666', lineHeight: 1.7, marginBottom: '24px', whiteSpace: 'pre-line' }}>{product.description}</p>
+              <p className="pdp-info-description" style={{ fontSize: '15px', color: '#666', lineHeight: 1.7, marginBottom: '24px', whiteSpace: 'pre-line' }}>{product.shortDescription || product.description}</p>
 
               {/* Color */}
               {product.colors.length > 0 && (
@@ -952,11 +952,7 @@ export function ProductDetailContent({
                     title: 'Descrição',
                     content: (
                       <>
-                        <p style={{ marginBottom: '16px' }}>{product.description}</p>
-                        <p style={{ marginBottom: '16px' }}>Uma saia envelope preta de seda é uma peça versátil e elegante. Geralmente, tem um design transpassado com fechamento por faixa ou fivela na cintura, permitindo um ajuste personalizado. Feita de seda luxuosa, possui textura suave e fluida, com caimento elegante e movimento leve. O comprimento costuma chegar aos joelhos ou à metade da panturrilha, embora existam variações. A cor preta combina com ocasiões formais e casuais: use com salto e blusa para um visual sofisticado ou com sapatos baixos e uma blusa simples para uma proposta descontraída.</p>
-                        <p style={{ marginBottom: '16px' }}>As lantejoulas são cuidadosamente distribuídas pelo vestido, muitas vezes em padrões elaborados que valorizam o visual. Elas criam uma textura brilhante e marcante, ideal para destacar a peça em eventos e ocasiões especiais.</p>
-                        <p style={{ marginBottom: '16px' }}>O comprimento do vestido também pode variar, do curto ao midi ou longo, oferecendo opções para diferentes preferências e ocasiões. Em qualquer comprimento, o vestido dourado com lantejoulas foi pensado para criar uma entrada marcante.</p>
-                        <p>Para completar o visual, combine o vestido com acessórios como sapatos dourados, uma clutch marcante e joias elegantes.</p>
+                        <p style={{ whiteSpace: 'pre-line' }}>{product.description || product.shortDescription}</p>
                       </>
                     ),
                   },

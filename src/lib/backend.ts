@@ -38,6 +38,7 @@ interface ApiProduct {
   name: string;
   slug: string;
   description: string | null;
+  short_description?: string | null;
   category: ApiCategory | null;
   brand?: { id: number; name: string; slug: string } | null;
   images: ApiImage[];
@@ -141,6 +142,7 @@ function mapProduct(raw: ApiProduct): Product {
     availability: variants.some((variant) => variant.available) ? 'in-stock' : 'out-of-stock',
     badge: null,
     description: raw.description ?? '',
+    shortDescription: raw.short_description ?? '',
     features: [],
     rating: 0,
     reviewCount: 0,

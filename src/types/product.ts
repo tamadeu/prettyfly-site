@@ -49,6 +49,7 @@ export interface Product {
   availability: 'in-stock' | 'out-of-stock' | 'pre-order';
   badge: 'sale' | 'new' | 'pre-order' | null;
   description: string;
+  shortDescription?: string;
   features: string[];
   rating: number;
   reviewCount: number;
