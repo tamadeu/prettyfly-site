@@ -13,11 +13,12 @@ export interface Customer {
   phone: string | null;
   document: string | null;
   birth_date: string | null;
+  email_verified: boolean;
 }
 
 export async function customerFetch(
   path: string,
-  options: { method?: string; body?: unknown; token?: string } = {},
+  options: { method?: string; body?: unknown; token?: string; ip?: string | null } = {},
 ): Promise<Response> {
   return fetch(`${API_URL}/customers${path}`, {
     method: options.method ?? 'GET',
@@ -26,6 +27,7 @@ export async function customerFetch(
       Accept: 'application/json',
       ...(options.body !== undefined ? { 'Content-Type': 'application/json' } : {}),
       ...(API_TOKEN ? { Authorization: `Bearer ${API_TOKEN}` } : {}),
+      ...(options.ip ? { 'X-Forwarded-For': options.ip } : {}),
       ...(options.token ? { 'X-Customer-Token': options.token } : {}),
     },
     body: options.body !== undefined ? JSON.stringify(options.body) : undefined,
@@ -40,6 +42,12 @@ export function sessionCookieOptions() {
     path: '/',
     maxAge: CUSTOMER_COOKIE_MAX_AGE,
   };
+}
+
+// IP do visitante, para o backend aplicar limites por pessoa e não pelo IP do servidor do site.
+export function clientIp(request: Request): string | null {
+  const forwarded = request.headers.get('x-forwarded-for')?.split(',')[0]?.trim();
+  return forwarded || request.headers.get('x-real-ip');
 }
 
 export async function getCurrentCustomer(): Promise<Customer | null> {

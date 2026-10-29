@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
+import { AUTH_EVENT } from '@/components/shared/WishlistSync';
 
 const ACCENT = '#c96742';
 const DARK = '#111111';
@@ -77,6 +78,7 @@ export function LoginPageContent() {
               const message = await submitAuth('/api/auth/login', { email, password });
               setLoading(false);
               if (message) return setError(message);
+              window.dispatchEvent(new Event(AUTH_EVENT));
               router.push('/minha-conta');
               router.refresh();
             }}>

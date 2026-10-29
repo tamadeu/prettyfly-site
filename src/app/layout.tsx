@@ -12,6 +12,7 @@ import { QuickViewModal } from '@/features/quickview/components/QuickViewModal';
 import { SITE_NAME, SITE_DESCRIPTION, SITE_URL } from '@/lib/constants';
 import { ScrollToTop } from '@/components/shared/ScrollToTop';
 import { CompareBar } from '@/components/shared/CompareBar';
+import { WishlistSync } from '@/components/shared/WishlistSync';
 import { PageLoader } from '@/components/shared/PageLoader';
 import { NewsletterPopup } from '@/components/shared/NewsletterPopup';
 
@@ -56,6 +57,7 @@ export default async function RootLayout({
     <html lang="pt-BR" dir="ltr" className={albertSans.variable}>
       <body className="min-h-screen flex flex-col">
         <PageLoader />
+        <WishlistSync />
         <Providers>
           <Header config={headerConfig} />
           <main className="flex-1">{children}</main>

@@ -15,8 +15,39 @@ function ArrowDiag() {
   );
 }
 
-export function ResetPasswordPageContent() {
-  const [email, setEmail] = useState('');
+async function post(url: string, body: Record<string, string>): Promise<{ ok: boolean; message: string }> {
+  try {
+    const response = await fetch(url, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(body),
+    });
+    const json = await response.json().catch(() => ({}));
+    const first = json.errors ? Object.values(json.errors as Record<string, string[]>)[0]?.[0] : undefined;
+    if (response.status === 429) return { ok: false, message: 'Muitas tentativas. Aguarde um minuto.' };
+    return { ok: response.ok, message: first ?? json.message ?? (response.ok ? 'Pronto.' : 'Não foi possível concluir.') };
+  } catch {
+    return { ok: false, message: 'Sem conexão. Tente novamente.' };
+  }
+}
+
+export function ResetPasswordPageContent({ token, initialEmail }: { token?: string; initialEmail?: string }) {
+  const [email, setEmail] = useState(initialEmail ?? '');
+  const [password, setPassword] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [feedback, setFeedback] = useState<{ ok: boolean; message: string } | null>(null);
+
+  async function submit(e: React.FormEvent) {
+    e.preventDefault();
+    setLoading(true);
+    setFeedback(null);
+    const result = token
+      ? await post('/api/auth/reset-password', { token, email, password })
+      : await post('/api/auth/forgot-password', { email });
+    setLoading(false);
+    setFeedback(result);
+    if (result.ok) setPassword('');
+  }
 
   return (
     <>
@@ -29,22 +60,45 @@ export function ResetPasswordPageContent() {
 
           {/* ── Left: Reset form ── */}
           <section>
-            <h2 className="rp-heading">Redefinir sua senha</h2>
-            <p className="rp-desc">Enviaremos um e-mail para você redefinir sua senha.</p>
-            <form className="rp-form" onSubmit={(e) => e.preventDefault()}>
+            <h2 className="rp-heading">{token ? 'Criar nova senha' : 'Redefinir sua senha'}</h2>
+            <p className="rp-desc">
+              {token ? 'Escolha uma nova senha com pelo menos 8 caracteres.' : 'Enviaremos um e-mail para você redefinir sua senha.'}
+            </p>
+            <form className="rp-form" onSubmit={submit}>
               <input
                 type="email"
                 placeholder="E-mail *"
                 required
+                readOnly={Boolean(token && initialEmail)}
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 className="au-input"
               />
+              {token && (
+                <input
+                  type="password"
+                  placeholder="Nova senha *"
+                  required
+                  minLength={8}
+                  autoComplete="new-password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  className="au-input"
+                />
+              )}
+              {feedback && (
+                <p role="alert" style={{ color: feedback.ok ? '#2e7d32' : '#c0392b', fontSize: '1.4rem', margin: 0 }}>
+                  {feedback.message}{' '}
+                  {feedback.ok && token && <Link href="/login" style={{ textDecoration: 'underline' }}>Entrar</Link>}
+                </p>
+              )}
               <div>
                 <Link href="/login" className="rp-cancel">Cancelar</Link>
               </div>
               <div>
-                <button type="submit" className="rp-submit">Redefinir senha</button>
+                <button type="submit" className="rp-submit" disabled={loading}>
+                  {loading ? 'Enviando...' : token ? 'Salvar nova senha' : 'Redefinir senha'}
+                </button>
               </div>
             </form>
           </section>
