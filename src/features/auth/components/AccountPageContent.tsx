@@ -4,6 +4,7 @@ import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import type { Customer } from '@/lib/customer-api';
 import { useWishlistStore } from '@/store/wishlistStore';
+import { flushCart } from '@/components/shared/CartSync';
 import { AUTH_EVENT } from '@/components/shared/WishlistSync';
 import { AccountAddresses } from './account/AccountAddresses';
 import { AccountOrders } from './account/AccountOrders';
@@ -22,6 +23,7 @@ export function AccountPageContent({ customer, initialTab = 'dados' }: { custome
   }
 
   async function logout() {
+    await flushCart();
     await fetch('/api/auth/logout', { method: 'POST' });
     // Evita que os favoritos da conta fiquem no navegador após sair.
     useWishlistStore.setState({ items: [] });

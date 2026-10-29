@@ -6,7 +6,8 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useCartStore } from '@/store/cartStore';
 import { formatPrice } from '@/utils/formatPrice';
-import { FREE_SHIPPING_THRESHOLD, GIFT_WRAP_PRICE } from '@/lib/constants';
+import { useCheckoutStore } from '@/store/checkoutStore';
+import { CartSaveStatus } from '@/components/shared/CartSaveStatus';
 import { getStorefrontFromPath, getStorefrontOfSlug, productHrefBaseFor, shopHrefFor } from '@/utils/storefront';
 
 /* ── Icons ── */
@@ -28,93 +29,34 @@ function IconEdit({ size = 20 }: { size?: number }) {
   );
 }
 
-function IconShipping({ size = 20 }: { size?: number }) {
-  return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <rect x="1" y="3" width="15" height="13" />
-      <polygon points="16 8 20 8 23 11 23 16 16 16 16 8" />
-      <circle cx="5.5" cy="18.5" r="2.5" />
-      <circle cx="18.5" cy="18.5" r="2.5" />
-    </svg>
-  );
-}
 
-function IconCoupon({ size = 20 }: { size?: number }) {
-  return (
-    <svg viewBox="0 0 24 24" fill="currentColor" width={size} height={size}>
-      <path d="M10.9042 2.1001L20.8037 3.51431L22.2179 13.4138L13.0255 22.6062C12.635 22.9967 12.0019 22.9967 11.6113 22.6062L1.71184 12.7067C1.32131 12.3162 1.32131 11.683 1.71184 11.2925L10.9042 2.1001ZM11.6113 4.22142L3.83316 11.9996L12.3184 20.4849L20.0966 12.7067L18.9833 4.33473L11.6113 4.22142ZM13.7327 10.5854C12.9516 9.80433 12.9516 8.53799 13.7327 7.75695C14.5137 6.9759 15.7801 6.9759 16.5611 7.75695C17.3422 8.53799 17.3422 9.80433 16.5611 10.5854C15.7801 11.3664 14.5137 11.3664 13.7327 10.5854Z" />
-    </svg>
-  );
-}
 
 /* ── Tab Panels ── */
 
-type TabType = 'none' | 'note' | 'shipping' | 'coupon';
+type TabType = 'none' | 'note';
 
 function NotePanel({ onClose }: { onClose: () => void }) {
+  const { draft, update, ready } = useCheckoutStore();
   return (
     <div style={{ padding: '24px' }}>
       <h4 style={{ fontSize: '18px', fontWeight: 700, color: '#222', marginBottom: '16px' }}>Instruções especiais do pedido</h4>
-      <textarea
+      <textarea value={draft.notes} maxLength={2000} disabled={!ready} onChange={(e) => update({ notes: e.target.value })}
         placeholder="Instruções para o vendedor"
         style={{ width: '100%', minHeight: '120px', padding: '14px', fontSize: '15px', border: '1px solid #e5e5e5', borderRadius: '8px', outline: 'none', resize: 'vertical', color: '#222' }}
       />
-      <button
+      <button onClick={onClose}
         style={{ width: '100%', padding: '14px', backgroundColor: '#F15B41', color: '#fff', fontSize: '16px', fontWeight: 600, border: 'none', borderRadius: '40px', cursor: 'pointer', marginTop: '20px' }}
       >
-        Aplicar
+        Concluir
       </button>
       <button onClick={onClose} style={{ display: 'block', margin: '14px auto 0', fontSize: '15px', fontWeight: 500, color: '#222', background: 'none', border: 'none', cursor: 'pointer', textDecoration: 'underline' }}>
-        Cancelar
+        Fechar
       </button>
     </div>
   );
 }
 
-function ShippingPanel({ onClose }: { onClose: () => void }) {
-  return (
-    <div style={{ padding: '24px' }}>
-      <h4 style={{ fontSize: '18px', fontWeight: 700, color: '#222', marginBottom: '16px' }}>Calcular frete</h4>
-      <select style={{ width: '100%', padding: '14px', fontSize: '15px', border: '1px solid #e5e5e5', borderRadius: '40px', outline: 'none', color: '#222', marginBottom: '14px', appearance: 'auto' }}>
-        <option>---</option>
-        <option>Brasil</option>
-        <option>Estados Unidos</option>
-        <option>Reino Unido</option>
-        <option>Canadá</option>
-        <option>Bangladesh</option>
-      </select>
-      <input
-        placeholder="CEP"
-        style={{ width: '100%', padding: '14px', fontSize: '15px', border: '1px solid #e5e5e5', borderRadius: '40px', outline: 'none', color: '#222' }}
-      />
-      <button
-        style={{ width: '100%', padding: '14px', backgroundColor: '#F15B41', color: '#fff', fontSize: '16px', fontWeight: 600, border: 'none', borderRadius: '40px', cursor: 'pointer', marginTop: '20px' }}
-      >
-        Calcular
-      </button>
-      <button onClick={onClose} style={{ display: 'block', margin: '14px auto 0', fontSize: '15px', fontWeight: 500, color: '#222', background: 'none', border: 'none', cursor: 'pointer', textDecoration: 'underline' }}>
-        Cancelar
-      </button>
-    </div>
-  );
-}
 
-function CouponPanel({ onClose }: { onClose: () => void }) {
-  return (
-    <div style={{ padding: '24px' }}>
-      <h4 style={{ fontSize: '18px', fontWeight: 700, color: '#222', marginBottom: '16px' }}>Aplicar cupom de desconto</h4>
-      <div style={{ display: 'flex', gap: '10px' }}>
-        <input
-          placeholder="Digite o cupom de desconto"
-          style={{ flex: 1, padding: '14px 18px', fontSize: '15px', border: '1px solid #e5e5e5', borderRadius: '40px', outline: 'none', color: '#222' }}
-        />
-        <button style={{ padding: '14px 28px', backgroundColor: '#F15B41', color: '#fff', fontSize: '15px', fontWeight: 600, border: 'none', borderRadius: '40px', cursor: 'pointer', whiteSpace: 'nowrap' }}>
-          Aplicar
-        </button>
-      </div>
-    </div>
-  );
-}
 
 /* ── Cart Drawer ── */
 
@@ -126,17 +68,16 @@ export function CartDrawer() {
   const productHrefBase = productHrefBaseFor(storefront);
   const shopHref = shopHrefFor(storefront);
   const [activeTab, setActiveTab] = useState<TabType>('none');
-  const [giftWrap, setGiftWrap] = useState(false);
   const subtotal = items.reduce((sum, item) => sum + item.price * item.quantity, 0);
-  const shippingRemaining = Math.max(0, FREE_SHIPPING_THRESHOLD - subtotal);
-  const shippingPercent = Math.min(100, (subtotal / FREE_SHIPPING_THRESHOLD) * 100);
 
   useEffect(() => {
     if (isDrawerOpen) {
       document.body.style.overflow = 'hidden';
     } else {
       document.body.style.overflow = '';
-      setActiveTab('none');
+      // O fechamento também pode vir de outro componente.
+      const reset = setTimeout(() => setActiveTab('none'), 0);
+      return () => clearTimeout(reset);
     }
     return () => { document.body.style.overflow = ''; };
   }, [isDrawerOpen]);
@@ -178,22 +119,6 @@ export function CartDrawer() {
           </button>
         </div>
 
-        {/* Free shipping bar — only when items exist */}
-        {items.length > 0 && <div style={{ padding: '16px 24px', borderBottom: '1px solid #f0f0f0' }}>
-          <p style={{ fontSize: '15px', color: '#555', marginBottom: '10px' }}>
-            {shippingRemaining > 0
-              ? <>Faltam {formatPrice(shippingRemaining)} para você ganhar frete grátis.</>
-              : <span style={{ color: '#22c55e', fontWeight: 600 }}>Você ganhou frete grátis!</span>
-            }
-          </p>
-          <div style={{ position: 'relative', height: '8px', backgroundColor: '#e5e5e5', borderRadius: '40px', overflow: 'hidden' }}>
-            <div style={{ height: '100%', width: `${shippingPercent}%`, background: 'linear-gradient(90deg, #4ECDC4, #44B09E)', borderRadius: '40px', transition: 'width 500ms ease' }} />
-          </div>
-          <div style={{ position: 'relative', marginTop: '-14px', left: `calc(${Math.min(shippingPercent, 95)}% - 14px)`, width: '28px', height: '28px', borderRadius: '50%', border: '2px solid #44B09E', backgroundColor: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', transition: 'left 500ms ease' }}>
-            <IconShipping size={14} />
-          </div>
-        </div>}
-
         {/* Cart items — scrollable */}
         <div style={{ flex: 1, overflowY: 'auto', padding: '0 24px' }}>
           {items.length === 0 ? (
@@ -218,7 +143,7 @@ export function CartDrawer() {
               <div key={`${item.productId}-${item.variantId}`} style={{ display: 'flex', gap: '16px', padding: '20px 0', borderBottom: '1px solid #f0f0f0' }}>
                 {/* Thumbnail */}
                 <Link href={`${productHrefBase}/${item.slug}`} onClick={closeDrawer} style={{ width: '90px', height: '110px', borderRadius: '6px', overflow: 'hidden', backgroundColor: '#f5f5f5', flexShrink: 0, position: 'relative', display: 'block' }}>
-                  <Image src={item.image} alt={item.name} fill style={{ objectFit: 'cover' }} sizes="90px" />
+                  {item.image && <Image src={item.image} alt={item.name} fill style={{ objectFit: 'cover' }} sizes="90px" />}
                 </Link>
 
                 {/* Info */}
@@ -228,7 +153,7 @@ export function CartDrawer() {
                     <span style={{ fontWeight: 600, color: '#222' }}>Cor:</span> {item.color} &nbsp;&nbsp;
                     <span style={{ fontWeight: 600, color: '#222' }}>Tamanho:</span> {item.size}
                   </p>
-                  <p style={{ fontSize: '17px', fontWeight: 600, color: '#F15B41', marginBottom: '12px' }}>{formatPrice(item.price)}</p>
+                  <p style={{ fontSize: '17px', fontWeight: 600, color: '#F15B41', marginBottom: '12px' }}>{formatPrice(item.price, 'BRL')}</p>
 
                   {/* Quantity + remove */}
                   <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
@@ -241,6 +166,7 @@ export function CartDrawer() {
                         {item.quantity}
                       </span>
                       <button
+                        disabled={item.quantity >= 99}
                         onClick={() => updateQuantity(item.productId, item.variantId, item.quantity + 1)}
                         style={{ width: '34px', height: '34px', display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'none', border: 'none', cursor: 'pointer', fontSize: '18px', color: '#222' }}
                       >+</button>
@@ -257,31 +183,15 @@ export function CartDrawer() {
             ))
           )}
 
-          {/* Gift wrap */}
-          {items.length > 0 && (
-            <div style={{ padding: '18px 0', display: 'flex', alignItems: 'center', gap: '10px' }}>
-              <input
-                type="checkbox"
-                checked={giftWrap}
-                onChange={(e) => setGiftWrap(e.target.checked)}
-                style={{ width: '18px', height: '18px', cursor: 'pointer', accentColor: '#222' }}
-              />
-              <span style={{ fontSize: '15px', color: '#555' }}>
-                For ${GIFT_WRAP_PRICE}.00 per item, please wrap the products in this order.
-              </span>
-            </div>
-          )}
         </div>
 
         {/* Footer — tabs + subtotal + buttons */}
         {items.length > 0 && (
           <div style={{ borderTop: '1px solid #e5e5e5' }}>
             {/* Tab buttons */}
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', borderBottom: '1px solid #f0f0f0' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr', borderBottom: '1px solid #f0f0f0' }}>
               {[
                 { key: 'note' as TabType, icon: <IconEdit size={20} />, label: 'Observação' },
-                { key: 'shipping' as TabType, icon: <IconShipping size={20} />, label: 'Frete' },
-                { key: 'coupon' as TabType, icon: <IconCoupon size={20} />, label: 'Cupom' },
               ].map((tab) => (
                 <button
                   key={tab.key}
@@ -304,18 +214,17 @@ export function CartDrawer() {
             {activeTab !== 'none' && (
               <div style={{ animation: 'cartTabSlideUp 300ms ease-out' }}>
                 {activeTab === 'note' && <NotePanel onClose={() => setActiveTab('none')} />}
-                {activeTab === 'shipping' && <ShippingPanel onClose={() => setActiveTab('none')} />}
-                {activeTab === 'coupon' && <CouponPanel onClose={() => setActiveTab('none')} />}
               </div>
             )}
 
+            <div style={{ padding: '0 24px' }}><CartSaveStatus /></div>
             {/* Subtotal + buttons */}
             <div style={{ padding: '20px 24px' }}>
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '6px' }}>
                 <span style={{ fontSize: '26px', fontWeight: 700, color: '#222' }}>Subtotal</span>
-                <span style={{ fontSize: '20px', fontWeight: 600, color: '#222' }}>{formatPrice(subtotal)} USD</span>
+                <span style={{ fontSize: '20px', fontWeight: 600, color: '#222' }}>{formatPrice(subtotal, 'BRL')}</span>
               </div>
-              <p style={{ fontSize: '15px', color: '#777', marginBottom: '18px' }}>Impostos e frete calculados na finalização da compra</p>
+              <p style={{ fontSize: '15px', color: '#777', marginBottom: '18px' }}>Frete e pagamento estarão disponíveis em breve.</p>
 
               <div style={{ display: 'flex', gap: '12px' }}>
                 <Link

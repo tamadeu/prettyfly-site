@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef, useCallback } from 'react';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 
 // ─────────────────────────── storage keys ────────────────────────────────────
 const KEY_PERMANENT = 'nl_popup_dismissed_permanent';
@@ -37,7 +38,13 @@ export interface NewsletterPopupProps {
 }
 
 // ─────────────────────────── component ───────────────────────────────────────
-export function NewsletterPopup({
+export function NewsletterPopup(props: NewsletterPopupProps) {
+  const pathname = usePathname();
+  if (pathname === '/cart' || pathname === '/checkout') return null;
+  return <NewsletterDialog {...props} />;
+}
+
+function NewsletterDialog({
   image       = '/popup/popup1.png',
   imageAlt    = 'Cadastro para receber novidades',
   heading     = 'Vantagens exclusivas',

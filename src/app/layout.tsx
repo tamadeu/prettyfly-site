@@ -12,6 +12,7 @@ import { QuickViewModal } from '@/features/quickview/components/QuickViewModal';
 import { SITE_NAME, SITE_DESCRIPTION, SITE_URL } from '@/lib/constants';
 import { ScrollToTop } from '@/components/shared/ScrollToTop';
 import { CompareBar } from '@/components/shared/CompareBar';
+import { CartSync } from '@/components/shared/CartSync';
 import { WishlistSync } from '@/components/shared/WishlistSync';
 import { PageLoader } from '@/components/shared/PageLoader';
 import { NewsletterPopup } from '@/components/shared/NewsletterPopup';
@@ -58,6 +59,7 @@ export default async function RootLayout({
       <body className="min-h-screen flex flex-col">
         <PageLoader />
         <WishlistSync />
+        <CartSync />
         <Providers>
           <Header config={headerConfig} />
           <main className="flex-1">{children}</main>

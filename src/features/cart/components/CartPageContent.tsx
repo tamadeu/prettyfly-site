@@ -7,78 +7,18 @@ import { useCartStore } from '@/store/cartStore';
 import { QuantitySelector } from '@/components/ui/QuantitySelector';
 import { FeaturedSlider } from '@/features/home/components/FeaturedSlider';
 import { formatPrice } from '@/utils/formatPrice';
-import { FREE_SHIPPING_THRESHOLD, GIFT_WRAP_PRICE } from '@/lib/constants';
+import { useCheckoutStore } from '@/store/checkoutStore';
+import { CartSaveStatus } from '@/components/shared/CartSaveStatus';
 
 const ACCENT = '#c96742';
 
-const SHIP_COUNTRIES = [
-  { value: '', label: '---' },
-  { value: 'BR', label: 'Brasil' },
-  { value: 'US', label: 'Estados Unidos' },
-  { value: 'GB', label: 'Reino Unido' },
-  { value: 'CA', label: 'Canadá' },
-  { value: 'AU', label: 'Austrália' },
-  { value: 'BD', label: 'Bangladesh' },
-  { value: 'DE', label: 'Alemanha' },
-  { value: 'FR', label: 'França' },
-  { value: 'IN', label: 'Índia' },
-  { value: 'JP', label: 'Japão' },
-  { value: 'SG', label: 'Singapura' },
-  { value: 'AE', label: 'Emirados Árabes Unidos' },
-];
 
 /* ── Icons ───────────────────────────────────────────────────── */
 
-function IcoTruck({ size = 26 }: { size?: number }) {
-  return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
-      <rect x="1" y="3" width="14" height="12" rx="1" />
-      <path d="M15 8h4l3 3.5V18h-7V8z" />
-      <circle cx="5.5" cy="18.5" r="2" />
-      <circle cx="18.5" cy="18.5" r="2" />
-    </svg>
-  );
-}
 
-function IcoReturn({ size = 26 }: { size?: number }) {
-  return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
-      <polyline points="1 4 1 10 7 10" />
-      <path d="M3.51 15a9 9 0 1 0 .49-4.13" />
-    </svg>
-  );
-}
 
-function IcoShield({ size = 26 }: { size?: number }) {
-  return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
-      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-      <polyline points="9 12 11 14 15 10" />
-    </svg>
-  );
-}
 
-function IcoGift({ size = 17 }: { size?: number }) {
-  return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
-      <polyline points="20 12 20 22 4 22 4 12" />
-      <rect x="2" y="7" width="20" height="5" />
-      <line x1="12" y1="22" x2="12" y2="7" />
-      <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z" />
-      <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z" />
-    </svg>
-  );
-}
 
-function IcoPercent() {
-  return (
-    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
-      <line x1="19" y1="5" x2="5" y2="19" />
-      <circle cx="6.5" cy="6.5" r="2.5" />
-      <circle cx="17.5" cy="17.5" r="2.5" />
-    </svg>
-  );
-}
 
 function IcoDoc() {
   return (
@@ -98,14 +38,6 @@ function IcoLock() {
   );
 }
 
-function IcoKeyboard() {
-  return (
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
-      <rect x="2" y="4" width="20" height="16" rx="2" />
-      <path d="M6 8h.01M10 8h.01M14 8h.01M18 8h.01M8 12h.01M12 12h.01M16 12h.01M7 16h10" />
-    </svg>
-  );
-}
 
 function IcoClose() {
   return (
@@ -129,45 +61,7 @@ function IcoChevron({ open }: { open: boolean }) {
 
 /* ── Shared sub-components ───────────────────────────────────── */
 
-function TrustBadges() {
-  const badges = [
-    { Icon: IcoTruck, title: 'Frete grátis', desc: 'Em pedidos acima de US$ 100' },
-    { Icon: IcoReturn, title: 'Devoluções fáceis', desc: 'Política de devolução em 30 dias' },
-    { Icon: IcoShield, title: 'Pagamento seguro', desc: 'Criptografia SSL' },
-  ];
-  return (
-    <div className="cp-trust">
-      {badges.map(({ Icon, title, desc }) => (
-        <div key={title} className="cp-trust-card">
-          <Icon />
-          <p className="cp-trust-title">{title}</p>
-          <p className="cp-trust-desc">{desc}</p>
-        </div>
-      ))}
-    </div>
-  );
-}
 
-function GiftOptions({ checked, onChange }: { checked: boolean; onChange: (v: boolean) => void }) {
-  return (
-    <div className="cp-gift-box">
-      <h3 className="cp-gift-heading">
-        <IcoGift />         Opções para presente
-      </h3>
-      <label className="cp-gift-label">
-        <input
-          type="checkbox"
-          checked={checked}
-          onChange={(e) => onChange(e.target.checked)}
-          className="cp-gift-check"
-        />
-        <span>
-          Embale os produtos deste pedido para presente por <strong>{formatPrice(GIFT_WRAP_PRICE)}</strong> por item.
-        </span>
-      </label>
-    </div>
-  );
-}
 
 function AccordionSection({
   icon, title, children, defaultOpen = true,
@@ -201,18 +95,9 @@ function AccordionSection({
 /* ── Main component ──────────────────────────────────────────── */
 
 export function CartPageContent() {
-  const { items, removeItem, updateQuantity, getSubtotal, getFreeShippingRemaining } = useCartStore();
-  const [promoCode, setPromoCode] = useState('');
-  const [country, setCountry] = useState('');
-  const [postalCode, setPostalCode] = useState('');
-  const [instructions, setInstructions] = useState('');
-  const [giftWrap, setGiftWrap] = useState(false);
-
+  const { items, removeItem, updateQuantity, getSubtotal } = useCartStore();
+  const { draft, update, ready } = useCheckoutStore();
   const subtotal = getSubtotal();
-  const shippingRemaining = getFreeShippingRemaining();
-  const giftTotal = giftWrap ? items.reduce((s, i) => s + i.quantity, 0) * GIFT_WRAP_PRICE : 0;
-  const total = subtotal + giftTotal;
-  const shippingPct = Math.min(100, (subtotal / FREE_SHIPPING_THRESHOLD) * 100);
 
   /* ── Empty state ─────────────────────────────────── */
   if (items.length === 0) {
@@ -220,7 +105,7 @@ export function CartPageContent() {
       <>
         <div className="container-main" style={{ paddingTop: '3.6rem', paddingBottom: '8rem' }}>
           <h1 className="cp-page-title">Meu carrinho</h1>
-
+          <CartSaveStatus />
           <div className="cp-empty-center">
             <Link href="/shop" className="cp-return-btn">Voltar à loja</Link>
             <div className="cp-account-block">
@@ -230,9 +115,6 @@ export function CartPageContent() {
               </p>
             </div>
           </div>
-
-          <TrustBadges />
-          <GiftOptions checked={false} onChange={() => {}} />
         </div>
 
         <div style={{ paddingBottom: '8rem' }}>
@@ -264,13 +146,13 @@ export function CartPageContent() {
               {items.map((item) => (
                 <div key={`${item.productId}-${item.variantId}`} className="cp-item" style={{ position: 'relative' }}>
                   <Link href={`/products/${item.slug}`} className="cp-item-img">
-                    <Image
+                    {item.image && <Image
                       src={item.image}
                       alt={item.name}
                       fill
                       sizes="100px"
                       style={{ objectFit: 'contain' }}
-                    />
+                    />}
                   </Link>
                   <div className="cp-item-body">
                     {item.vendor && <span className="cp-item-vendor">{item.vendor}</span>}
@@ -284,7 +166,7 @@ export function CartPageContent() {
                         value={item.quantity}
                         onChange={(qty) => updateQuantity(item.productId, item.variantId, qty)}
                       />
-                      <span className="cp-item-price">{formatPrice(item.price * item.quantity)}</span>
+                      <span className="cp-item-price">{formatPrice(item.price * item.quantity, 'BRL')}</span>
                     </div>
                   </div>
                   <button
@@ -298,67 +180,22 @@ export function CartPageContent() {
                 </div>
               ))}
             </div>
-
-            <TrustBadges />
-            <GiftOptions checked={giftWrap} onChange={setGiftWrap} />
           </div>
 
           {/* ── Right sidebar ── */}
           <div className="cp-right">
 
-            {/* Promo code */}
-            <AccordionSection icon={<IcoPercent />} title="Cupom de desconto">
-              <div className="cp-promo-row">
-                <input
-                  type="text"
-                  placeholder="Digite o cupom de desconto"
-                  value={promoCode}
-                  onChange={(e) => setPromoCode(e.target.value)}
-                  className="cp-promo-input"
-                />
-                <button className="cp-apply-btn">Aplicar</button>
-              </div>
-            </AccordionSection>
-
-            {/* Estimate shipping */}
-            <AccordionSection icon={<IcoTruck size={14} />} title="Calcular frete">
-              <div className="cp-ship-fields">
-                <label className="cp-field-label">País/região</label>
-                <select
-                  value={country}
-                  onChange={(e) => setCountry(e.target.value)}
-                  className="cp-select"
-                >
-                  {SHIP_COUNTRIES.map((c) => (
-                    <option key={c.value} value={c.value}>{c.label}</option>
-                  ))}
-                </select>
-                <label className="cp-field-label">CEP</label>
-                <div className="cp-input-wrap">
-                  <input
-                    type="text"
-                    placeholder="CEP"
-                    value={postalCode}
-                    onChange={(e) => setPostalCode(e.target.value)}
-                    className="cp-text-input"
-                  />
-                  <span className="cp-input-icon"><IcoKeyboard /></span>
-                </div>
-                <button className="cp-calc-btn">Calcular frete</button>
-              </div>
-            </AccordionSection>
-
             {/* Order instructions */}
             <AccordionSection icon={<IcoDoc />} title="Instruções especiais do pedido" defaultOpen={false}>
               <div className="cp-notes-wrap">
                 <textarea
-                  value={instructions}
-                  onChange={(e) => setInstructions(e.target.value.slice(0, 500))}
+                  value={draft.notes} maxLength={2000} disabled={!ready}
+                  onChange={(e) => update({ notes: e.target.value })}
                   placeholder="Adicione uma observação ao pedido (opcional)"
                   className="cp-notes-area"
                   rows={4}
                 />
-                <p className="cp-char-count">{instructions.length}/500 characters</p>
+                <p className="cp-char-count">{draft.notes.length}/2000 caracteres</p>
               </div>
             </AccordionSection>
 
@@ -366,42 +203,23 @@ export function CartPageContent() {
             <div className="cp-summary">
               <h3 className="cp-summary-title">Resumo do pedido</h3>
 
-              <p className="cp-ship-msg">
-                {shippingRemaining > 0
-                  ? <>Faltam {formatPrice(shippingRemaining)} para você ganhar frete grátis.</>
-                  : 'Você ganhou frete grátis!'
-                }
-              </p>
-
-              <div className="cp-progress-track">
-                <div className="cp-progress-fill" style={{ width: `${shippingPct}%` }} />
-                <div className="cp-progress-thumb" style={{ left: `calc(${shippingPct}% - 1.4rem)` }}>
-                  <IcoTruck size={11} />
-                </div>
-              </div>
-
               <div className="cp-totals">
                 <div className="cp-total-row">
                   <span>Subtotal</span>
-                  <span>{formatPrice(subtotal)}</span>
+                  <span>{formatPrice(subtotal, 'BRL')}</span>
                 </div>
-                {giftWrap && (
-                  <div className="cp-total-row">
-                    <span>Embalagem para presente</span>
-                    <span>{formatPrice(giftTotal)}</span>
-                  </div>
-                )}
                 <div className="cp-total-row cp-total-bold">
                   <span>Total</span>
-                  <span>{formatPrice(total)}</span>
+                  <span>{formatPrice(subtotal, 'BRL')}</span>
                 </div>
               </div>
 
-              <p className="cp-tax-note">Impostos e frete calculados na finalização da compra</p>
+              <p className="cp-tax-note">Frete e pagamento estarão disponíveis em breve.</p>
 
-              <button className="cp-checkout-btn">
-                <IcoLock /> Secure Checkout
-              </button>
+              <CartSaveStatus />
+              <Link href="/checkout" className="cp-checkout-btn">
+                <IcoLock /> Continuar para o checkout
+              </Link>
             </div>
 
           </div>

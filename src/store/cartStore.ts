@@ -27,6 +27,8 @@ export const useCartStore = create<CartState>()(
       isDrawerOpen: false,
 
       addItem: (item) => {
+        if (!Number.isInteger(item.quantity) || item.quantity < 1) return;
+        item = { ...item, quantity: Math.min(99, item.quantity) };
         set((state) => {
           const existing = state.items.find(
             (i) => i.productId === item.productId && i.variantId === item.variantId
@@ -36,7 +38,7 @@ export const useCartStore = create<CartState>()(
             return {
               items: state.items.map((i) =>
                 i.productId === item.productId && i.variantId === item.variantId
-                  ? { ...i, quantity: i.quantity + item.quantity }
+                  ? { ...i, quantity: Math.min(99, i.quantity + item.quantity) }
                   : i
               ),
               isDrawerOpen: true,
@@ -56,7 +58,7 @@ export const useCartStore = create<CartState>()(
       },
 
       updateQuantity: (productId, variantId, quantity) => {
-        if (quantity < 1) return;
+        if (!Number.isInteger(quantity) || quantity < 1 || quantity > 99) return;
         set((state) => ({
           items: state.items.map((i) =>
             i.productId === productId && i.variantId === variantId

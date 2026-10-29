@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
+import { flushCart } from '@/components/shared/CartSync';
 import { AUTH_EVENT } from '@/components/shared/WishlistSync';
 
 const ACCENT = '#c96742';
@@ -82,6 +83,7 @@ export function RegisterPageContent() {
             setLoading(true);
             setError(null);
             const name = `${firstName} ${lastName}`.trim() || email.split('@')[0];
+            await flushCart();
             const message = await submitAuth('/api/auth/register', { name, email, password });
             setLoading(false);
             if (message) return setError(message);

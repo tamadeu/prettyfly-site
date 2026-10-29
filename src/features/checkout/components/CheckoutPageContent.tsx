@@ -1,282 +1,120 @@
 'use client';
 
 import Link from 'next/link';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useCartStore } from '@/store/cartStore';
+import { useCheckoutStore, type CheckoutDraft } from '@/store/checkoutStore';
+import { CART_FLUSH_EVENT, CART_RETRY_EVENT } from '@/components/shared/CartSync';
 import { formatPrice } from '@/utils/formatPrice';
 
 const ACCENT = '#c96742';
 const DARK = '#111111';
-
-const COUNTRIES = [
-  { value: '', label: '---' },
-  { value: 'BR', label: 'Brasil' },
-  { value: 'US', label: 'Estados Unidos' },
-  { value: 'GB', label: 'Reino Unido' },
-  { value: 'CA', label: 'Canadá' },
-  { value: 'AU', label: 'Austrália' },
-  { value: 'BD', label: 'Bangladesh' },
-  { value: 'DE', label: 'Alemanha' },
-  { value: 'FR', label: 'França' },
-  { value: 'IN', label: 'Índia' },
-  { value: 'JP', label: 'Japão' },
-  { value: 'SG', label: 'Singapura' },
-  { value: 'AE', label: 'Emirados Árabes Unidos' },
-];
-
-type PaymentMethod = 'bank' | 'cod';
-
-function IcoCheck() {
-  return (
-    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round">
-      <polyline points="20 6 9 17 4 12" />
-    </svg>
-  );
-}
+const STATES = 'AC AL AP AM BA CE DF ES GO MA MT MS MG PA PB PR PE PI RJ RN RS RO RR SC SP SE TO'.split(' ');
 
 export function CheckoutPageContent() {
-  const { items, getSubtotal } = useCartStore();
+  const items = useCartStore((s) => s.items);
+  const { draft, update, ready, status, message } = useCheckoutStore();
+  const [cepStatus, setCepStatus] = useState('');
+  const [lookupCep, setLookupCep] = useState('');
+  const subtotal = items.reduce((sum, item) => sum + item.price * item.quantity, 0);
 
-  const [firstName, setFirstName] = useState('');
-  const [lastName, setLastName] = useState('');
-  const [country, setCountry] = useState('');
-  const [city, setCity] = useState('');
-  const [address, setAddress] = useState('');
-  const [phone, setPhone] = useState('');
-  const [email, setEmail] = useState('');
-  const [notes, setNotes] = useState('');
-  const [discountCode, setDiscountCode] = useState('');
-  const [paymentMethod, setPaymentMethod] = useState<PaymentMethod>('bank');
-  const [agreeTerms, setAgreeTerms] = useState(false);
+  useEffect(() => {
+    const cep = lookupCep.replace(/\D/g, '');
+    if (!ready || cep.length !== 8) return;
+    const controller = new AbortController();
+    const initial = useCheckoutStore.getState().draft;
+    const timer = setTimeout(async () => {
+      setCepStatus('Consultando CEP…');
+      try {
+        const response = await fetch(`/api/cep/${cep}`, { signal: controller.signal });
+        const data = await response.json();
+        if (controller.signal.aborted) return;
+        if (!response.ok) { setCepStatus(data.message); return; }
+        const current = useCheckoutStore.getState().draft;
+        if (current.postal_code.replace(/\D/g, '') !== cep) return;
+        const patch: Partial<CheckoutDraft> = {};
+        for (const key of ['street', 'neighborhood', 'city', 'state'] as const) {
+          // Não sobrescreve campos editados enquanto a consulta estava em andamento.
+          if (current[key] === initial[key] && typeof data[key] === 'string') patch[key] = data[key];
+        }
+        update(patch);
+        setCepStatus('Endereço encontrado. Confira os dados e informe o número.');
+      } catch {
+        if (!controller.signal.aborted) setCepStatus('Não foi possível consultar o CEP. Preencha o endereço manualmente.');
+      }
+    }, 400);
+    return () => { clearTimeout(timer); controller.abort(); };
+  }, [lookupCep, ready, update]);
 
-  const subtotal = getSubtotal();
+  function field(key: keyof CheckoutDraft, label: string, maxLength = 150, type = 'text', autoComplete?: string) {
+    return <div className="co-field">
+      <label className="co-label" htmlFor={`checkout-${key}`}>{label}</label>
+      <input id={`checkout-${key}`} name={key} className="co-input" type={type} maxLength={maxLength} autoComplete={autoComplete}
+        value={draft[key]} onChange={(e) => update({ [key]: e.target.value })} />
+    </div>;
+  }
 
-  return (
-    <>
-      {/* ── Hero Banner ── */}
-      <div className="co-hero">
-        <h1 className="co-hero-title">Finalizar compra</h1>
-      </div>
-
-      {/* ── Main Content ── */}
-      <div className="container-main" style={{ paddingTop: '6rem', paddingBottom: '8rem' }}>
-        <div className="co-layout">
-
-          {/* ── LEFT: Billing Details ── */}
-          <section>
-            <h2 className="co-section-title">Dados de cobrança</h2>
-            <div className="co-fields">
-
-              {/* First + Last name */}
+  return <>
+    <div className="co-hero"><h1 className="co-hero-title">Finalizar compra</h1></div>
+    <div className="container-main" style={{ paddingTop: '6rem', paddingBottom: '8rem' }}>
+      <div className="co-layout">
+        <section>
+          <h2 className="co-section-title">Seus dados</h2>
+          <fieldset disabled={!ready || items.length === 0} style={{ border: 0, padding: 0, margin: 0, minWidth: 0 }}>
+            <div className="co-fields" onBlur={() => window.dispatchEvent(new Event(CART_FLUSH_EVENT))}>
+              <div className="co-row-2">{field('first_name', 'Nome', 100, 'text', 'given-name')}{field('last_name', 'Sobrenome', 150, 'text', 'family-name')}</div>
+              {field('email', 'E-mail', 254, 'email', 'email')}
+              {field('phone', 'Telefone', 30, 'tel', 'tel')}
+              <div className="co-field"><label htmlFor="checkout-country" className="co-label">País/região</label><select id="checkout-country" className="co-select" value="BR" disabled><option value="BR">Brasil</option></select></div>
+              <div className="co-field">
+                <label className="co-label" htmlFor="checkout-cep">CEP</label>
+                <input id="checkout-cep" className="co-input" inputMode="numeric" autoComplete="postal-code" placeholder="00000-000" maxLength={9}
+                  aria-describedby="cep-status" value={draft.postal_code}
+                  onChange={(e) => { setCepStatus(''); setLookupCep(e.target.value); update({ postal_code: e.target.value.replace(/\D/g, '').slice(0, 8).replace(/^(\d{5})(\d)/, '$1-$2') }); }} />
+                <p id="cep-status" role="status" className="co-privacy" style={{ marginBottom: 0 }}>{cepStatus || 'Digite o CEP para preencher o endereço automaticamente.'}</p>
+              </div>
+              {field('street', 'Endereço', 255, 'text', 'address-line1')}
+              <div className="co-row-2">{field('number', 'Número', 30)}{field('complement', 'Complemento (opcional)', 150, 'text', 'address-line2')}</div>
+              {field('neighborhood', 'Bairro')}
               <div className="co-row-2">
-                <div className="co-field">
-                  <label className="co-label">Nome<span className="co-req">*</span></label>
-                  <input
-                    type="text"
-                    value={firstName}
-                    onChange={(e) => setFirstName(e.target.value)}
-                    placeholder="Nome"
-                    className="co-input"
-                  />
-                </div>
-                <div className="co-field">
-                  <label className="co-label">Sobrenome<span className="co-req">*</span></label>
-                  <input
-                    type="text"
-                    value={lastName}
-                    onChange={(e) => setLastName(e.target.value)}
-                    className="co-input"
-                  />
+                {field('city', 'Cidade', 150, 'text', 'address-level2')}
+                <div className="co-field"><label htmlFor="checkout-state" className="co-label">Estado</label>
+                  <select id="checkout-state" className="co-select" autoComplete="address-level1" value={draft.state} onChange={(e) => update({ state: e.target.value })}>
+                    <option value="">Selecione</option>{STATES.map((uf) => <option key={uf} value={uf}>{uf}</option>)}
+                  </select>
                 </div>
               </div>
-
-              {/* Country/Region */}
-              <div className="co-field">
-                <label className="co-label">País/região<span className="co-req">*</span></label>
-                <select
-                  value={country}
-                  onChange={(e) => setCountry(e.target.value)}
-                  className="co-select"
-                >
-                  {COUNTRIES.map((c) => (
-                    <option key={c.value} value={c.value}>{c.label}</option>
-                  ))}
-                </select>
+              <div className="co-field"><label htmlFor="checkout-notes" className="co-label">Observações (opcional)</label>
+                <textarea id="checkout-notes" className="co-textarea" rows={5} maxLength={2000} value={draft.notes} onChange={(e) => update({ notes: e.target.value })} />
               </div>
-
-              {/* Town/City */}
-              <div className="co-field">
-                <label className="co-label">Cidade<span className="co-req">*</span></label>
-                <input
-                  type="text"
-                  value={city}
-                  onChange={(e) => setCity(e.target.value)}
-                  className="co-input"
-                />
-              </div>
-
-              {/* Address */}
-              <div className="co-field">
-                <label className="co-label">Endereço<span className="co-req">*</span></label>
-                <input
-                  type="text"
-                  value={address}
-                  onChange={(e) => setAddress(e.target.value)}
-                  className="co-input"
-                />
-              </div>
-
-              {/* Phone Number */}
-              <div className="co-field">
-                <label className="co-label">Telefone<span className="co-req">*</span></label>
-                <input
-                  type="tel"
-                  value={phone}
-                  onChange={(e) => setPhone(e.target.value)}
-                  className="co-input"
-                />
-              </div>
-
-              {/* Email */}
-              <div className="co-field">
-                <label className="co-label">E-mail<span className="co-req">*</span></label>
-                <input
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  className="co-input"
-                />
-              </div>
-
-              {/* Order notes */}
-              <div className="co-field">
-                <label className="co-label">Observações do pedido (opcional)</label>
-                <textarea
-                  value={notes}
-                  onChange={(e) => setNotes(e.target.value)}
-                  className="co-textarea"
-                  rows={5}
-                />
-              </div>
-
             </div>
-          </section>
-
-          {/* ── RIGHT: Your Order ── */}
-          <aside className="co-order-aside">
-            <h2 className="co-section-title">Seu pedido</h2>
-
-            {/* Cart items card */}
-            <div className="co-order-card">
-              {items.length === 0 ? (
-                <div className="co-empty-state">
-                  <p className="co-empty-text">Seu carrinho está vazio</p>
-                  <Link href="/shop" className="co-explore-btn">Ver produtos</Link>
-                </div>
-              ) : (
-                <>
-                  <div className="co-order-head">
-                    <span>Produto</span>
-                    <span>Subtotal</span>
-                  </div>
-                  {items.map((item) => (
-                    <div key={`${item.productId}-${item.variantId}`} className="co-order-row">
-                      <span className="co-order-name">
-                        {item.name}{' '}
-                        <span className="co-order-qty">× {item.quantity}</span>
-                      </span>
-                      <span className="co-order-price">{formatPrice(item.price * item.quantity)}</span>
-                    </div>
-                  ))}
-                  <div className="co-order-subtotal">
-                    <span>Subtotal</span>
-                    <span>{formatPrice(subtotal)}</span>
-                  </div>
-                </>
-              )}
-            </div>
-
-            {/* Discount code — merged bottom edge of order card */}
-            <div className="co-discount-row">
-              <input
-                type="text"
-                placeholder="Cupom de desconto"
-                value={discountCode}
-                onChange={(e) => setDiscountCode(e.target.value)}
-                className="co-discount-input"
-              />
-              <button className="co-discount-apply">Aplicar</button>
-            </div>
-
-            {/* Total */}
-            <div className="co-total-bar">
-              <span className="co-total-label">Total</span>
-              <span className="co-total-amount">{formatPrice(subtotal)}</span>
-            </div>
-
-            {/* Payment methods */}
-            <div className="co-payment-wrap">
-              {(
-                [
-                  { value: 'bank' as PaymentMethod, label: 'Transferência bancária direta' },
-                  { value: 'cod' as PaymentMethod, label: 'Pagamento na entrega' },
-                ] as const
-              ).map(({ value, label }) => (
-                <label
-                  key={value}
-                  className="co-payment-opt"
-                  onClick={() => setPaymentMethod(value)}
-                >
-                  <span className={`co-radio-dot${paymentMethod === value ? ' co-radio-on' : ''}`}>
-                    {paymentMethod === value && <IcoCheck />}
-                  </span>
-                  <span className="co-payment-text">{label}</span>
-                </label>
-              ))}
-            </div>
-
-            {/* Privacy text */}
-            <p className="co-privacy">
-              Seus dados pessoais serão usados para processar seu pedido, melhorar sua
-              experiência neste site e para outras finalidades descritas em nossa{' '}
-              <Link href="/pages/privacy-policy" className="co-link">
-                política de privacidade
-              </Link>
-              .
-            </p>
-
-            {/* Terms checkbox */}
-            <label className="co-terms">
-              <input
-                type="checkbox"
-                checked={agreeTerms}
-                onChange={(e) => setAgreeTerms(e.target.checked)}
-                className="co-terms-check"
-              />
-              <span>
-                Li e concordo com os{' '}
-                <Link href="#" className="co-link">termos e condições</Link> do site
-              </span>
-            </label>
-
-            {/* Place order */}
-            <button
-              className="co-place-order"
-              disabled={!agreeTerms}
-            >
-              Fazer pedido
-            </button>
-
-          </aside>
-        </div>
+          </fieldset>
+        </section>
+        <aside className="co-order-aside">
+          <h2 className="co-section-title">Seu carrinho</h2>
+          <div className="co-order-card">
+            {!ready ? <div className="co-empty-state">Carregando carrinho…</div> : !items.length ? <div className="co-empty-state"><p className="co-empty-text">Seu carrinho está vazio</p><Link href="/shop" className="co-explore-btn">Ver produtos</Link></div> : <>
+              <div className="co-order-head"><span>Produto</span><span>Subtotal</span></div>
+              {items.map((item) => <div key={`${item.productId}-${item.variantId}`} className="co-order-row">
+                <span className="co-order-name">{item.name} <span className="co-order-qty">× {item.quantity}</span><br /><small>{[item.color, item.size].filter(Boolean).join(' / ')}</small></span>
+                <span className="co-order-price">{formatPrice(item.price * item.quantity, 'BRL')}</span>
+              </div>)}
+              <div className="co-order-subtotal"><span>Subtotal dos produtos</span><span>{formatPrice(subtotal, 'BRL')}</span></div>
+            </>}
+          </div>
+          <p role="status" aria-live="polite" className="co-privacy">
+            {status === 'loading' ? 'Recuperando seu carrinho…' : status === 'saving' ? 'Salvando alterações…' : status === 'error' || status === 'conflict' ? message : items.length ? 'Seu carrinho e seus dados estão salvos.' : 'Adicione produtos para iniciar seu carrinho.'}
+          </p>
+          {(status === 'error' || status === 'conflict') && <button className="co-explore-btn" style={{ width: '100%', marginBottom: '2rem' }} onClick={() => window.dispatchEvent(new Event(CART_RETRY_EVENT))}>{status === 'conflict' ? 'Recarregar dados salvos' : 'Tentar novamente'}</button>}
+          <p className="co-privacy">Frete e pagamento estarão disponíveis em breve. Nenhum pedido será enviado nesta etapa.</p>
+          <p className="co-privacy">Seus dados são salvos conforme você preenche, para continuar depois. Consulte nossa <Link href="/pages/privacy-policy" className="co-link">política de privacidade</Link>.</p>
+          <Link href="/cart" className="co-link">Editar produtos do carrinho</Link>
+        </aside>
       </div>
-
-      <style>{coStyles}</style>
-    </>
-  );
+    </div>
+    <style>{coStyles}</style>
+  </>;
 }
-
-/* ── Styles ──────────────────────────────────────────────────── */
 
 const coStyles = `
   /* ── Hero ── */
