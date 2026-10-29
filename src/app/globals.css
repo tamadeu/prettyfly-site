@@ -1,0 +1,618 @@
+@import "tailwindcss";
+
+/* ============================================
+   AMBAZ DESIGN SYSTEM - Tailwind v4 Theme
+   ============================================ */
+
+@theme inline {
+  /* ---- Colors ---- */
+  --color-primary: #F15B41;
+  --color-primary-hover: #d94a32;
+  --color-secondary: #FFD700;
+  --color-dark: #000000;
+  --color-dark-hover: #1a1a1a;
+  --color-white: #ffffff;
+  --color-body: #666666;
+  --color-heading: #222222;
+  --color-border: #e5e5e5;
+  --color-border-dark: #cccccc;
+  --color-bg-light: #f7f7f7;
+  --color-bg-overlay: rgba(0, 0, 0, 0.5);
+  --color-success: #22c55e;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  --color-info: #3b82f6;
+  --color-sale: #F15B41;
+  --color-new: #000000;
+  --color-pre-order: #F15B41;
+
+  /* ---- Typography ---- */
+  --font-sans: var(--font-albert-sans), "Albert Sans", system-ui, -apple-system, sans-serif;
+  --font-heading: var(--font-albert-sans), "Albert Sans", system-ui, -apple-system, sans-serif;
+
+  --font-size-xs: 1.2rem;
+  --font-size-sm: 1.3rem;
+  --font-size-base: 1.4rem;
+  --font-size-md: 1.5rem;
+  --font-size-lg: 1.6rem;
+  --font-size-xl: 1.8rem;
+  --font-size-2xl: 2rem;
+  --font-size-3xl: 2.4rem;
+  --font-size-4xl: 3.2rem;
+  --font-size-5xl: 4rem;
+
+  /* ---- Spacing (1rem = 10px) ---- */
+  --spacing-0: 0;
+  --spacing-0-5: 0.5rem;
+  --spacing-1: 1rem;
+  --spacing-1-5: 1.5rem;
+  --spacing-2: 2rem;
+  --spacing-2-5: 2.5rem;
+  --spacing-3: 3rem;
+  --spacing-4: 4rem;
+  --spacing-5: 5rem;
+  --spacing-6: 6rem;
+  --spacing-7: 7rem;
+  --spacing-8: 8rem;
+  --spacing-10: 10rem;
+  --spacing-12: 12rem;
+
+  /* ---- Container ---- */
+  --container-max: 153rem;
+
+  /* ---- Breakpoints ---- */
+  --breakpoint-sm: 750px;
+  --breakpoint-md: 992px;
+  --breakpoint-lg: 1200px;
+  --breakpoint-xl: 1400px;
+  --breakpoint-2xl: 1530px;
+
+  /* ---- Border Radius ---- */
+  --radius-sm: 0.4rem;
+  --radius-md: 0.8rem;
+  --radius-lg: 1.2rem;
+  --radius-xl: 1.6rem;
+  --radius-full: 9999px;
+
+  /* ---- Shadows ---- */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07);
+  --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.12);
+  --shadow-drawer: -4px 0 25px rgba(0, 0, 0, 0.15);
+
+  /* ---- Transitions ---- */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 350ms ease;
+
+  /* ---- Z-Index ---- */
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-overlay: 300;
+  --z-drawer: 400;
+  --z-modal: 500;
+  --z-toast: 600;
+}
+
+/* ============================================
+   ROOT FONT SIZE: 1rem = 10px
+   ============================================ */
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: clip;
+  /* RGB triplet so rgba(var(--color-foreground)) resolves correctly */
+  --color-foreground: 17, 17, 17;
+}
+
+body {
+  font-size: var(--font-size-base);
+  font-family: var(--font-sans);
+  color: var(--color-body);
+  background-color: var(--color-white);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: clip;
+}
+
+/* ============================================
+   BASE RESETS
+   ============================================ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Global smooth transitions on all interactive elements */
+a,
+button,
+input,
+select,
+textarea,
+[role="button"] {
+  transition: color 250ms ease, background-color 250ms ease, border-color 250ms ease, box-shadow 250ms ease, opacity 250ms ease, transform 250ms ease;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font: inherit;
+  color: inherit;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+input, textarea, select {
+  font: inherit;
+  color: inherit;
+}
+
+/* ============================================
+   TYPOGRAPHY
+   ============================================ */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--color-heading);
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+h1 { font-size: var(--font-size-4xl); }
+h2 { font-size: var(--font-size-3xl); }
+h3 { font-size: var(--font-size-2xl); }
+h4 { font-size: var(--font-size-xl); }
+
+/* ============================================
+   SCROLLBAR
+   ============================================ */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border-dark);
+  border-radius: var(--radius-full);
+}
+
+/* ============================================
+   SWIPER OVERRIDES
+   ============================================ */
+.swiper {
+  width: 100%;
+}
+
+.swiper-slide {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hide Swiper's default built-in navigation arrows */
+.swiper-button-next,
+.swiper-button-prev {
+  display: none !important;
+}
+
+/* ============================================
+   BODY SCROLL LOCK
+   ============================================ */
+/* Locks the page behind any full-viewport modal/drawer (cart, search,
+   mobile nav, filter drawer, quick-view, compare bar). overscroll-behavior
+   stops momentum-scroll from chaining to the page; touch-action: none stops
+   mobile touch gestures from panning the body under the modal. */
+body.scroll-locked {
+  overflow: hidden;
+  overscroll-behavior: contain;
+  touch-action: none;
+}
+
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInRight {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+@keyframes slideInLeft {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(10px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes menuSlideDown {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes headerBorderSlide {
+  from { transform: scaleY(0); }
+  to { transform: scaleY(1); }
+}
+
+.animate-fade-in { animation: fadeIn var(--transition-base); }
+.animate-slide-in-right { animation: slideInRight var(--transition-slow); }
+.animate-slide-in-left { animation: slideInLeft var(--transition-slow); }
+.animate-slide-up { animation: slideUp var(--transition-base); }
+.animate-marquee { animation: marquee 30s linear infinite; }
+.animate-shimmer {
+  background: linear-gradient(90deg, var(--color-bg-light) 25%, #ececec 50%, var(--color-bg-light) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+.container-main {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+
+@media (min-width: 750px) {
+  .container-main { padding-inline: 2rem; }
+}
+@media (min-width: 992px) {
+  .container-main { padding-inline: 3rem; }
+}
+@media (min-width: 1200px) {
+  .container-main { padding-inline: 4rem; }
+}
+
+/* Homepage section gap */
+.home-sections > * + * {
+  margin-top: 90px;
+}
+
+/* ============================================
+   PRODUCT CARD STYLES (shared across sections)
+   ============================================ */
+.fc-action-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 200ms ease, color 200ms ease, transform 200ms ease, box-shadow 200ms ease;
+}
+.fc-action-btn:hover { transform: scale(1.08); }
+
+.fc-action-btn-light {
+  background-color: #fff;
+  color: #333;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.fc-action-btn-light:hover { background-color: #222; color: #fff; }
+
+.fc-action-btn-dark {
+  background-color: #222;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+.fc-action-btn-dark:hover { background-color: #000; }
+
+.fc-tooltip {
+  position: absolute;
+  right: calc(100% + 8px);
+  top: 50%;
+  transform: translateY(-50%) translateX(6px);
+  background-color: #222;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 200ms ease, transform 200ms ease;
+}
+.fc-tooltip-wrap:hover .fc-tooltip {
+  opacity: 1;
+  transform: translateY(-50%) translateX(0);
+}
+
+.fc-quick-add-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #fff;
+  color: #222;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 13px 0;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  transition: background-color 250ms ease, color 250ms ease, box-shadow 250ms ease;
+}
+.fc-quick-add-btn:hover {
+  background-color: #000;
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+}
+
+/* Line clamp */
+.line-clamp-1 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ============================================
+   RESPONSIVE — TABLET (< 992px)
+   ============================================ */
+@media (max-width: 991px) {
+  .home-sections > * + * { margin-top: 60px !important; }
+  .promo-grid-wrapper { grid-template-columns: 1fr !important; }
+  .promo-grid-right { grid-template-rows: auto auto !important; height: auto !important; }
+  .promo-grid-left { height: 450px !important; }
+  .fc-grid { grid-template-columns: repeat(3, 1fr) !important; }
+  .lto-grid { grid-template-columns: 1fr !important; text-align: center; gap: 20px !important; }
+  .lto-grid > *:last-child { justify-self: center !important; }
+  .stl-grid { grid-template-columns: 1fr !important; }
+  .stl-lookbook { height: 600px !important; }
+  .tab-grid { grid-template-columns: 1fr !important; }
+  .tab-media { height: 450px !important; }
+  .tab-content { height: auto !important; padding: 40px 0 !important; }
+  .banner-list-grid { grid-template-columns: repeat(2, 1fr) !important; }
+  .ts-grid { grid-template-columns: repeat(2, 1fr) !important; }
+  .trust-grid { grid-template-columns: repeat(2, 1fr) !important; }
+  .footer-grid { grid-template-columns: repeat(2, 1fr) !important; }
+  .footer-bottom-grid { grid-template-columns: 1fr !important; gap: 16px !important; text-align: center; }
+  .footer-bottom-grid > * { justify-self: center !important; }
+}
+
+/* ============================================
+   RESPONSIVE — MOBILE (< 750px)
+   ============================================ */
+@media (max-width: 749px) {
+  /* Reserve space at the bottom for the fixed MobileBottomNav (70px bar +
+     a small buffer) so footer / page content is never hidden behind it. */
+  body { padding-bottom: 70px; }
+  .home-sections > * + * { margin-top: 40px !important; }
+  .promo-grid-wrapper { grid-template-columns: 1fr !important; }
+  .promo-grid-left { height: 350px !important; }
+  .promo-grid-right { height: auto !important; }
+  .promo-grid-right-top { grid-template-columns: 1fr !important; }
+  .fc-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 16px !important; }
+  .lto-grid { grid-template-columns: 1fr !important; text-align: center; gap: 16px !important; }
+  .lto-section { height: auto !important; padding: 40px 0 !important; }
+  .stl-grid { grid-template-columns: 1fr !important; }
+  .stl-lookbook { height: 450px !important; order: -1; }
+  .tab-grid { grid-template-columns: 1fr !important; }
+  .tab-media { height: 350px !important; }
+  .tab-content { height: auto !important; padding: 30px 0 !important; }
+  .banner-list-grid { grid-template-columns: 1fr !important; }
+  .ts-grid { grid-template-columns: 1fr !important; }
+  .ts-card { height: auto !important; min-height: 320px !important; }
+  .trust-grid { grid-template-columns: 1fr !important; gap: 20px !important; }
+  .footer-grid { grid-template-columns: 1fr !important; gap: 30px !important; }
+  .footer-bottom-grid { grid-template-columns: 1fr !important; gap: 16px !important; text-align: center; }
+  .footer-bottom-grid > * { justify-self: center !important; }
+  .announce-social, .announce-dropdowns { display: none !important; }
+  .announce-grid { grid-template-columns: 1fr !important; }
+}
+
+/* ============================================
+   PRICE RANGE SLIDER — Shop page filter
+   Defines the 20px circular thumb used by the single shared PriceRangeSlider
+   component (src/features/shop/components/PriceRangeSlider.tsx), rendered by
+   both the desktop filter sidebar and the mobile filter drawer, across ALL
+   shop pages.
+   Lives here (globals.css) so it loads before React hydration, guaranteeing
+   consistent thumb size regardless of component render order.
+   The invisible hit-area stays the same (28px input height, 14px inset —
+   set inline in PriceRangeSlider.tsx) for touch-friendliness; only the
+   visible thumb graphic below is 20px. margin-top centers the 20px thumb
+   on the 4px runnable-track: (trackHeight - thumbHeight) / 2 = (4-20)/2 = -8px.
+   ============================================ */
+.price-slider-thumb::-webkit-slider-runnable-track {
+  height: 4px;
+  background: transparent;
+}
+.price-slider-thumb::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fff;
+  border: 1.5px solid #8c8c8c;
+  cursor: pointer;
+  pointer-events: auto;
+  margin-top: -8px;
+  transition: border-color 160ms ease;
+}
+.price-slider-thumb::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fff;
+  border: 1.5px solid #8c8c8c;
+  cursor: pointer;
+  pointer-events: auto;
+  border-style: solid;
+  transition: border-color 160ms ease;
+}
+.price-slider-thumb:hover::-webkit-slider-thumb,
+.price-slider-thumb:active::-webkit-slider-thumb {
+  border-color: #222;
+}
+.price-slider-thumb:hover::-moz-range-thumb,
+.price-slider-thumb:active::-moz-range-thumb {
+  border-color: #222;
+}
+
+/* ============================================
+   MEGASTORE — Hero & banner structural CSS
+   Hoisted here so Image fill parents have
+   position/height on first paint, before React
+   hydrates and client <style> blocks inject.
+   Same pattern as price-slider-thumb above.
+   ============================================ */
+
+/* Hero — mobile-first base */
+.msh-hero-section { padding-top: 30px; }
+.msh-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  align-items: stretch;
+}
+.msh-hero-slider-wrap {
+  position: relative;
+  height: 380px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.msh-slide {
+  position: relative;
+  width: 100%;
+  height: 380px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+.msh-slide-image-wrap {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+.msh-side-banners {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+.msh-side-large {
+  position: relative;
+  display: block;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 240px;
+}
+.msh-side-image-wrap {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+.msh-mini-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+.msh-mini {
+  position: relative;
+  display: block;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 200px;
+}
+.msh-mini-image-wrap {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+/* Hero — small mobile */
+@media (max-width: 749px) {
+  .msh-hero-section { padding-top: 16px; }
+  .msh-hero-slider-wrap {
+    height: calc(clamp(185px, 52vw, 280px) + 240px);
+    border-radius: 0;
+  }
+  .msh-slide { height: calc(clamp(185px, 52vw, 280px) + 240px); }
+}
+/* Hero — tablet */
+@media (min-width: 750px) {
+  .msh-side-large { height: 260px; }
+  .msh-mini { height: 220px; }
+}
+/* Hero — desktop */
+@media (min-width: 992px) {
+  .msh-hero-grid {
+    grid-template-columns: 13fr 7fr;
+    height: 720px;
+  }
+  .msh-hero-slider-wrap,
+  .msh-slide { height: 720px; }
+  .msh-side-banners {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 16px;
+    height: 720px;
+  }
+  .msh-side-large { height: 100%; }
+  .msh-mini-row {
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    height: 100%;
+  }
+  .msh-mini { height: 100%; }
+}
+
+/* Daily Special Deals — slider banner Image fill parent */
+.ms-sb-banner { height: 320px; }
+@media (min-width: 750px) { .ms-sb-banner { height: 380px; } }
+@media (min-width: 992px) {
+  .ms-sb-banner { height: 440px; }
+  .ms-sb-slider-wrap { height: 440px; }
+}

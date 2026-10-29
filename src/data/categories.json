@@ -1,0 +1,8 @@
+[
+  { "id": "cat-1", "name": "Jewelry", "slug": "jewelry", "image": "/fashion/products/products3.png", "description": "Elegant jewelry collection", "productCount": 8 },
+  { "id": "cat-2", "name": "Beauty", "slug": "beauty", "image": "/fashion/products/products6.png", "description": "Beauty essentials", "productCount": 12 },
+  { "id": "cat-3", "name": "Glasses", "slug": "glasses", "image": "/fashion/products/products11.png", "description": "Stylish eyewear", "productCount": 9 },
+  { "id": "cat-4", "name": "Basketball", "slug": "basketball", "image": "/fashion/products/products9.png", "description": "Sports equipment", "productCount": 12 },
+  { "id": "cat-5", "name": "Backpack Fashion", "slug": "backpack-fashion", "image": "/fashion/products/products2.png", "description": "Trendy backpacks", "productCount": 12 },
+  { "id": "cat-6", "name": "Socks", "slug": "socks", "image": "/fashion/products/products13.png", "description": "Comfortable socks", "productCount": 12 }
+]

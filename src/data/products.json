@@ -1,0 +1,5637 @@
+[
+  {
+    "id": "1",
+    "slug": "casual-chambray-shirt",
+    "name": "Casual Chambray Shirt",
+    "vendor": "ELEGANT FASHION",
+    "price": 40,
+    "compareAtPrice": 55,
+    "currency": "USD",
+    "images": [
+      {
+        "id": "1-img-1",
+        "src": "/fashion/products/products1.png",
+        "alt": "Casual Chambray Shirt - Black"
+      },
+      {
+        "id": "1-img-2",
+        "src": "/fashion/products/products12.png",
+        "alt": "Casual Chambray Shirt - Blue"
+      },
+      {
+        "id": "1-img-3",
+        "src": "/fashion/products/products14.png",
+        "alt": "Casual Chambray Shirt - White"
+      },
+      {
+        "id": "1-img-4",
+        "src": "/fashion/products/products15.png",
+        "alt": "Casual Chambray Shirt - View 4"
+      },
+      {
+        "id": "1-img-5",
+        "src": "/fashion/products/products16.png",
+        "alt": "Casual Chambray Shirt - View 5"
+      },
+      {
+        "id": "1-img-6",
+        "src": "/fashion/products/products17.png",
+        "alt": "Casual Chambray Shirt - View 6"
+      },
+      {
+        "id": "1-img-7",
+        "src": "/fashion/products/products18.png",
+        "alt": "Casual Chambray Shirt - View 7"
+      },
+      {
+        "id": "1-img-8",
+        "src": "/fashion/products/products19.png",
+        "alt": "Casual Chambray Shirt - View 8"
+      },
+      {
+        "id": "1-img-9",
+        "src": "/fashion/products/products20.png",
+        "alt": "Casual Chambray Shirt - View 9"
+      },
+      {
+        "id": "1-img-10",
+        "src": "/fashion/products/products2.png",
+        "alt": "Casual Chambray Shirt - View 10"
+      }
+    ],
+    "variants": [
+      {
+        "id": "1-v1",
+        "color": "Black",
+        "size": "S",
+        "price": 40,
+        "compareAtPrice": 55,
+        "image": "/fashion/products/products1.png",
+        "available": true,
+        "sku": "CS-BLK-S"
+      },
+      {
+        "id": "1-v2",
+        "color": "Black",
+        "size": "M",
+        "price": 40,
+        "compareAtPrice": 55,
+        "image": "/fashion/products/products1.png",
+        "available": true,
+        "sku": "CS-BLK-M"
+      },
+      {
+        "id": "1-v3",
+        "color": "Black",
+        "size": "L",
+        "price": 40,
+        "compareAtPrice": 55,
+        "image": "/fashion/products/products1.png",
+        "available": true,
+        "sku": "CS-BLK-L"
+      },
+      {
+        "id": "1-v4",
+        "color": "Blue",
+        "size": "S",
+        "price": 40,
+        "compareAtPrice": 55,
+        "image": "/fashion/products/products12.png",
+        "available": true,
+        "sku": "CS-BLU-S"
+      },
+      {
+        "id": "1-v5",
+        "color": "Blue",
+        "size": "M",
+        "price": 40,
+        "compareAtPrice": 55,
+        "image": "/fashion/products/products12.png",
+        "available": true,
+        "sku": "CS-BLU-M"
+      },
+      {
+        "id": "1-v-white",
+        "color": "White",
+        "size": "S",
+        "price": 40,
+        "compareAtPrice": 55,
+        "image": "/fashion/products/products14.png",
+        "available": true,
+        "sku": "CS-001-WHI"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Black",
+        "value": "#000000",
+        "type": "hex"
+      },
+      {
+        "name": "Blue",
+        "value": "#3B82F6",
+        "type": "hex"
+      },
+      {
+        "name": "White",
+        "value": "#FFFFFF",
+        "type": "hex"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "category": "Tops",
+    "tags": [
+      "shirt",
+      "chambray",
+      "casual",
+      "women"
+    ],
+    "brand": "Ambaz fashion shopify theme",
+    "availability": "in-stock",
+    "badge": "sale",
+    "description": "Elevate your everyday style with our Casual Chambray Shirt, a versatile wardrobe staple that blends comfort and sophistication. Crafted from soft, breathable chambray fabric, this shirt offers a lightweight feel that's perfect for any season.",
+    "features": [
+      "Soft chambray fabric",
+      "Classic button-down front",
+      "Relaxed fit",
+      "Machine washable"
+    ],
+    "rating": 4.5,
+    "reviewCount": 4,
+    "reviews": [
+      {
+        "id": "r1",
+        "author": "Sarah M.",
+        "rating": 5,
+        "title": "Stylish and Comfortable",
+        "body": "I recently purchased the Classic Fit Denim Jacket from Fashion Brand, and I'm beyond impressed! The quality of the fabric is excellent, and it has just the right amount of stretch, making it incredibly comfortable to wear all day.",
+        "date": "2024-11-20",
+        "verified": true
+      },
+      {
+        "id": "r2",
+        "author": "James K.",
+        "rating": 4,
+        "title": "Great quality",
+        "body": "The fit is perfect, and it adds a stylish touch to any outfit. I've received so many compliments already. Highly recommend it.",
+        "date": "2024-10-15",
+        "verified": true
+      }
+    ],
+    "relatedProducts": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "pairsWellWith": [
+      "6",
+      "7",
+      "8"
+    ],
+    "createdAt": "2024-01-15",
+    "sku": "CS-001",
+    "countdownEnd": null,
+    "collections": ["basketball", "backpack-fashion"]
+  },
+  {
+    "id": "2",
+    "slug": "red-maxi-dress",
+    "name": "Red Maxi Dress",
+    "vendor": "ELEGANT FASHION",
+    "price": 38,
+    "compareAtPrice": 62,
+    "currency": "USD",
+    "images": [
+      {
+        "id": "2-img-1",
+        "src": "/fashion/products/products12.png",
+        "alt": "Red Maxi Dress - Red"
+      },
+      {
+        "id": "2-img-2",
+        "src": "/fashion/products/products14.png",
+        "alt": "Red Maxi Dress - Pink"
+      },
+      {
+        "id": "2-img-3",
+        "src": "/fashion/products/products15.png",
+        "alt": "Red Maxi Dress - Black"
+      },
+      {
+        "id": "2-img-4",
+        "src": "/fashion/products/products16.png",
+        "alt": "Red Maxi Dress - Navy"
+      },
+      {
+        "id": "2-img-5",
+        "src": "/fashion/products/products1.png",
+        "alt": "Red Maxi Dress - View 5"
+      },
+      {
+        "id": "2-img-6",
+        "src": "/fashion/products/products17.png",
+        "alt": "Red Maxi Dress - View 6"
+      },
+      {
+        "id": "2-img-7",
+        "src": "/fashion/products/products18.png",
+        "alt": "Red Maxi Dress - View 7"
+      },
+      {
+        "id": "2-img-8",
+        "src": "/fashion/products/products19.png",
+        "alt": "Red Maxi Dress - View 8"
+      },
+      {
+        "id": "2-img-9",
+        "src": "/fashion/products/products20.png",
+        "alt": "Red Maxi Dress - View 9"
+      },
+      {
+        "id": "2-img-10",
+        "src": "/fashion/products/products2.png",
+        "alt": "Red Maxi Dress - View 10"
+      }
+    ],
+    "variants": [
+      {
+        "id": "2-v1",
+        "color": "Red",
+        "size": "S",
+        "price": 38,
+        "compareAtPrice": 62,
+        "image": "/fashion/products/products12.png",
+        "available": true,
+        "sku": "RMD-RED-S"
+      },
+      {
+        "id": "2-v2",
+        "color": "Red",
+        "size": "M",
+        "price": 38,
+        "compareAtPrice": 62,
+        "image": "/fashion/products/products12.png",
+        "available": true,
+        "sku": "RMD-RED-M"
+      },
+      {
+        "id": "2-v3",
+        "color": "Red",
+        "size": "L",
+        "price": 38,
+        "compareAtPrice": 62,
+        "image": "/fashion/products/products12.png",
+        "available": true,
+        "sku": "RMD-RED-L"
+      },
+      {
+        "id": "2-v4",
+        "color": "Red",
+        "size": "XL",
+        "price": 38,
+        "compareAtPrice": 62,
+        "image": "/fashion/products/products12.png",
+        "available": true,
+        "sku": "RMD-RED-XL"
+      },
+      {
+        "id": "2-v-pink",
+        "color": "Pink",
+        "size": "S",
+        "price": 38,
+        "compareAtPrice": 62,
+        "image": "/fashion/products/products14.png",
+        "available": true,
+        "sku": "RMD-001-PIN"
+      },
+      {
+        "id": "2-v-black",
+        "color": "Black",
+        "size": "S",
+        "price": 38,
+        "compareAtPrice": 62,
+        "image": "/fashion/products/products15.png",
+        "available": true,
+        "sku": "RMD-001-BLA"
+      },
+      {
+        "id": "2-v-navy",
+        "color": "Navy",
+        "size": "S",
+        "price": 38,
+        "compareAtPrice": 62,
+        "image": "/fashion/products/products16.png",
+        "available": true,
+        "sku": "RMD-001-NAV"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Red",
+        "value": "#EF4444",
+        "type": "hex"
+      },
+      {
+        "name": "Pink",
+        "value": "#EC4899",
+        "type": "hex"
+      },
+      {
+        "name": "Black",
+        "value": "#000000",
+        "type": "hex"
+      },
+      {
+        "name": "Navy",
+        "value": "#1E3A5F",
+        "type": "hex"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "category": "Dresses",
+    "tags": [
+      "dress",
+      "maxi",
+      "red",
+      "women",
+      "summer"
+    ],
+    "brand": "Ambaz fashion shopify theme",
+    "availability": "in-stock",
+    "badge": "sale",
+    "description": "Make a bold statement with our Red Maxi Dress. This stunning floor-length dress features a flattering silhouette with a comfortable elastic waist and flowing skirt.",
+    "features": [
+      "Floor-length design",
+      "Elastic waist",
+      "Soft fabric",
+      "Machine washable"
+    ],
+    "rating": 4.8,
+    "reviewCount": 12,
+    "reviews": [
+      {
+        "id": "r3",
+        "author": "Emily R.",
+        "rating": 5,
+        "title": "Gorgeous dress!",
+        "body": "Absolutely love this dress. The color is vibrant and the fit is flattering.",
+        "date": "2024-09-10",
+        "verified": true
+      }
+    ],
+    "relatedProducts": [
+      "1",
+      "3",
+      "5",
+      "7"
+    ],
+    "pairsWellWith": [
+      "1",
+      "6"
+    ],
+    "createdAt": "2024-02-20",
+    "sku": "RMD-001",
+    "countdownEnd": null,
+    "collections": ["beauty", "backpack-fashion"]
+  },
+  {
+    "id": "3",
+    "slug": "classic-wrap-dress",
+    "name": "Classic Wrap Dress",
+    "vendor": "ELEGANT FASHION",
+    "price": 56,
+    "compareAtPrice": null,
+    "currency": "USD",
+    "images": [
+      {
+        "id": "3-img-1",
+        "src": "/fashion/products/products14.png",
+        "alt": "Classic Wrap Dress - Black"
+      },
+      {
+        "id": "3-img-2",
+        "src": "/fashion/products/products15.png",
+        "alt": "Classic Wrap Dress - Navy"
+      },
+      {
+        "id": "3-img-3",
+        "src": "/fashion/products/products1.png",
+        "alt": "Classic Wrap Dress - View 3"
+      },
+      {
+        "id": "3-img-4",
+        "src": "/fashion/products/products12.png",
+        "alt": "Classic Wrap Dress - View 4"
+      },
+      {
+        "id": "3-img-5",
+        "src": "/fashion/products/products16.png",
+        "alt": "Classic Wrap Dress - View 5"
+      },
+      {
+        "id": "3-img-6",
+        "src": "/fashion/products/products17.png",
+        "alt": "Classic Wrap Dress - View 6"
+      },
+      {
+        "id": "3-img-7",
+        "src": "/fashion/products/products18.png",
+        "alt": "Classic Wrap Dress - View 7"
+      },
+      {
+        "id": "3-img-8",
+        "src": "/fashion/products/products19.png",
+        "alt": "Classic Wrap Dress - View 8"
+      },
+      {
+        "id": "3-img-9",
+        "src": "/fashion/products/products20.png",
+        "alt": "Classic Wrap Dress - View 9"
+      },
+      {
+        "id": "3-img-10",
+        "src": "/fashion/products/products2.png",
+        "alt": "Classic Wrap Dress - View 10"
+      }
+    ],
+    "variants": [
+      {
+        "id": "3-v1",
+        "color": "Black",
+        "size": "S",
+        "price": 56,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products14.png",
+        "available": true,
+        "sku": "CWD-BLK-S"
+      },
+      {
+        "id": "3-v2",
+        "color": "Black",
+        "size": "M",
+        "price": 56,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products14.png",
+        "available": true,
+        "sku": "CWD-BLK-M"
+      },
+      {
+        "id": "3-v3",
+        "color": "Black",
+        "size": "L",
+        "price": 56,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products14.png",
+        "available": true,
+        "sku": "CWD-BLK-L"
+      },
+      {
+        "id": "3-v-navy",
+        "color": "Navy",
+        "size": "S",
+        "price": 56,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products15.png",
+        "available": true,
+        "sku": "CWD-001-NAV"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Black",
+        "value": "#000000",
+        "type": "hex"
+      },
+      {
+        "name": "Navy",
+        "value": "#1E3A5F",
+        "type": "hex"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "category": "Dresses",
+    "tags": [
+      "dress",
+      "wrap",
+      "classic",
+      "women"
+    ],
+    "brand": "Ambaz fashion shopify theme",
+    "availability": "in-stock",
+    "badge": null,
+    "description": "A timeless classic wrap dress that flatters every body type. Features a V-neckline, adjustable wrap tie, and knee-length hem.",
+    "features": [
+      "V-neckline",
+      "Adjustable wrap tie",
+      "Knee-length",
+      "Stretch fabric"
+    ],
+    "rating": 4.6,
+    "reviewCount": 8,
+    "reviews": [],
+    "relatedProducts": [
+      "2",
+      "4",
+      "5",
+      "7"
+    ],
+    "pairsWellWith": [
+      "1",
+      "8"
+    ],
+    "createdAt": "2024-03-05",
+    "sku": "CWD-001",
+    "countdownEnd": null,
+    "collections": ["beauty", "backpack-fashion"]
+  },
+  {
+    "id": "4",
+    "slug": "satin-symphony-skirt",
+    "name": "Satin Symphony Skirt",
+    "vendor": "ELEGANT FASHION",
+    "price": 62,
+    "compareAtPrice": null,
+    "currency": "USD",
+    "images": [
+      {
+        "id": "4-img-1",
+        "src": "/fashion/products/products15.png",
+        "alt": "Satin Symphony Skirt - Black"
+      },
+      {
+        "id": "4-img-2",
+        "src": "/fashion/products/products16.png",
+        "alt": "Satin Symphony Skirt - Champagne"
+      },
+      {
+        "id": "4-img-3",
+        "src": "/fashion/products/products1.png",
+        "alt": "Satin Symphony Skirt - View 3"
+      },
+      {
+        "id": "4-img-4",
+        "src": "/fashion/products/products12.png",
+        "alt": "Satin Symphony Skirt - View 4"
+      },
+      {
+        "id": "4-img-5",
+        "src": "/fashion/products/products14.png",
+        "alt": "Satin Symphony Skirt - View 5"
+      },
+      {
+        "id": "4-img-6",
+        "src": "/fashion/products/products17.png",
+        "alt": "Satin Symphony Skirt - View 6"
+      },
+      {
+        "id": "4-img-7",
+        "src": "/fashion/products/products18.png",
+        "alt": "Satin Symphony Skirt - View 7"
+      },
+      {
+        "id": "4-img-8",
+        "src": "/fashion/products/products19.png",
+        "alt": "Satin Symphony Skirt - View 8"
+      },
+      {
+        "id": "4-img-9",
+        "src": "/fashion/products/products20.png",
+        "alt": "Satin Symphony Skirt - View 9"
+      },
+      {
+        "id": "4-img-10",
+        "src": "/fashion/products/products2.png",
+        "alt": "Satin Symphony Skirt - View 10"
+      }
+    ],
+    "variants": [
+      {
+        "id": "4-v1",
+        "color": "Black",
+        "size": "S",
+        "price": 62,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products15.png",
+        "available": true,
+        "sku": "SSK-BLK-S"
+      },
+      {
+        "id": "4-v2",
+        "color": "Black",
+        "size": "M",
+        "price": 62,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products15.png",
+        "available": true,
+        "sku": "SSK-BLK-M"
+      },
+      {
+        "id": "4-v-champagne",
+        "color": "Champagne",
+        "size": "S",
+        "price": 62,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products16.png",
+        "available": true,
+        "sku": "SSK-001-CHA"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Black",
+        "value": "#000000",
+        "type": "hex"
+      },
+      {
+        "name": "Champagne",
+        "value": "#F7E7CE",
+        "type": "hex"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "category": "Bottoms",
+    "tags": [
+      "skirt",
+      "satin",
+      "elegant",
+      "women"
+    ],
+    "brand": "Ambaz fashion shopify theme",
+    "availability": "in-stock",
+    "badge": null,
+    "description": "Luxurious satin skirt with a flowing silhouette. Perfect for both casual and formal occasions.",
+    "features": [
+      "Satin fabric",
+      "Elastic waistband",
+      "Midi length",
+      "Lined"
+    ],
+    "rating": 4.3,
+    "reviewCount": 5,
+    "reviews": [],
+    "relatedProducts": [
+      "1",
+      "3",
+      "5",
+      "6"
+    ],
+    "pairsWellWith": [
+      "1",
+      "3"
+    ],
+    "createdAt": "2024-03-10",
+    "sku": "SSK-001",
+    "countdownEnd": null,
+    "collections": ["glasses", "backpack-fashion"]
+  },
+  {
+    "id": "5",
+    "slug": "active-gym-shorts",
+    "name": "Active Gym Shorts",
+    "vendor": "ACTIVEWEAR",
+    "price": 32,
+    "compareAtPrice": 44,
+    "currency": "USD",
+    "images": [
+      {
+        "id": "5-img-1",
+        "src": "/fashion/products/products16.png",
+        "alt": "Active Gym Shorts - Black"
+      },
+      {
+        "id": "5-img-2",
+        "src": "/fashion/products/products17.png",
+        "alt": "Active Gym Shorts - Grey"
+      },
+      {
+        "id": "5-img-3",
+        "src": "/fashion/products/products18.png",
+        "alt": "Active Gym Shorts - Navy"
+      },
+      {
+        "id": "5-img-4",
+        "src": "/fashion/products/products1.png",
+        "alt": "Active Gym Shorts - View 4"
+      },
+      {
+        "id": "5-img-5",
+        "src": "/fashion/products/products12.png",
+        "alt": "Active Gym Shorts - View 5"
+      },
+      {
+        "id": "5-img-6",
+        "src": "/fashion/products/products14.png",
+        "alt": "Active Gym Shorts - View 6"
+      },
+      {
+        "id": "5-img-7",
+        "src": "/fashion/products/products15.png",
+        "alt": "Active Gym Shorts - View 7"
+      },
+      {
+        "id": "5-img-8",
+        "src": "/fashion/products/products19.png",
+        "alt": "Active Gym Shorts - View 8"
+      },
+      {
+        "id": "5-img-9",
+        "src": "/fashion/products/products20.png",
+        "alt": "Active Gym Shorts - View 9"
+      },
+      {
+        "id": "5-img-10",
+        "src": "/fashion/products/products2.png",
+        "alt": "Active Gym Shorts - View 10"
+      }
+    ],
+    "variants": [
+      {
+        "id": "5-v1",
+        "color": "Black",
+        "size": "S",
+        "price": 32,
+        "compareAtPrice": 44,
+        "image": "/fashion/products/products16.png",
+        "available": true,
+        "sku": "AGS-BLK-S"
+      },
+      {
+        "id": "5-v2",
+        "color": "Black",
+        "size": "M",
+        "price": 32,
+        "compareAtPrice": 44,
+        "image": "/fashion/products/products16.png",
+        "available": true,
+        "sku": "AGS-BLK-M"
+      },
+      {
+        "id": "5-v3",
+        "color": "Grey",
+        "size": "M",
+        "price": 32,
+        "compareAtPrice": 44,
+        "image": "/fashion/products/products17.png",
+        "available": true,
+        "sku": "AGS-GRY-M"
+      },
+      {
+        "id": "5-v-navy",
+        "color": "Navy",
+        "size": "S",
+        "price": 32,
+        "compareAtPrice": 44,
+        "image": "/fashion/products/products18.png",
+        "available": true,
+        "sku": "AGS-001-NAV"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Black",
+        "value": "#000000",
+        "type": "hex"
+      },
+      {
+        "name": "Grey",
+        "value": "#9CA3AF",
+        "type": "hex"
+      },
+      {
+        "name": "Navy",
+        "value": "#1E3A5F",
+        "type": "hex"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "category": "Activewear",
+    "tags": [
+      "shorts",
+      "gym",
+      "active",
+      "sports",
+      "women"
+    ],
+    "brand": "ActiveWave",
+    "availability": "in-stock",
+    "badge": "sale",
+    "description": "High-performance gym shorts with moisture-wicking fabric. Features a comfortable elastic waistband and built-in liner.",
+    "features": [
+      "Moisture-wicking",
+      "Elastic waistband",
+      "Built-in liner",
+      "Side pockets"
+    ],
+    "rating": 4.7,
+    "reviewCount": 22,
+    "reviews": [],
+    "relatedProducts": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "pairsWellWith": [
+      "9",
+      "10"
+    ],
+    "createdAt": "2024-04-01",
+    "sku": "AGS-001",
+    "countdownEnd": null,
+    "collections": ["basketball"]
+  },
+  {
+    "id": "6",
+    "slug": "black-silk-wrap-skirt",
+    "name": "Black Silk Wrap Skirt",
+    "vendor": "ELEGANT FASHION",
+    "price": 68,
+    "compareAtPrice": null,
+    "currency": "USD",
+    "images": [
+      {
+        "id": "6-img-1",
+        "src": "/fashion/products/products17.png",
+        "alt": "Black Silk Wrap Skirt - Black"
+      },
+      {
+        "id": "6-img-2",
+        "src": "/fashion/products/products1.png",
+        "alt": "Black Silk Wrap Skirt - View 2"
+      },
+      {
+        "id": "6-img-3",
+        "src": "/fashion/products/products12.png",
+        "alt": "Black Silk Wrap Skirt - View 3"
+      },
+      {
+        "id": "6-img-4",
+        "src": "/fashion/products/products14.png",
+        "alt": "Black Silk Wrap Skirt - View 4"
+      },
+      {
+        "id": "6-img-5",
+        "src": "/fashion/products/products15.png",
+        "alt": "Black Silk Wrap Skirt - View 5"
+      },
+      {
+        "id": "6-img-6",
+        "src": "/fashion/products/products16.png",
+        "alt": "Black Silk Wrap Skirt - View 6"
+      },
+      {
+        "id": "6-img-7",
+        "src": "/fashion/products/products18.png",
+        "alt": "Black Silk Wrap Skirt - View 7"
+      },
+      {
+        "id": "6-img-8",
+        "src": "/fashion/products/products19.png",
+        "alt": "Black Silk Wrap Skirt - View 8"
+      },
+      {
+        "id": "6-img-9",
+        "src": "/fashion/products/products20.png",
+        "alt": "Black Silk Wrap Skirt - View 9"
+      },
+      {
+        "id": "6-img-10",
+        "src": "/fashion/products/products2.png",
+        "alt": "Black Silk Wrap Skirt - View 10"
+      }
+    ],
+    "variants": [
+      {
+        "id": "6-v1",
+        "color": "Black",
+        "size": "S",
+        "price": 68,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products17.png",
+        "available": true,
+        "sku": "BSWS-BLK-S"
+      },
+      {
+        "id": "6-v2",
+        "color": "Black",
+        "size": "M",
+        "price": 68,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products17.png",
+        "available": true,
+        "sku": "BSWS-BLK-M"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Black",
+        "value": "#000000",
+        "type": "hex"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "category": "Bottoms",
+    "tags": [
+      "skirt",
+      "silk",
+      "wrap",
+      "women"
+    ],
+    "brand": "Ambaz fashion shopify theme",
+    "availability": "in-stock",
+    "badge": null,
+    "description": "Luxurious silk wrap skirt with a timeless silhouette.",
+    "features": [
+      "100% Silk",
+      "Wrap closure",
+      "Midi length"
+    ],
+    "rating": 4.4,
+    "reviewCount": 6,
+    "reviews": [],
+    "relatedProducts": [
+      "4",
+      "3",
+      "7",
+      "8"
+    ],
+    "pairsWellWith": [
+      "1",
+      "3"
+    ],
+    "createdAt": "2024-02-01",
+    "sku": "BSWS-001",
+    "countdownEnd": null,
+    "collections": ["glasses", "backpack-fashion"]
+  },
+  {
+    "id": "7",
+    "slug": "bohemian-maxi-dress",
+    "name": "Bohemian Maxi Dress",
+    "vendor": "ELEGANT FASHION",
+    "price": 55,
+    "compareAtPrice": 70,
+    "currency": "USD",
+    "images": [
+      {
+        "id": "7-img-1",
+        "src": "/fashion/products/products18.png",
+        "alt": "Bohemian Maxi Dress - Beige"
+      },
+      {
+        "id": "7-img-2",
+        "src": "/fashion/products/products19.png",
+        "alt": "Bohemian Maxi Dress - Green"
+      },
+      {
+        "id": "7-img-3",
+        "src": "/fashion/products/products1.png",
+        "alt": "Bohemian Maxi Dress - View 3"
+      },
+      {
+        "id": "7-img-4",
+        "src": "/fashion/products/products12.png",
+        "alt": "Bohemian Maxi Dress - View 4"
+      },
+      {
+        "id": "7-img-5",
+        "src": "/fashion/products/products14.png",
+        "alt": "Bohemian Maxi Dress - View 5"
+      },
+      {
+        "id": "7-img-6",
+        "src": "/fashion/products/products15.png",
+        "alt": "Bohemian Maxi Dress - View 6"
+      },
+      {
+        "id": "7-img-7",
+        "src": "/fashion/products/products16.png",
+        "alt": "Bohemian Maxi Dress - View 7"
+      },
+      {
+        "id": "7-img-8",
+        "src": "/fashion/products/products17.png",
+        "alt": "Bohemian Maxi Dress - View 8"
+      },
+      {
+        "id": "7-img-9",
+        "src": "/fashion/products/products20.png",
+        "alt": "Bohemian Maxi Dress - View 9"
+      },
+      {
+        "id": "7-img-10",
+        "src": "/fashion/products/products2.png",
+        "alt": "Bohemian Maxi Dress - View 10"
+      }
+    ],
+    "variants": [
+      {
+        "id": "7-v1",
+        "color": "Beige",
+        "size": "S",
+        "price": 55,
+        "compareAtPrice": 70,
+        "image": "/fashion/products/products18.png",
+        "available": true,
+        "sku": "BMD-BGE-S"
+      },
+      {
+        "id": "7-v2",
+        "color": "Beige",
+        "size": "M",
+        "price": 55,
+        "compareAtPrice": 70,
+        "image": "/fashion/products/products18.png",
+        "available": true,
+        "sku": "BMD-BGE-M"
+      },
+      {
+        "id": "7-v-green",
+        "color": "Green",
+        "size": "S",
+        "price": 55,
+        "compareAtPrice": 70,
+        "image": "/fashion/products/products19.png",
+        "available": true,
+        "sku": "BMD-001-GRE"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Beige",
+        "value": "#D2B48C",
+        "type": "hex"
+      },
+      {
+        "name": "Green",
+        "value": "#22C55E",
+        "type": "hex"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "category": "Dresses",
+    "tags": [
+      "dress",
+      "bohemian",
+      "maxi",
+      "women",
+      "summer"
+    ],
+    "brand": "Ambaz fashion shopify theme",
+    "availability": "in-stock",
+    "badge": "sale",
+    "description": "Free-spirited bohemian maxi dress with floral print and flowing fabric.",
+    "features": [
+      "Floral print",
+      "V-neckline",
+      "Maxi length",
+      "Lightweight"
+    ],
+    "rating": 4.5,
+    "reviewCount": 15,
+    "reviews": [],
+    "relatedProducts": [
+      "2",
+      "3",
+      "8",
+      "14"
+    ],
+    "pairsWellWith": [
+      "6"
+    ],
+    "createdAt": "2024-04-15",
+    "sku": "BMD-001",
+    "countdownEnd": null,
+    "collections": ["beauty", "backpack-fashion"]
+  },
+  {
+    "id": "8",
+    "slug": "sophisticated-dress",
+    "name": "Sophisticated Dress",
+    "vendor": "ELEGANT FASHION",
+    "price": 52,
+    "compareAtPrice": null,
+    "currency": "USD",
+    "images": [
+      {
+        "id": "8-img-1",
+        "src": "/fashion/products/products19.png",
+        "alt": "Sophisticated Dress - Red"
+      },
+      {
+        "id": "8-img-2",
+        "src": "/fashion/products/products20.png",
+        "alt": "Sophisticated Dress - Pink"
+      },
+      {
+        "id": "8-img-3",
+        "src": "/fashion/products/products1.png",
+        "alt": "Sophisticated Dress - View 3"
+      },
+      {
+        "id": "8-img-4",
+        "src": "/fashion/products/products12.png",
+        "alt": "Sophisticated Dress - View 4"
+      },
+      {
+        "id": "8-img-5",
+        "src": "/fashion/products/products14.png",
+        "alt": "Sophisticated Dress - View 5"
+      },
+      {
+        "id": "8-img-6",
+        "src": "/fashion/products/products15.png",
+        "alt": "Sophisticated Dress - View 6"
+      },
+      {
+        "id": "8-img-7",
+        "src": "/fashion/products/products16.png",
+        "alt": "Sophisticated Dress - View 7"
+      },
+      {
+        "id": "8-img-8",
+        "src": "/fashion/products/products17.png",
+        "alt": "Sophisticated Dress - View 8"
+      },
+      {
+        "id": "8-img-9",
+        "src": "/fashion/products/products18.png",
+        "alt": "Sophisticated Dress - View 9"
+      },
+      {
+        "id": "8-img-10",
+        "src": "/fashion/products/products2.png",
+        "alt": "Sophisticated Dress - View 10"
+      }
+    ],
+    "variants": [
+      {
+        "id": "8-v1",
+        "color": "Red",
+        "size": "S",
+        "price": 52,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products19.png",
+        "available": true,
+        "sku": "SD-RED-S"
+      },
+      {
+        "id": "8-v2",
+        "color": "Red",
+        "size": "M",
+        "price": 52,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products19.png",
+        "available": true,
+        "sku": "SD-RED-M"
+      },
+      {
+        "id": "8-v-pink",
+        "color": "Pink",
+        "size": "S",
+        "price": 52,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products20.png",
+        "available": true,
+        "sku": "SD-001-PIN"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Red",
+        "value": "#EF4444",
+        "type": "hex"
+      },
+      {
+        "name": "Pink",
+        "value": "#EC4899",
+        "type": "hex"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "category": "Dresses",
+    "tags": [
+      "dress",
+      "sophisticated",
+      "elegant",
+      "women"
+    ],
+    "brand": "Ambaz fashion shopify theme",
+    "availability": "in-stock",
+    "badge": null,
+    "description": "An elegantly sophisticated dress for special occasions.",
+    "features": [
+      "Premium fabric",
+      "Tailored fit",
+      "Knee length"
+    ],
+    "rating": 4.2,
+    "reviewCount": 3,
+    "reviews": [],
+    "relatedProducts": [
+      "2",
+      "3",
+      "7",
+      "14"
+    ],
+    "pairsWellWith": [
+      "4"
+    ],
+    "createdAt": "2024-05-01",
+    "sku": "SD-001",
+    "countdownEnd": null,
+    "collections": ["beauty", "jewelry"]
+  },
+  {
+    "id": "9",
+    "slug": "rapiddry-sports-tee",
+    "name": "RapidDry Sports Tee",
+    "vendor": "ACTIVEWEAR",
+    "price": 52,
+    "compareAtPrice": null,
+    "currency": "USD",
+    "images": [
+      {
+        "id": "9-img-1",
+        "src": "/fashion/products/products20.png",
+        "alt": "RapidDry Sports Tee - White"
+      },
+      {
+        "id": "9-img-2",
+        "src": "/fashion/products/products2.png",
+        "alt": "RapidDry Sports Tee - Black"
+      },
+      {
+        "id": "9-img-3",
+        "src": "/fashion/products/products1.png",
+        "alt": "RapidDry Sports Tee - View 3"
+      },
+      {
+        "id": "9-img-4",
+        "src": "/fashion/products/products12.png",
+        "alt": "RapidDry Sports Tee - View 4"
+      },
+      {
+        "id": "9-img-5",
+        "src": "/fashion/products/products14.png",
+        "alt": "RapidDry Sports Tee - View 5"
+      },
+      {
+        "id": "9-img-6",
+        "src": "/fashion/products/products15.png",
+        "alt": "RapidDry Sports Tee - View 6"
+      },
+      {
+        "id": "9-img-7",
+        "src": "/fashion/products/products16.png",
+        "alt": "RapidDry Sports Tee - View 7"
+      },
+      {
+        "id": "9-img-8",
+        "src": "/fashion/products/products17.png",
+        "alt": "RapidDry Sports Tee - View 8"
+      },
+      {
+        "id": "9-img-9",
+        "src": "/fashion/products/products18.png",
+        "alt": "RapidDry Sports Tee - View 9"
+      },
+      {
+        "id": "9-img-10",
+        "src": "/fashion/products/products19.png",
+        "alt": "RapidDry Sports Tee - View 10"
+      }
+    ],
+    "variants": [
+      {
+        "id": "9-v1",
+        "color": "White",
+        "size": "S",
+        "price": 52,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products20.png",
+        "available": true,
+        "sku": "RST-WHT-S"
+      },
+      {
+        "id": "9-v2",
+        "color": "White",
+        "size": "M",
+        "price": 52,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products20.png",
+        "available": true,
+        "sku": "RST-WHT-M"
+      },
+      {
+        "id": "9-v-black",
+        "color": "Black",
+        "size": "S",
+        "price": 52,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products2.png",
+        "available": true,
+        "sku": "RST-001-BLA"
+      }
+    ],
+    "colors": [
+      {
+        "name": "White",
+        "value": "#FFFFFF",
+        "type": "hex"
+      },
+      {
+        "name": "Black",
+        "value": "#000000",
+        "type": "hex"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "category": "Activewear",
+    "tags": [
+      "tee",
+      "sports",
+      "active",
+      "women"
+    ],
+    "brand": "ActiveWave",
+    "availability": "in-stock",
+    "badge": null,
+    "description": "Quick-drying sports tee with breathable mesh panels.",
+    "features": [
+      "Quick-dry fabric",
+      "Mesh panels",
+      "Flatlock seams",
+      "Reflective logo"
+    ],
+    "rating": 4.6,
+    "reviewCount": 18,
+    "reviews": [],
+    "relatedProducts": [
+      "5",
+      "10",
+      "11",
+      "12"
+    ],
+    "pairsWellWith": [
+      "5",
+      "10"
+    ],
+    "createdAt": "2024-04-10",
+    "sku": "RST-001",
+    "countdownEnd": null,
+    "collections": ["basketball", "socks"]
+  },
+  {
+    "id": "10",
+    "slug": "stretch-training-pants",
+    "name": "Stretch Training Pants",
+    "vendor": "ACTIVEWEAR",
+    "price": 25,
+    "compareAtPrice": 45,
+    "currency": "USD",
+    "images": [
+      {
+        "id": "10-img-1",
+        "src": "/fashion/products/products2.png",
+        "alt": "Stretch Training Pants - Black"
+      },
+      {
+        "id": "10-img-2",
+        "src": "/fashion/products/products3.png",
+        "alt": "Stretch Training Pants - Grey"
+      },
+      {
+        "id": "10-img-3",
+        "src": "/fashion/products/products1.png",
+        "alt": "Stretch Training Pants - View 3"
+      },
+      {
+        "id": "10-img-4",
+        "src": "/fashion/products/products12.png",
+        "alt": "Stretch Training Pants - View 4"
+      },
+      {
+        "id": "10-img-5",
+        "src": "/fashion/products/products14.png",
+        "alt": "Stretch Training Pants - View 5"
+      },
+      {
+        "id": "10-img-6",
+        "src": "/fashion/products/products15.png",
+        "alt": "Stretch Training Pants - View 6"
+      },
+      {
+        "id": "10-img-7",
+        "src": "/fashion/products/products16.png",
+        "alt": "Stretch Training Pants - View 7"
+      },
+      {
+        "id": "10-img-8",
+        "src": "/fashion/products/products17.png",
+        "alt": "Stretch Training Pants - View 8"
+      },
+      {
+        "id": "10-img-9",
+        "src": "/fashion/products/products18.png",
+        "alt": "Stretch Training Pants - View 9"
+      },
+      {
+        "id": "10-img-10",
+        "src": "/fashion/products/products19.png",
+        "alt": "Stretch Training Pants - View 10"
+      }
+    ],
+    "variants": [
+      {
+        "id": "10-v1",
+        "color": "Black",
+        "size": "S",
+        "price": 25,
+        "compareAtPrice": 45,
+        "image": "/fashion/products/products2.png",
+        "available": true,
+        "sku": "STP-BLK-S"
+      },
+      {
+        "id": "10-v2",
+        "color": "Black",
+        "size": "M",
+        "price": 25,
+        "compareAtPrice": 45,
+        "image": "/fashion/products/products2.png",
+        "available": true,
+        "sku": "STP-BLK-M"
+      },
+      {
+        "id": "10-v-grey",
+        "color": "Grey",
+        "size": "S",
+        "price": 25,
+        "compareAtPrice": 45,
+        "image": "/fashion/products/products3.png",
+        "available": true,
+        "sku": "STP-001-GRE"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Black",
+        "value": "#000000",
+        "type": "hex"
+      },
+      {
+        "name": "Grey",
+        "value": "#6B7280",
+        "type": "hex"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "category": "Activewear",
+    "tags": [
+      "pants",
+      "training",
+      "stretch",
+      "women"
+    ],
+    "brand": "ActiveWave",
+    "availability": "in-stock",
+    "badge": "sale",
+    "description": "4-way stretch training pants with high waist support.",
+    "features": [
+      "4-way stretch",
+      "High waist",
+      "Moisture-wicking",
+      "Side pocket"
+    ],
+    "rating": 4.4,
+    "reviewCount": 10,
+    "reviews": [],
+    "relatedProducts": [
+      "5",
+      "9",
+      "11",
+      "12"
+    ],
+    "pairsWellWith": [
+      "5",
+      "9"
+    ],
+    "createdAt": "2024-03-20",
+    "sku": "STP-001",
+    "countdownEnd": null,
+    "collections": ["basketball", "socks"]
+  },
+  {
+    "id": "11",
+    "slug": "rapidmove-running-belt",
+    "name": "RapidMove Running Belt",
+    "vendor": "ACTIVEWEAR",
+    "price": 36,
+    "compareAtPrice": null,
+    "currency": "USD",
+    "images": [
+      {
+        "id": "11-img-1",
+        "src": "/fashion/products/products3.png",
+        "alt": "RapidMove Running Belt - Black"
+      },
+      {
+        "id": "11-img-2",
+        "src": "/fashion/products/products1.png",
+        "alt": "RapidMove Running Belt - View 2"
+      },
+      {
+        "id": "11-img-3",
+        "src": "/fashion/products/products12.png",
+        "alt": "RapidMove Running Belt - View 3"
+      },
+      {
+        "id": "11-img-4",
+        "src": "/fashion/products/products14.png",
+        "alt": "RapidMove Running Belt - View 4"
+      },
+      {
+        "id": "11-img-5",
+        "src": "/fashion/products/products15.png",
+        "alt": "RapidMove Running Belt - View 5"
+      },
+      {
+        "id": "11-img-6",
+        "src": "/fashion/products/products16.png",
+        "alt": "RapidMove Running Belt - View 6"
+      },
+      {
+        "id": "11-img-7",
+        "src": "/fashion/products/products17.png",
+        "alt": "RapidMove Running Belt - View 7"
+      },
+      {
+        "id": "11-img-8",
+        "src": "/fashion/products/products18.png",
+        "alt": "RapidMove Running Belt - View 8"
+      },
+      {
+        "id": "11-img-9",
+        "src": "/fashion/products/products19.png",
+        "alt": "RapidMove Running Belt - View 9"
+      },
+      {
+        "id": "11-img-10",
+        "src": "/fashion/products/products20.png",
+        "alt": "RapidMove Running Belt - View 10"
+      }
+    ],
+    "variants": [
+      {
+        "id": "11-v1",
+        "color": "Black",
+        "size": "One Size",
+        "price": 36,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products3.png",
+        "available": true,
+        "sku": "RRB-BLK-OS"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Black",
+        "value": "#000000",
+        "type": "hex"
+      }
+    ],
+    "sizes": [
+      "One Size"
+    ],
+    "category": "Accessories",
+    "tags": [
+      "belt",
+      "running",
+      "accessories",
+      "unisex"
+    ],
+    "brand": "ActiveWave",
+    "availability": "in-stock",
+    "badge": null,
+    "description": "Lightweight running belt with secure zippered pockets.",
+    "features": [
+      "Lightweight",
+      "Secure zip",
+      "Adjustable",
+      "Sweat-resistant"
+    ],
+    "rating": 4.1,
+    "reviewCount": 7,
+    "reviews": [],
+    "relatedProducts": [
+      "5",
+      "9",
+      "10",
+      "12"
+    ],
+    "pairsWellWith": [
+      "5"
+    ],
+    "createdAt": "2024-05-05",
+    "sku": "RRB-001",
+    "countdownEnd": null,
+    "collections": ["basketball", "jewelry"]
+  },
+  {
+    "id": "12",
+    "slug": "flexfit-training-gloves",
+    "name": "FlexFit Training Gloves",
+    "vendor": "ACTIVEWEAR",
+    "price": 28,
+    "compareAtPrice": 38,
+    "currency": "USD",
+    "images": [
+      {
+        "id": "12-img-1",
+        "src": "/fashion/products/products4.png",
+        "alt": "FlexFit Training Gloves - Black"
+      },
+      {
+        "id": "12-img-2",
+        "src": "/fashion/products/products1.png",
+        "alt": "FlexFit Training Gloves - View 2"
+      },
+      {
+        "id": "12-img-3",
+        "src": "/fashion/products/products12.png",
+        "alt": "FlexFit Training Gloves - View 3"
+      },
+      {
+        "id": "12-img-4",
+        "src": "/fashion/products/products14.png",
+        "alt": "FlexFit Training Gloves - View 4"
+      },
+      {
+        "id": "12-img-5",
+        "src": "/fashion/products/products15.png",
+        "alt": "FlexFit Training Gloves - View 5"
+      },
+      {
+        "id": "12-img-6",
+        "src": "/fashion/products/products16.png",
+        "alt": "FlexFit Training Gloves - View 6"
+      },
+      {
+        "id": "12-img-7",
+        "src": "/fashion/products/products17.png",
+        "alt": "FlexFit Training Gloves - View 7"
+      },
+      {
+        "id": "12-img-8",
+        "src": "/fashion/products/products18.png",
+        "alt": "FlexFit Training Gloves - View 8"
+      },
+      {
+        "id": "12-img-9",
+        "src": "/fashion/products/products19.png",
+        "alt": "FlexFit Training Gloves - View 9"
+      },
+      {
+        "id": "12-img-10",
+        "src": "/fashion/products/products20.png",
+        "alt": "FlexFit Training Gloves - View 10"
+      }
+    ],
+    "variants": [
+      {
+        "id": "12-v1",
+        "color": "Black",
+        "size": "S",
+        "price": 28,
+        "compareAtPrice": 38,
+        "image": "/fashion/products/products4.png",
+        "available": true,
+        "sku": "FTG-BLK-S"
+      },
+      {
+        "id": "12-v2",
+        "color": "Black",
+        "size": "M",
+        "price": 28,
+        "compareAtPrice": 38,
+        "image": "/fashion/products/products4.png",
+        "available": true,
+        "sku": "FTG-BLK-M"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Black",
+        "value": "#000000",
+        "type": "hex"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "category": "Accessories",
+    "tags": [
+      "gloves",
+      "training",
+      "fitness",
+      "unisex"
+    ],
+    "brand": "ActiveWave",
+    "availability": "in-stock",
+    "badge": "sale",
+    "description": "Padded training gloves with superior grip and wrist support.",
+    "features": [
+      "Padded palm",
+      "Wrist support",
+      "Breathable mesh",
+      "Anti-slip grip"
+    ],
+    "rating": 4.3,
+    "reviewCount": 14,
+    "reviews": [],
+    "relatedProducts": [
+      "5",
+      "9",
+      "10",
+      "11"
+    ],
+    "pairsWellWith": [
+      "5",
+      "10"
+    ],
+    "createdAt": "2024-04-25",
+    "sku": "FTG-001",
+    "countdownEnd": null,
+    "collections": ["basketball", "jewelry"]
+  },
+  {
+    "id": "13",
+    "slug": "rapidflex-sports-bra",
+    "name": "RapidFlex Sports Bra",
+    "vendor": "ACTIVEWEAR",
+    "price": 55,
+    "compareAtPrice": null,
+    "currency": "USD",
+    "images": [
+      {
+        "id": "13-img-1",
+        "src": "/fashion/products/products5.png",
+        "alt": "RapidFlex Sports Bra - Black"
+      },
+      {
+        "id": "13-img-2",
+        "src": "/fashion/products/products6.png",
+        "alt": "RapidFlex Sports Bra - Pink"
+      },
+      {
+        "id": "13-img-3",
+        "src": "/fashion/products/products1.png",
+        "alt": "RapidFlex Sports Bra - View 3"
+      },
+      {
+        "id": "13-img-4",
+        "src": "/fashion/products/products12.png",
+        "alt": "RapidFlex Sports Bra - View 4"
+      },
+      {
+        "id": "13-img-5",
+        "src": "/fashion/products/products14.png",
+        "alt": "RapidFlex Sports Bra - View 5"
+      },
+      {
+        "id": "13-img-6",
+        "src": "/fashion/products/products15.png",
+        "alt": "RapidFlex Sports Bra - View 6"
+      },
+      {
+        "id": "13-img-7",
+        "src": "/fashion/products/products16.png",
+        "alt": "RapidFlex Sports Bra - View 7"
+      },
+      {
+        "id": "13-img-8",
+        "src": "/fashion/products/products17.png",
+        "alt": "RapidFlex Sports Bra - View 8"
+      },
+      {
+        "id": "13-img-9",
+        "src": "/fashion/products/products18.png",
+        "alt": "RapidFlex Sports Bra - View 9"
+      },
+      {
+        "id": "13-img-10",
+        "src": "/fashion/products/products19.png",
+        "alt": "RapidFlex Sports Bra - View 10"
+      }
+    ],
+    "variants": [
+      {
+        "id": "13-v1",
+        "color": "Black",
+        "size": "S",
+        "price": 55,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products5.png",
+        "available": true,
+        "sku": "RSB-BLK-S"
+      },
+      {
+        "id": "13-v2",
+        "color": "Black",
+        "size": "M",
+        "price": 55,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products5.png",
+        "available": true,
+        "sku": "RSB-BLK-M"
+      },
+      {
+        "id": "13-v-pink",
+        "color": "Pink",
+        "size": "S",
+        "price": 55,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products6.png",
+        "available": true,
+        "sku": "RSB-001-PIN"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Black",
+        "value": "#000000",
+        "type": "hex"
+      },
+      {
+        "name": "Pink",
+        "value": "#EC4899",
+        "type": "hex"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "category": "Activewear",
+    "tags": [
+      "sports bra",
+      "active",
+      "fitness",
+      "women"
+    ],
+    "brand": "ActiveWave",
+    "availability": "in-stock",
+    "badge": null,
+    "description": "High-impact sports bra with maximum support and comfort.",
+    "features": [
+      "High impact support",
+      "Moisture-wicking",
+      "Padded cups",
+      "Racerback"
+    ],
+    "rating": 4.8,
+    "reviewCount": 25,
+    "reviews": [],
+    "relatedProducts": [
+      "5",
+      "9",
+      "10",
+      "12"
+    ],
+    "pairsWellWith": [
+      "5",
+      "10"
+    ],
+    "createdAt": "2024-05-10",
+    "sku": "RSB-001",
+    "countdownEnd": null,
+    "collections": ["basketball", "socks"]
+  },
+  {
+    "id": "14",
+    "slug": "enchanted-forest-tulle-dress",
+    "name": "Enchanted Forest Tulle Dress",
+    "vendor": "ELEGANT FASHION",
+    "price": 40,
+    "compareAtPrice": null,
+    "currency": "USD",
+    "images": [
+      {
+        "id": "14-img-1",
+        "src": "/fashion/products/products6.png",
+        "alt": "Enchanted Forest Tulle Dress - Green"
+      },
+      {
+        "id": "14-img-2",
+        "src": "/fashion/products/products7.png",
+        "alt": "Enchanted Forest Tulle Dress - Blue"
+      },
+      {
+        "id": "14-img-3",
+        "src": "/fashion/products/products1.png",
+        "alt": "Enchanted Forest Tulle Dress - View 3"
+      },
+      {
+        "id": "14-img-4",
+        "src": "/fashion/products/products12.png",
+        "alt": "Enchanted Forest Tulle Dress - View 4"
+      },
+      {
+        "id": "14-img-5",
+        "src": "/fashion/products/products14.png",
+        "alt": "Enchanted Forest Tulle Dress - View 5"
+      },
+      {
+        "id": "14-img-6",
+        "src": "/fashion/products/products15.png",
+        "alt": "Enchanted Forest Tulle Dress - View 6"
+      },
+      {
+        "id": "14-img-7",
+        "src": "/fashion/products/products16.png",
+        "alt": "Enchanted Forest Tulle Dress - View 7"
+      },
+      {
+        "id": "14-img-8",
+        "src": "/fashion/products/products17.png",
+        "alt": "Enchanted Forest Tulle Dress - View 8"
+      },
+      {
+        "id": "14-img-9",
+        "src": "/fashion/products/products18.png",
+        "alt": "Enchanted Forest Tulle Dress - View 9"
+      },
+      {
+        "id": "14-img-10",
+        "src": "/fashion/products/products19.png",
+        "alt": "Enchanted Forest Tulle Dress - View 10"
+      }
+    ],
+    "variants": [
+      {
+        "id": "14-v1",
+        "color": "Green",
+        "size": "S",
+        "price": 40,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products6.png",
+        "available": true,
+        "sku": "EFTD-GRN-S"
+      },
+      {
+        "id": "14-v2",
+        "color": "Green",
+        "size": "M",
+        "price": 40,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products6.png",
+        "available": true,
+        "sku": "EFTD-GRN-M"
+      },
+      {
+        "id": "14-v-blue",
+        "color": "Blue",
+        "size": "S",
+        "price": 40,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products7.png",
+        "available": true,
+        "sku": "EFTD-001-BLU"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Green",
+        "value": "#22C55E",
+        "type": "hex"
+      },
+      {
+        "name": "Blue",
+        "value": "#3B82F6",
+        "type": "hex"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "category": "Dresses",
+    "tags": [
+      "dress",
+      "tulle",
+      "elegant",
+      "women"
+    ],
+    "brand": "Ambaz fashion shopify theme",
+    "availability": "in-stock",
+    "badge": null,
+    "description": "A dreamy tulle dress with ethereal layers and delicate details.",
+    "features": [
+      "Multi-layer tulle",
+      "Sweetheart neckline",
+      "Hidden zipper",
+      "Lined"
+    ],
+    "rating": 4.9,
+    "reviewCount": 9,
+    "reviews": [],
+    "relatedProducts": [
+      "2",
+      "3",
+      "7",
+      "8"
+    ],
+    "pairsWellWith": [
+      "6"
+    ],
+    "createdAt": "2024-05-15",
+    "sku": "EFTD-001",
+    "countdownEnd": null,
+    "collections": ["beauty"]
+  },
+  {
+    "id": "15",
+    "slug": "timeless-trench-dress",
+    "name": "Timeless Trench Dress",
+    "vendor": "ELEGANT FASHION",
+    "price": 84,
+    "compareAtPrice": null,
+    "currency": "USD",
+    "images": [
+      {
+        "id": "15-img-1",
+        "src": "/fashion/products/products7.png",
+        "alt": "Timeless Trench Dress - Beige"
+      },
+      {
+        "id": "15-img-2",
+        "src": "/fashion/products/products8.png",
+        "alt": "Timeless Trench Dress - Black"
+      },
+      {
+        "id": "15-img-3",
+        "src": "/fashion/products/products1.png",
+        "alt": "Timeless Trench Dress - View 3"
+      },
+      {
+        "id": "15-img-4",
+        "src": "/fashion/products/products12.png",
+        "alt": "Timeless Trench Dress - View 4"
+      },
+      {
+        "id": "15-img-5",
+        "src": "/fashion/products/products14.png",
+        "alt": "Timeless Trench Dress - View 5"
+      },
+      {
+        "id": "15-img-6",
+        "src": "/fashion/products/products15.png",
+        "alt": "Timeless Trench Dress - View 6"
+      },
+      {
+        "id": "15-img-7",
+        "src": "/fashion/products/products16.png",
+        "alt": "Timeless Trench Dress - View 7"
+      },
+      {
+        "id": "15-img-8",
+        "src": "/fashion/products/products17.png",
+        "alt": "Timeless Trench Dress - View 8"
+      },
+      {
+        "id": "15-img-9",
+        "src": "/fashion/products/products18.png",
+        "alt": "Timeless Trench Dress - View 9"
+      },
+      {
+        "id": "15-img-10",
+        "src": "/fashion/products/products19.png",
+        "alt": "Timeless Trench Dress - View 10"
+      }
+    ],
+    "variants": [
+      {
+        "id": "15-v1",
+        "color": "Beige",
+        "size": "S",
+        "price": 84,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products7.png",
+        "available": true,
+        "sku": "TTD-BGE-S"
+      },
+      {
+        "id": "15-v2",
+        "color": "Beige",
+        "size": "M",
+        "price": 84,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products7.png",
+        "available": true,
+        "sku": "TTD-BGE-M"
+      },
+      {
+        "id": "15-v-black",
+        "color": "Black",
+        "size": "S",
+        "price": 84,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products8.png",
+        "available": true,
+        "sku": "TTD-001-BLA"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Beige",
+        "value": "#D2B48C",
+        "type": "hex"
+      },
+      {
+        "name": "Black",
+        "value": "#000000",
+        "type": "hex"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "category": "Dresses",
+    "tags": [
+      "dress",
+      "trench",
+      "classic",
+      "women"
+    ],
+    "brand": "Ambaz fashion shopify theme",
+    "availability": "in-stock",
+    "badge": null,
+    "description": "Classic trench dress with belted waist and structured shoulders.",
+    "features": [
+      "Belt closure",
+      "Structured shoulders",
+      "Button front",
+      "Pockets"
+    ],
+    "rating": 4.7,
+    "reviewCount": 11,
+    "reviews": [],
+    "relatedProducts": [
+      "3",
+      "7",
+      "8",
+      "14"
+    ],
+    "pairsWellWith": [
+      "6"
+    ],
+    "createdAt": "2024-06-01",
+    "sku": "TTD-001",
+    "countdownEnd": null,
+    "collections": ["beauty", "backpack-fashion"]
+  },
+  {
+    "id": "16",
+    "slug": "statement-sequin-dress",
+    "name": "Statement Sequin Dress",
+    "vendor": "ELEGANT FASHION",
+    "price": 45,
+    "compareAtPrice": null,
+    "currency": "USD",
+    "images": [
+      {
+        "id": "16-img-1",
+        "src": "/fashion/products/products8.png",
+        "alt": "Statement Sequin Dress - Gold"
+      },
+      {
+        "id": "16-img-2",
+        "src": "/fashion/products/products9.png",
+        "alt": "Statement Sequin Dress - Silver"
+      },
+      {
+        "id": "16-img-3",
+        "src": "/fashion/products/products10.png",
+        "alt": "Statement Sequin Dress - Black"
+      },
+      {
+        "id": "16-img-4",
+        "src": "/fashion/products/products1.png",
+        "alt": "Statement Sequin Dress - View 4"
+      },
+      {
+        "id": "16-img-5",
+        "src": "/fashion/products/products12.png",
+        "alt": "Statement Sequin Dress - View 5"
+      },
+      {
+        "id": "16-img-6",
+        "src": "/fashion/products/products14.png",
+        "alt": "Statement Sequin Dress - View 6"
+      },
+      {
+        "id": "16-img-7",
+        "src": "/fashion/products/products15.png",
+        "alt": "Statement Sequin Dress - View 7"
+      },
+      {
+        "id": "16-img-8",
+        "src": "/fashion/products/products16.png",
+        "alt": "Statement Sequin Dress - View 8"
+      },
+      {
+        "id": "16-img-9",
+        "src": "/fashion/products/products17.png",
+        "alt": "Statement Sequin Dress - View 9"
+      },
+      {
+        "id": "16-img-10",
+        "src": "/fashion/products/products18.png",
+        "alt": "Statement Sequin Dress - View 10"
+      }
+    ],
+    "variants": [
+      {
+        "id": "16-v1",
+        "color": "Gold",
+        "size": "S",
+        "price": 45,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products8.png",
+        "available": true,
+        "sku": "SSD-GLD-S"
+      },
+      {
+        "id": "16-v2",
+        "color": "Gold",
+        "size": "M",
+        "price": 45,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products8.png",
+        "available": true,
+        "sku": "SSD-GLD-M"
+      },
+      {
+        "id": "16-v-silver",
+        "color": "Silver",
+        "size": "S",
+        "price": 45,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products9.png",
+        "available": true,
+        "sku": "SSD-001-SIL"
+      },
+      {
+        "id": "16-v-black",
+        "color": "Black",
+        "size": "S",
+        "price": 45,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products10.png",
+        "available": true,
+        "sku": "SSD-001-BLA"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Gold",
+        "value": "#FFD700",
+        "type": "hex"
+      },
+      {
+        "name": "Silver",
+        "value": "#C0C0C0",
+        "type": "hex"
+      },
+      {
+        "name": "Black",
+        "value": "#000000",
+        "type": "hex"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "category": "Dresses",
+    "tags": [
+      "dress",
+      "sequin",
+      "party",
+      "women"
+    ],
+    "brand": "Ambaz fashion shopify theme",
+    "availability": "in-stock",
+    "badge": null,
+    "description": "Dazzling sequin dress perfect for parties and special occasions.",
+    "features": [
+      "All-over sequins",
+      "Fitted silhouette",
+      "Hidden zipper",
+      "Fully lined"
+    ],
+    "rating": 4.6,
+    "reviewCount": 7,
+    "reviews": [],
+    "relatedProducts": [
+      "2",
+      "8",
+      "14",
+      "15"
+    ],
+    "pairsWellWith": [],
+    "createdAt": "2024-06-10",
+    "sku": "SSD-001",
+    "countdownEnd": null,
+    "collections": ["beauty", "jewelry"]
+  },
+  {
+    "id": "17",
+    "slug": "adidas-nba-basketball",
+    "name": "Adidas NBA Basketball",
+    "vendor": "ADIDAS",
+    "price": 72,
+    "compareAtPrice": 116,
+    "currency": "USD",
+    "images": [
+      {
+        "id": "17-img-1",
+        "src": "/fashion/products/products9.png",
+        "alt": "Adidas NBA Basketball - Orange"
+      },
+      {
+        "id": "17-img-2",
+        "src": "/fashion/products/products10.png",
+        "alt": "Adidas NBA Basketball - Red"
+      },
+      {
+        "id": "17-img-3",
+        "src": "/fashion/products/products1.png",
+        "alt": "Adidas NBA Basketball - View 3"
+      },
+      {
+        "id": "17-img-4",
+        "src": "/fashion/products/products12.png",
+        "alt": "Adidas NBA Basketball - View 4"
+      },
+      {
+        "id": "17-img-5",
+        "src": "/fashion/products/products14.png",
+        "alt": "Adidas NBA Basketball - View 5"
+      },
+      {
+        "id": "17-img-6",
+        "src": "/fashion/products/products15.png",
+        "alt": "Adidas NBA Basketball - View 6"
+      },
+      {
+        "id": "17-img-7",
+        "src": "/fashion/products/products16.png",
+        "alt": "Adidas NBA Basketball - View 7"
+      },
+      {
+        "id": "17-img-8",
+        "src": "/fashion/products/products17.png",
+        "alt": "Adidas NBA Basketball - View 8"
+      },
+      {
+        "id": "17-img-9",
+        "src": "/fashion/products/products18.png",
+        "alt": "Adidas NBA Basketball - View 9"
+      },
+      {
+        "id": "17-img-10",
+        "src": "/fashion/products/products19.png",
+        "alt": "Adidas NBA Basketball - View 10"
+      }
+    ],
+    "variants": [
+      {
+        "id": "17-v1",
+        "color": "Orange",
+        "size": "7",
+        "price": 72,
+        "compareAtPrice": 116,
+        "image": "/fashion/products/products9.png",
+        "available": true,
+        "sku": "ANB-ORG-7"
+      },
+      {
+        "id": "17-v-red",
+        "color": "Red",
+        "size": "5",
+        "price": 72,
+        "compareAtPrice": 116,
+        "image": "/fashion/products/products10.png",
+        "available": true,
+        "sku": "ANB-001-RED"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Orange",
+        "value": "#F97316",
+        "type": "hex"
+      },
+      {
+        "name": "Red",
+        "value": "#EF4444",
+        "type": "hex"
+      }
+    ],
+    "sizes": [
+      "5",
+      "6",
+      "7"
+    ],
+    "category": "Sports",
+    "tags": [
+      "basketball",
+      "adidas",
+      "sports",
+      "NBA"
+    ],
+    "brand": "Adidas",
+    "availability": "in-stock",
+    "badge": "sale",
+    "description": "Official NBA game basketball by Adidas with premium composite leather.",
+    "features": [
+      "Composite leather",
+      "Official size",
+      "NBA logo",
+      "Indoor/outdoor"
+    ],
+    "rating": 4.5,
+    "reviewCount": 30,
+    "reviews": [],
+    "relatedProducts": [
+      "18",
+      "19"
+    ],
+    "pairsWellWith": [],
+    "createdAt": "2024-01-01",
+    "sku": "ANB-001",
+    "countdownEnd": null,
+    "collections": ["basketball"]
+  },
+  {
+    "id": "18",
+    "slug": "adidas-nba-basketball-two",
+    "name": "Adidas NBA Basketball Two",
+    "vendor": "ADIDAS",
+    "price": 72,
+    "compareAtPrice": 116,
+    "currency": "USD",
+    "images": [
+      {
+        "id": "18-img-1",
+        "src": "/fashion/products/products10.png",
+        "alt": "Adidas NBA Basketball Two - Orange"
+      },
+      {
+        "id": "18-img-2",
+        "src": "/fashion/products/products11.png",
+        "alt": "Adidas NBA Basketball Two - Brown"
+      },
+      {
+        "id": "18-img-3",
+        "src": "/fashion/products/products1.png",
+        "alt": "Adidas NBA Basketball Two - View 3"
+      },
+      {
+        "id": "18-img-4",
+        "src": "/fashion/products/products12.png",
+        "alt": "Adidas NBA Basketball Two - View 4"
+      },
+      {
+        "id": "18-img-5",
+        "src": "/fashion/products/products14.png",
+        "alt": "Adidas NBA Basketball Two - View 5"
+      },
+      {
+        "id": "18-img-6",
+        "src": "/fashion/products/products15.png",
+        "alt": "Adidas NBA Basketball Two - View 6"
+      },
+      {
+        "id": "18-img-7",
+        "src": "/fashion/products/products16.png",
+        "alt": "Adidas NBA Basketball Two - View 7"
+      },
+      {
+        "id": "18-img-8",
+        "src": "/fashion/products/products17.png",
+        "alt": "Adidas NBA Basketball Two - View 8"
+      },
+      {
+        "id": "18-img-9",
+        "src": "/fashion/products/products18.png",
+        "alt": "Adidas NBA Basketball Two - View 9"
+      },
+      {
+        "id": "18-img-10",
+        "src": "/fashion/products/products19.png",
+        "alt": "Adidas NBA Basketball Two - View 10"
+      }
+    ],
+    "variants": [
+      {
+        "id": "18-v1",
+        "color": "Orange",
+        "size": "7",
+        "price": 72,
+        "compareAtPrice": 116,
+        "image": "/fashion/products/products10.png",
+        "available": true,
+        "sku": "ANB2-ORG-7"
+      },
+      {
+        "id": "18-v-brown",
+        "color": "Brown",
+        "size": "5",
+        "price": 72,
+        "compareAtPrice": 116,
+        "image": "/fashion/products/products11.png",
+        "available": true,
+        "sku": "ANB2-001-BRO"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Orange",
+        "value": "#F97316",
+        "type": "hex"
+      },
+      {
+        "name": "Brown",
+        "value": "#92400E",
+        "type": "hex"
+      }
+    ],
+    "sizes": [
+      "5",
+      "6",
+      "7"
+    ],
+    "category": "Sports",
+    "tags": [
+      "basketball",
+      "adidas",
+      "sports"
+    ],
+    "brand": "Adidas",
+    "availability": "pre-order",
+    "badge": "pre-order",
+    "description": "Premium NBA basketball with enhanced grip technology.",
+    "features": [
+      "Enhanced grip",
+      "Durable construction",
+      "Official weight"
+    ],
+    "rating": 4.3,
+    "reviewCount": 15,
+    "reviews": [],
+    "relatedProducts": [
+      "17",
+      "19"
+    ],
+    "pairsWellWith": [],
+    "createdAt": "2024-02-15",
+    "sku": "ANB2-001",
+    "countdownEnd": null,
+    "collections": ["basketball"]
+  },
+  {
+    "id": "19",
+    "slug": "audience-x-sunglasses",
+    "name": "Audience X Sunglasses",
+    "vendor": "AUDIENCE",
+    "price": 20,
+    "compareAtPrice": null,
+    "currency": "USD",
+    "images": [
+      {
+        "id": "19-img-1",
+        "src": "/fashion/products/products11.png",
+        "alt": "Audience X Sunglasses - Brown"
+      },
+      {
+        "id": "19-img-2",
+        "src": "/fashion/products/products13.png",
+        "alt": "Audience X Sunglasses - Black"
+      },
+      {
+        "id": "19-img-3",
+        "src": "/fashion/products/products1.png",
+        "alt": "Audience X Sunglasses - Gold"
+      },
+      {
+        "id": "19-img-4",
+        "src": "/fashion/products/products12.png",
+        "alt": "Audience X Sunglasses - View 4"
+      },
+      {
+        "id": "19-img-5",
+        "src": "/fashion/products/products14.png",
+        "alt": "Audience X Sunglasses - View 5"
+      },
+      {
+        "id": "19-img-6",
+        "src": "/fashion/products/products15.png",
+        "alt": "Audience X Sunglasses - View 6"
+      },
+      {
+        "id": "19-img-7",
+        "src": "/fashion/products/products16.png",
+        "alt": "Audience X Sunglasses - View 7"
+      },
+      {
+        "id": "19-img-8",
+        "src": "/fashion/products/products17.png",
+        "alt": "Audience X Sunglasses - View 8"
+      },
+      {
+        "id": "19-img-9",
+        "src": "/fashion/products/products18.png",
+        "alt": "Audience X Sunglasses - View 9"
+      },
+      {
+        "id": "19-img-10",
+        "src": "/fashion/products/products19.png",
+        "alt": "Audience X Sunglasses - View 10"
+      }
+    ],
+    "variants": [
+      {
+        "id": "19-v1",
+        "color": "Brown",
+        "size": "One Size",
+        "price": 20,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products11.png",
+        "available": true,
+        "sku": "AXS-BRN-OS"
+      },
+      {
+        "id": "19-v-black",
+        "color": "Black",
+        "size": "One Size",
+        "price": 20,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products13.png",
+        "available": true,
+        "sku": "AXS-001-BLA"
+      },
+      {
+        "id": "19-v-gold",
+        "color": "Gold",
+        "size": "One Size",
+        "price": 20,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products1.png",
+        "available": true,
+        "sku": "AXS-001-GOL"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Brown",
+        "value": "#92400E",
+        "type": "hex"
+      },
+      {
+        "name": "Black",
+        "value": "#000000",
+        "type": "hex"
+      },
+      {
+        "name": "Gold",
+        "value": "#FFD700",
+        "type": "hex"
+      }
+    ],
+    "sizes": [
+      "One Size"
+    ],
+    "category": "Accessories",
+    "tags": [
+      "sunglasses",
+      "eyewear",
+      "accessories",
+      "unisex"
+    ],
+    "brand": "Audience",
+    "availability": "in-stock",
+    "badge": null,
+    "description": "Classic tortoise-shell sunglasses with UV400 protection.",
+    "features": [
+      "UV400 protection",
+      "Tortoise-shell frame",
+      "Polarized lenses"
+    ],
+    "rating": 4,
+    "reviewCount": 20,
+    "reviews": [],
+    "relatedProducts": [
+      "20",
+      "21"
+    ],
+    "pairsWellWith": [],
+    "createdAt": "2024-03-01",
+    "sku": "AXS-001",
+    "countdownEnd": null,
+    "collections": ["glasses", "jewelry"]
+  },
+  {
+    "id": "20",
+    "slug": "arctic-sun-glasses",
+    "name": "Arctic Sun Glasses",
+    "vendor": "ARCTIC",
+    "price": 35,
+    "compareAtPrice": null,
+    "currency": "USD",
+    "images": [
+      {
+        "id": "20-img-1",
+        "src": "/fashion/products/products13.png",
+        "alt": "Arctic Sun Glasses - Silver"
+      },
+      {
+        "id": "20-img-2",
+        "src": "/fashion/products/products1.png",
+        "alt": "Arctic Sun Glasses - Gold"
+      },
+      {
+        "id": "20-img-3",
+        "src": "/fashion/products/products12.png",
+        "alt": "Arctic Sun Glasses - Rose"
+      },
+      {
+        "id": "20-img-4",
+        "src": "/fashion/products/products14.png",
+        "alt": "Arctic Sun Glasses - Black"
+      },
+      {
+        "id": "20-img-5",
+        "src": "/fashion/products/products15.png",
+        "alt": "Arctic Sun Glasses - Blue"
+      },
+      {
+        "id": "20-img-6",
+        "src": "/fashion/products/products16.png",
+        "alt": "Arctic Sun Glasses - View 6"
+      },
+      {
+        "id": "20-img-7",
+        "src": "/fashion/products/products17.png",
+        "alt": "Arctic Sun Glasses - View 7"
+      },
+      {
+        "id": "20-img-8",
+        "src": "/fashion/products/products18.png",
+        "alt": "Arctic Sun Glasses - View 8"
+      },
+      {
+        "id": "20-img-9",
+        "src": "/fashion/products/products19.png",
+        "alt": "Arctic Sun Glasses - View 9"
+      },
+      {
+        "id": "20-img-10",
+        "src": "/fashion/products/products20.png",
+        "alt": "Arctic Sun Glasses - View 10"
+      }
+    ],
+    "variants": [
+      {
+        "id": "20-v1",
+        "color": "Silver",
+        "size": "One Size",
+        "price": 35,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products13.png",
+        "available": true,
+        "sku": "ASG-SLV-OS"
+      },
+      {
+        "id": "20-v-gold",
+        "color": "Gold",
+        "size": "One Size",
+        "price": 35,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products1.png",
+        "available": true,
+        "sku": "ASG-001-GOL"
+      },
+      {
+        "id": "20-v-rose",
+        "color": "Rose",
+        "size": "One Size",
+        "price": 35,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products12.png",
+        "available": true,
+        "sku": "ASG-001-ROS"
+      },
+      {
+        "id": "20-v-black",
+        "color": "Black",
+        "size": "One Size",
+        "price": 35,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products14.png",
+        "available": true,
+        "sku": "ASG-001-BLA"
+      },
+      {
+        "id": "20-v-blue",
+        "color": "Blue",
+        "size": "One Size",
+        "price": 35,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products15.png",
+        "available": true,
+        "sku": "ASG-001-BLU"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Silver",
+        "value": "#C0C0C0",
+        "type": "hex"
+      },
+      {
+        "name": "Gold",
+        "value": "#FFD700",
+        "type": "hex"
+      },
+      {
+        "name": "Rose",
+        "value": "#FB7185",
+        "type": "hex"
+      },
+      {
+        "name": "Black",
+        "value": "#000000",
+        "type": "hex"
+      },
+      {
+        "name": "Blue",
+        "value": "#3B82F6",
+        "type": "hex"
+      }
+    ],
+    "sizes": [
+      "One Size"
+    ],
+    "category": "Accessories",
+    "tags": [
+      "sunglasses",
+      "eyewear",
+      "fashion"
+    ],
+    "brand": "Arctic",
+    "availability": "in-stock",
+    "badge": null,
+    "description": "Sleek modern sunglasses with mirrored lenses.",
+    "features": [
+      "Mirrored lenses",
+      "Metal frame",
+      "UV protection"
+    ],
+    "rating": 4.2,
+    "reviewCount": 12,
+    "reviews": [],
+    "relatedProducts": [
+      "19",
+      "21"
+    ],
+    "pairsWellWith": [],
+    "createdAt": "2024-04-05",
+    "sku": "ASG-001",
+    "countdownEnd": null,
+    "collections": ["glasses", "jewelry"]
+  },
+  {
+    "id": "21",
+    "slug": "artist-portrait-booklet",
+    "name": "Artist Portrait Booklet",
+    "vendor": "CREATIVE",
+    "price": 28,
+    "compareAtPrice": null,
+    "currency": "USD",
+    "images": [
+      {
+        "id": "21-img-1",
+        "src": "/fashion/products/products1.png",
+        "alt": "Artist Portrait Booklet - Yellow"
+      },
+      {
+        "id": "21-img-2",
+        "src": "/fashion/products/products12.png",
+        "alt": "Artist Portrait Booklet - White"
+      },
+      {
+        "id": "21-img-3",
+        "src": "/fashion/products/products14.png",
+        "alt": "Artist Portrait Booklet - Grey"
+      },
+      {
+        "id": "21-img-4",
+        "src": "/fashion/products/products15.png",
+        "alt": "Artist Portrait Booklet - View 4"
+      },
+      {
+        "id": "21-img-5",
+        "src": "/fashion/products/products16.png",
+        "alt": "Artist Portrait Booklet - View 5"
+      },
+      {
+        "id": "21-img-6",
+        "src": "/fashion/products/products17.png",
+        "alt": "Artist Portrait Booklet - View 6"
+      },
+      {
+        "id": "21-img-7",
+        "src": "/fashion/products/products18.png",
+        "alt": "Artist Portrait Booklet - View 7"
+      },
+      {
+        "id": "21-img-8",
+        "src": "/fashion/products/products19.png",
+        "alt": "Artist Portrait Booklet - View 8"
+      },
+      {
+        "id": "21-img-9",
+        "src": "/fashion/products/products20.png",
+        "alt": "Artist Portrait Booklet - View 9"
+      },
+      {
+        "id": "21-img-10",
+        "src": "/fashion/products/products2.png",
+        "alt": "Artist Portrait Booklet - View 10"
+      }
+    ],
+    "variants": [
+      {
+        "id": "21-v1",
+        "color": "Yellow",
+        "size": "One Size",
+        "price": 28,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products1.png",
+        "available": true,
+        "sku": "APB-YLW-OS"
+      },
+      {
+        "id": "21-v-white",
+        "color": "White",
+        "size": "One Size",
+        "price": 28,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products12.png",
+        "available": true,
+        "sku": "APB-001-WHI"
+      },
+      {
+        "id": "21-v-grey",
+        "color": "Grey",
+        "size": "One Size",
+        "price": 28,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products14.png",
+        "available": true,
+        "sku": "APB-001-GRE"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Yellow",
+        "value": "#FBBF24",
+        "type": "hex"
+      },
+      {
+        "name": "White",
+        "value": "#FFFFFF",
+        "type": "hex"
+      },
+      {
+        "name": "Grey",
+        "value": "#6B7280",
+        "type": "hex"
+      }
+    ],
+    "sizes": [
+      "One Size"
+    ],
+    "category": "Accessories",
+    "tags": [
+      "booklet",
+      "art",
+      "gift"
+    ],
+    "brand": "Creative",
+    "availability": "in-stock",
+    "badge": null,
+    "description": "Beautifully designed artist portrait booklet for sketching and notes.",
+    "features": [
+      "Premium paper",
+      "Hardcover",
+      "192 pages"
+    ],
+    "rating": 4.5,
+    "reviewCount": 8,
+    "reviews": [],
+    "relatedProducts": [
+      "19",
+      "20"
+    ],
+    "pairsWellWith": [],
+    "createdAt": "2024-05-20",
+    "sku": "APB-001",
+    "countdownEnd": null,
+    "collections": ["glasses", "jewelry"]
+  },
+  {
+    "id": "22",
+    "slug": "baby-clothes-set",
+    "name": "Baby Clothes Set",
+    "vendor": "BABY SHOP",
+    "price": 50,
+    "compareAtPrice": 70,
+    "currency": "USD",
+    "images": [
+      {
+        "id": "22-img-1",
+        "src": "/fashion/products/products12.png",
+        "alt": "Baby Clothes Set - Blue"
+      },
+      {
+        "id": "22-img-2",
+        "src": "/fashion/products/products14.png",
+        "alt": "Baby Clothes Set - Pink"
+      },
+      {
+        "id": "22-img-3",
+        "src": "/fashion/products/products1.png",
+        "alt": "Baby Clothes Set - View 3"
+      },
+      {
+        "id": "22-img-4",
+        "src": "/fashion/products/products15.png",
+        "alt": "Baby Clothes Set - View 4"
+      },
+      {
+        "id": "22-img-5",
+        "src": "/fashion/products/products16.png",
+        "alt": "Baby Clothes Set - View 5"
+      },
+      {
+        "id": "22-img-6",
+        "src": "/fashion/products/products17.png",
+        "alt": "Baby Clothes Set - View 6"
+      },
+      {
+        "id": "22-img-7",
+        "src": "/fashion/products/products18.png",
+        "alt": "Baby Clothes Set - View 7"
+      },
+      {
+        "id": "22-img-8",
+        "src": "/fashion/products/products19.png",
+        "alt": "Baby Clothes Set - View 8"
+      },
+      {
+        "id": "22-img-9",
+        "src": "/fashion/products/products20.png",
+        "alt": "Baby Clothes Set - View 9"
+      },
+      {
+        "id": "22-img-10",
+        "src": "/fashion/products/products2.png",
+        "alt": "Baby Clothes Set - View 10"
+      }
+    ],
+    "variants": [
+      {
+        "id": "22-v1",
+        "color": "Blue",
+        "size": "0-3M",
+        "price": 50,
+        "compareAtPrice": 70,
+        "image": "/fashion/products/products12.png",
+        "available": true,
+        "sku": "BCS-BLU-0"
+      },
+      {
+        "id": "22-v-pink",
+        "color": "Pink",
+        "size": "0-3M",
+        "price": 50,
+        "compareAtPrice": 70,
+        "image": "/fashion/products/products14.png",
+        "available": true,
+        "sku": "BCS-001-PIN"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Blue",
+        "value": "#3B82F6",
+        "type": "hex"
+      },
+      {
+        "name": "Pink",
+        "value": "#EC4899",
+        "type": "hex"
+      }
+    ],
+    "sizes": [
+      "0-3M",
+      "3-6M",
+      "6-12M"
+    ],
+    "category": "Kids",
+    "tags": [
+      "baby",
+      "clothes",
+      "set",
+      "kids"
+    ],
+    "brand": "Ambaz Baby toys shopify theme",
+    "availability": "in-stock",
+    "badge": "sale",
+    "description": "Adorable baby clothes set with matching top and bottom.",
+    "features": [
+      "100% cotton",
+      "Snap buttons",
+      "Machine washable"
+    ],
+    "rating": 4.8,
+    "reviewCount": 35,
+    "reviews": [],
+    "relatedProducts": [
+      "23",
+      "24",
+      "25"
+    ],
+    "pairsWellWith": [],
+    "createdAt": "2024-01-20",
+    "sku": "BCS-001",
+    "countdownEnd": null,
+    "collections": ["socks"]
+  },
+  {
+    "id": "23",
+    "slug": "baby-fitshi-bracelet",
+    "name": "Baby Fitshi Bracelet",
+    "vendor": "BABY SHOP",
+    "price": 295,
+    "compareAtPrice": null,
+    "currency": "USD",
+    "images": [
+      {
+        "id": "23-img-1",
+        "src": "/fashion/products/products14.png",
+        "alt": "Baby Fitshi Bracelet - Gold"
+      },
+      {
+        "id": "23-img-2",
+        "src": "/fashion/products/products1.png",
+        "alt": "Baby Fitshi Bracelet - View 2"
+      },
+      {
+        "id": "23-img-3",
+        "src": "/fashion/products/products12.png",
+        "alt": "Baby Fitshi Bracelet - View 3"
+      },
+      {
+        "id": "23-img-4",
+        "src": "/fashion/products/products15.png",
+        "alt": "Baby Fitshi Bracelet - View 4"
+      },
+      {
+        "id": "23-img-5",
+        "src": "/fashion/products/products16.png",
+        "alt": "Baby Fitshi Bracelet - View 5"
+      },
+      {
+        "id": "23-img-6",
+        "src": "/fashion/products/products17.png",
+        "alt": "Baby Fitshi Bracelet - View 6"
+      },
+      {
+        "id": "23-img-7",
+        "src": "/fashion/products/products18.png",
+        "alt": "Baby Fitshi Bracelet - View 7"
+      },
+      {
+        "id": "23-img-8",
+        "src": "/fashion/products/products19.png",
+        "alt": "Baby Fitshi Bracelet - View 8"
+      },
+      {
+        "id": "23-img-9",
+        "src": "/fashion/products/products20.png",
+        "alt": "Baby Fitshi Bracelet - View 9"
+      },
+      {
+        "id": "23-img-10",
+        "src": "/fashion/products/products2.png",
+        "alt": "Baby Fitshi Bracelet - View 10"
+      }
+    ],
+    "variants": [
+      {
+        "id": "23-v1",
+        "color": "Gold",
+        "size": "One Size",
+        "price": 295,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products14.png",
+        "available": true,
+        "sku": "BFB-GLD-OS"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Gold",
+        "value": "#FFD700",
+        "type": "hex"
+      }
+    ],
+    "sizes": [
+      "One Size"
+    ],
+    "category": "Kids",
+    "tags": [
+      "bracelet",
+      "baby",
+      "jewelry",
+      "kids"
+    ],
+    "brand": "Ambaz Baby toys shopify theme",
+    "availability": "in-stock",
+    "badge": null,
+    "description": "Delicate gold bracelet designed for babies.",
+    "features": [
+      "Gold plated",
+      "Hypoallergenic",
+      "Adjustable"
+    ],
+    "rating": 4.9,
+    "reviewCount": 5,
+    "reviews": [],
+    "relatedProducts": [
+      "22",
+      "24",
+      "25"
+    ],
+    "pairsWellWith": [],
+    "createdAt": "2024-02-10",
+    "sku": "BFB-001",
+    "countdownEnd": null,
+    "collections": ["socks"]
+  },
+  {
+    "id": "24",
+    "slug": "baby-flower-print-shoes",
+    "name": "Baby Flower Print Shoes",
+    "vendor": "BABY SHOP",
+    "price": 62,
+    "compareAtPrice": null,
+    "currency": "USD",
+    "images": [
+      {
+        "id": "24-img-1",
+        "src": "/fashion/products/products15.png",
+        "alt": "Baby Flower Print Shoes - Pink"
+      },
+      {
+        "id": "24-img-2",
+        "src": "/fashion/products/products16.png",
+        "alt": "Baby Flower Print Shoes - White"
+      },
+      {
+        "id": "24-img-3",
+        "src": "/fashion/products/products17.png",
+        "alt": "Baby Flower Print Shoes - Red"
+      },
+      {
+        "id": "24-img-4",
+        "src": "/fashion/products/products1.png",
+        "alt": "Baby Flower Print Shoes - View 4"
+      },
+      {
+        "id": "24-img-5",
+        "src": "/fashion/products/products12.png",
+        "alt": "Baby Flower Print Shoes - View 5"
+      },
+      {
+        "id": "24-img-6",
+        "src": "/fashion/products/products14.png",
+        "alt": "Baby Flower Print Shoes - View 6"
+      },
+      {
+        "id": "24-img-7",
+        "src": "/fashion/products/products18.png",
+        "alt": "Baby Flower Print Shoes - View 7"
+      },
+      {
+        "id": "24-img-8",
+        "src": "/fashion/products/products19.png",
+        "alt": "Baby Flower Print Shoes - View 8"
+      },
+      {
+        "id": "24-img-9",
+        "src": "/fashion/products/products20.png",
+        "alt": "Baby Flower Print Shoes - View 9"
+      },
+      {
+        "id": "24-img-10",
+        "src": "/fashion/products/products2.png",
+        "alt": "Baby Flower Print Shoes - View 10"
+      }
+    ],
+    "variants": [
+      {
+        "id": "24-v1",
+        "color": "Pink",
+        "size": "1",
+        "price": 62,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products15.png",
+        "available": true,
+        "sku": "BFPS-PNK-1"
+      },
+      {
+        "id": "24-v-white",
+        "color": "White",
+        "size": "1",
+        "price": 62,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products16.png",
+        "available": true,
+        "sku": "BFPS-001-WHI"
+      },
+      {
+        "id": "24-v-red",
+        "color": "Red",
+        "size": "1",
+        "price": 62,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products17.png",
+        "available": true,
+        "sku": "BFPS-001-RED"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Pink",
+        "value": "#EC4899",
+        "type": "hex"
+      },
+      {
+        "name": "White",
+        "value": "#FFFFFF",
+        "type": "hex"
+      },
+      {
+        "name": "Red",
+        "value": "#EF4444",
+        "type": "hex"
+      }
+    ],
+    "sizes": [
+      "1",
+      "2",
+      "3"
+    ],
+    "category": "Kids",
+    "tags": [
+      "shoes",
+      "baby",
+      "flower",
+      "kids"
+    ],
+    "brand": "Ambaz Baby toys shopify theme",
+    "availability": "in-stock",
+    "badge": null,
+    "description": "Adorable flower print baby shoes with soft soles.",
+    "features": [
+      "Soft sole",
+      "Velcro strap",
+      "Non-slip bottom"
+    ],
+    "rating": 4.6,
+    "reviewCount": 18,
+    "reviews": [],
+    "relatedProducts": [
+      "22",
+      "23",
+      "25"
+    ],
+    "pairsWellWith": [
+      "22"
+    ],
+    "createdAt": "2024-03-15",
+    "sku": "BFPS-001",
+    "countdownEnd": null,
+    "collections": ["socks"]
+  },
+  {
+    "id": "25",
+    "slug": "baby-rattles-toys",
+    "name": "Baby Rattles Toys",
+    "vendor": "BABY SHOP",
+    "price": 35,
+    "compareAtPrice": 60,
+    "currency": "USD",
+    "images": [
+      {
+        "id": "25-img-1",
+        "src": "/fashion/products/products16.png",
+        "alt": "Baby Rattles Toys - Multi"
+      },
+      {
+        "id": "25-img-2",
+        "src": "/fashion/products/products17.png",
+        "alt": "Baby Rattles Toys - Blue"
+      },
+      {
+        "id": "25-img-3",
+        "src": "/fashion/products/products1.png",
+        "alt": "Baby Rattles Toys - View 3"
+      },
+      {
+        "id": "25-img-4",
+        "src": "/fashion/products/products12.png",
+        "alt": "Baby Rattles Toys - View 4"
+      },
+      {
+        "id": "25-img-5",
+        "src": "/fashion/products/products14.png",
+        "alt": "Baby Rattles Toys - View 5"
+      },
+      {
+        "id": "25-img-6",
+        "src": "/fashion/products/products15.png",
+        "alt": "Baby Rattles Toys - View 6"
+      },
+      {
+        "id": "25-img-7",
+        "src": "/fashion/products/products18.png",
+        "alt": "Baby Rattles Toys - View 7"
+      },
+      {
+        "id": "25-img-8",
+        "src": "/fashion/products/products19.png",
+        "alt": "Baby Rattles Toys - View 8"
+      },
+      {
+        "id": "25-img-9",
+        "src": "/fashion/products/products20.png",
+        "alt": "Baby Rattles Toys - View 9"
+      },
+      {
+        "id": "25-img-10",
+        "src": "/fashion/products/products2.png",
+        "alt": "Baby Rattles Toys - View 10"
+      }
+    ],
+    "variants": [
+      {
+        "id": "25-v1",
+        "color": "Multi",
+        "size": "One Size",
+        "price": 35,
+        "compareAtPrice": 60,
+        "image": "/fashion/products/products16.png",
+        "available": true,
+        "sku": "BRT-MLT-OS"
+      },
+      {
+        "id": "25-v-blue",
+        "color": "Blue",
+        "size": "One Size",
+        "price": 35,
+        "compareAtPrice": 60,
+        "image": "/fashion/products/products17.png",
+        "available": true,
+        "sku": "BRT-001-BLU"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Multi",
+        "value": "#FBBF24",
+        "type": "hex"
+      },
+      {
+        "name": "Blue",
+        "value": "#3B82F6",
+        "type": "hex"
+      }
+    ],
+    "sizes": [
+      "One Size"
+    ],
+    "category": "Kids",
+    "tags": [
+      "toys",
+      "rattle",
+      "baby",
+      "kids"
+    ],
+    "brand": "Ambaz Baby toys shopify theme",
+    "availability": "in-stock",
+    "badge": "sale",
+    "description": "Colorful baby rattle toys set for sensory development.",
+    "features": [
+      "BPA-free",
+      "Easy to grip",
+      "Multiple textures"
+    ],
+    "rating": 4.7,
+    "reviewCount": 42,
+    "reviews": [],
+    "relatedProducts": [
+      "22",
+      "23",
+      "24"
+    ],
+    "pairsWellWith": [],
+    "createdAt": "2024-04-20",
+    "sku": "BRT-001",
+    "countdownEnd": "2025-12-31T23:59:59",
+    "collections": ["socks"]
+  },
+  {
+    "id": "26",
+    "slug": "baby-girls-bloomer",
+    "name": "Baby Girls Bloomer",
+    "vendor": "BABY SHOP",
+    "price": 30,
+    "compareAtPrice": null,
+    "currency": "USD",
+    "images": [
+      {
+        "id": "26-img-1",
+        "src": "/fashion/products/products17.png",
+        "alt": "Baby Girls Bloomer - Brown"
+      },
+      {
+        "id": "26-img-2",
+        "src": "/fashion/products/products18.png",
+        "alt": "Baby Girls Bloomer - Pink"
+      },
+      {
+        "id": "26-img-3",
+        "src": "/fashion/products/products19.png",
+        "alt": "Baby Girls Bloomer - White"
+      },
+      {
+        "id": "26-img-4",
+        "src": "/fashion/products/products1.png",
+        "alt": "Baby Girls Bloomer - View 4"
+      },
+      {
+        "id": "26-img-5",
+        "src": "/fashion/products/products12.png",
+        "alt": "Baby Girls Bloomer - View 5"
+      },
+      {
+        "id": "26-img-6",
+        "src": "/fashion/products/products14.png",
+        "alt": "Baby Girls Bloomer - View 6"
+      },
+      {
+        "id": "26-img-7",
+        "src": "/fashion/products/products15.png",
+        "alt": "Baby Girls Bloomer - View 7"
+      },
+      {
+        "id": "26-img-8",
+        "src": "/fashion/products/products16.png",
+        "alt": "Baby Girls Bloomer - View 8"
+      },
+      {
+        "id": "26-img-9",
+        "src": "/fashion/products/products20.png",
+        "alt": "Baby Girls Bloomer - View 9"
+      },
+      {
+        "id": "26-img-10",
+        "src": "/fashion/products/products2.png",
+        "alt": "Baby Girls Bloomer - View 10"
+      }
+    ],
+    "variants": [
+      {
+        "id": "26-v1",
+        "color": "Brown",
+        "size": "0-3M",
+        "price": 30,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products17.png",
+        "available": true,
+        "sku": "BGB-BRN-0"
+      },
+      {
+        "id": "26-v-pink",
+        "color": "Pink",
+        "size": "0-3M",
+        "price": 30,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products18.png",
+        "available": true,
+        "sku": "BGB-001-PIN"
+      },
+      {
+        "id": "26-v-white",
+        "color": "White",
+        "size": "0-3M",
+        "price": 30,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products19.png",
+        "available": true,
+        "sku": "BGB-001-WHI"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Brown",
+        "value": "#92400E",
+        "type": "hex"
+      },
+      {
+        "name": "Pink",
+        "value": "#EC4899",
+        "type": "hex"
+      },
+      {
+        "name": "White",
+        "value": "#FFFFFF",
+        "type": "hex"
+      }
+    ],
+    "sizes": [
+      "0-3M",
+      "3-6M",
+      "6-12M"
+    ],
+    "category": "Kids",
+    "tags": [
+      "bloomer",
+      "baby",
+      "girls",
+      "kids"
+    ],
+    "brand": "Ambaz Baby toys shopify theme",
+    "availability": "in-stock",
+    "badge": null,
+    "description": "Cute cotton baby bloomers with ruffled edges.",
+    "features": [
+      "100% cotton",
+      "Elastic waist",
+      "Ruffle detail"
+    ],
+    "rating": 4.5,
+    "reviewCount": 10,
+    "reviews": [],
+    "relatedProducts": [
+      "22",
+      "24",
+      "27"
+    ],
+    "pairsWellWith": [
+      "22"
+    ],
+    "createdAt": "2024-05-25",
+    "sku": "BGB-001",
+    "countdownEnd": null,
+    "collections": ["socks"]
+  },
+  {
+    "id": "27",
+    "slug": "baby-knitted-shoes",
+    "name": "Baby Knitted Shoes",
+    "vendor": "BABY SHOP",
+    "price": 32,
+    "compareAtPrice": 42,
+    "currency": "USD",
+    "images": [
+      {
+        "id": "27-img-1",
+        "src": "/fashion/products/products18.png",
+        "alt": "Baby Knitted Shoes - Multi"
+      },
+      {
+        "id": "27-img-2",
+        "src": "/fashion/products/products19.png",
+        "alt": "Baby Knitted Shoes - White"
+      },
+      {
+        "id": "27-img-3",
+        "src": "/fashion/products/products20.png",
+        "alt": "Baby Knitted Shoes - Blue"
+      },
+      {
+        "id": "27-img-4",
+        "src": "/fashion/products/products1.png",
+        "alt": "Baby Knitted Shoes - View 4"
+      },
+      {
+        "id": "27-img-5",
+        "src": "/fashion/products/products12.png",
+        "alt": "Baby Knitted Shoes - View 5"
+      },
+      {
+        "id": "27-img-6",
+        "src": "/fashion/products/products14.png",
+        "alt": "Baby Knitted Shoes - View 6"
+      },
+      {
+        "id": "27-img-7",
+        "src": "/fashion/products/products15.png",
+        "alt": "Baby Knitted Shoes - View 7"
+      },
+      {
+        "id": "27-img-8",
+        "src": "/fashion/products/products16.png",
+        "alt": "Baby Knitted Shoes - View 8"
+      },
+      {
+        "id": "27-img-9",
+        "src": "/fashion/products/products17.png",
+        "alt": "Baby Knitted Shoes - View 9"
+      },
+      {
+        "id": "27-img-10",
+        "src": "/fashion/products/products2.png",
+        "alt": "Baby Knitted Shoes - View 10"
+      }
+    ],
+    "variants": [
+      {
+        "id": "27-v1",
+        "color": "Multi",
+        "size": "1",
+        "price": 32,
+        "compareAtPrice": 42,
+        "image": "/fashion/products/products18.png",
+        "available": true,
+        "sku": "BKS-MLT-1"
+      },
+      {
+        "id": "27-v-white",
+        "color": "White",
+        "size": "1",
+        "price": 32,
+        "compareAtPrice": 42,
+        "image": "/fashion/products/products19.png",
+        "available": true,
+        "sku": "BKS-001-WHI"
+      },
+      {
+        "id": "27-v-blue",
+        "color": "Blue",
+        "size": "1",
+        "price": 32,
+        "compareAtPrice": 42,
+        "image": "/fashion/products/products20.png",
+        "available": true,
+        "sku": "BKS-001-BLU"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Multi",
+        "value": "#EC4899",
+        "type": "hex"
+      },
+      {
+        "name": "White",
+        "value": "#FFFFFF",
+        "type": "hex"
+      },
+      {
+        "name": "Blue",
+        "value": "#3B82F6",
+        "type": "hex"
+      }
+    ],
+    "sizes": [
+      "1",
+      "2",
+      "3"
+    ],
+    "category": "Kids",
+    "tags": [
+      "shoes",
+      "knitted",
+      "baby",
+      "kids"
+    ],
+    "brand": "Ambaz Baby toys shopify theme",
+    "availability": "in-stock",
+    "badge": "sale",
+    "description": "Hand-knitted baby shoes in rainbow colors.",
+    "features": [
+      "Hand knitted",
+      "Soft yarn",
+      "Drawstring closure"
+    ],
+    "rating": 4.8,
+    "reviewCount": 22,
+    "reviews": [],
+    "relatedProducts": [
+      "24",
+      "22",
+      "26"
+    ],
+    "pairsWellWith": [
+      "22"
+    ],
+    "createdAt": "2024-06-05",
+    "sku": "BKS-001",
+    "countdownEnd": null,
+    "collections": ["socks"]
+  },
+  {
+    "id": "28",
+    "slug": "baby-water-bottle",
+    "name": "Baby Water Bottle",
+    "vendor": "BABY SHOP",
+    "price": 28,
+    "compareAtPrice": 55,
+    "currency": "USD",
+    "images": [
+      {
+        "id": "28-img-1",
+        "src": "/fashion/products/products19.png",
+        "alt": "Baby Water Bottle - Yellow"
+      },
+      {
+        "id": "28-img-2",
+        "src": "/fashion/products/products20.png",
+        "alt": "Baby Water Bottle - Green"
+      },
+      {
+        "id": "28-img-3",
+        "src": "/fashion/products/products1.png",
+        "alt": "Baby Water Bottle - View 3"
+      },
+      {
+        "id": "28-img-4",
+        "src": "/fashion/products/products12.png",
+        "alt": "Baby Water Bottle - View 4"
+      },
+      {
+        "id": "28-img-5",
+        "src": "/fashion/products/products14.png",
+        "alt": "Baby Water Bottle - View 5"
+      },
+      {
+        "id": "28-img-6",
+        "src": "/fashion/products/products15.png",
+        "alt": "Baby Water Bottle - View 6"
+      },
+      {
+        "id": "28-img-7",
+        "src": "/fashion/products/products16.png",
+        "alt": "Baby Water Bottle - View 7"
+      },
+      {
+        "id": "28-img-8",
+        "src": "/fashion/products/products17.png",
+        "alt": "Baby Water Bottle - View 8"
+      },
+      {
+        "id": "28-img-9",
+        "src": "/fashion/products/products18.png",
+        "alt": "Baby Water Bottle - View 9"
+      },
+      {
+        "id": "28-img-10",
+        "src": "/fashion/products/products2.png",
+        "alt": "Baby Water Bottle - View 10"
+      }
+    ],
+    "variants": [
+      {
+        "id": "28-v1",
+        "color": "Yellow",
+        "size": "One Size",
+        "price": 28,
+        "compareAtPrice": 55,
+        "image": "/fashion/products/products19.png",
+        "available": true,
+        "sku": "BWB-YLW-OS"
+      },
+      {
+        "id": "28-v-green",
+        "color": "Green",
+        "size": "One Size",
+        "price": 28,
+        "compareAtPrice": 55,
+        "image": "/fashion/products/products20.png",
+        "available": true,
+        "sku": "BWB-001-GRE"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Yellow",
+        "value": "#FBBF24",
+        "type": "hex"
+      },
+      {
+        "name": "Green",
+        "value": "#22C55E",
+        "type": "hex"
+      }
+    ],
+    "sizes": [
+      "One Size"
+    ],
+    "category": "Kids",
+    "tags": [
+      "bottle",
+      "baby",
+      "feeding",
+      "kids"
+    ],
+    "brand": "Ambaz Baby toys shopify theme",
+    "availability": "in-stock",
+    "badge": "sale",
+    "description": "Spill-proof baby water bottle with straw.",
+    "features": [
+      "BPA-free",
+      "Spill-proof",
+      "Easy-grip handles"
+    ],
+    "rating": 4.4,
+    "reviewCount": 28,
+    "reviews": [],
+    "relatedProducts": [
+      "25",
+      "29"
+    ],
+    "pairsWellWith": [],
+    "createdAt": "2024-06-15",
+    "sku": "BWB-001",
+    "countdownEnd": null,
+    "collections": ["socks"]
+  },
+  {
+    "id": "29",
+    "slug": "baby-water-pitter",
+    "name": "Baby Water Pitter",
+    "vendor": "BABY SHOP",
+    "price": 42,
+    "compareAtPrice": null,
+    "currency": "USD",
+    "images": [
+      {
+        "id": "29-img-1",
+        "src": "/fashion/products/products20.png",
+        "alt": "Baby Water Pitter - Blue"
+      },
+      {
+        "id": "29-img-2",
+        "src": "/fashion/products/products2.png",
+        "alt": "Baby Water Pitter - Pink"
+      },
+      {
+        "id": "29-img-3",
+        "src": "/fashion/products/products1.png",
+        "alt": "Baby Water Pitter - View 3"
+      },
+      {
+        "id": "29-img-4",
+        "src": "/fashion/products/products12.png",
+        "alt": "Baby Water Pitter - View 4"
+      },
+      {
+        "id": "29-img-5",
+        "src": "/fashion/products/products14.png",
+        "alt": "Baby Water Pitter - View 5"
+      },
+      {
+        "id": "29-img-6",
+        "src": "/fashion/products/products15.png",
+        "alt": "Baby Water Pitter - View 6"
+      },
+      {
+        "id": "29-img-7",
+        "src": "/fashion/products/products16.png",
+        "alt": "Baby Water Pitter - View 7"
+      },
+      {
+        "id": "29-img-8",
+        "src": "/fashion/products/products17.png",
+        "alt": "Baby Water Pitter - View 8"
+      },
+      {
+        "id": "29-img-9",
+        "src": "/fashion/products/products18.png",
+        "alt": "Baby Water Pitter - View 9"
+      },
+      {
+        "id": "29-img-10",
+        "src": "/fashion/products/products19.png",
+        "alt": "Baby Water Pitter - View 10"
+      }
+    ],
+    "variants": [
+      {
+        "id": "29-v1",
+        "color": "Blue",
+        "size": "One Size",
+        "price": 42,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products20.png",
+        "available": true,
+        "sku": "BWP-BLU-OS"
+      },
+      {
+        "id": "29-v-pink",
+        "color": "Pink",
+        "size": "One Size",
+        "price": 42,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products2.png",
+        "available": true,
+        "sku": "BWP-001-PIN"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Blue",
+        "value": "#3B82F6",
+        "type": "hex"
+      },
+      {
+        "name": "Pink",
+        "value": "#EC4899",
+        "type": "hex"
+      }
+    ],
+    "sizes": [
+      "One Size"
+    ],
+    "category": "Kids",
+    "tags": [
+      "water",
+      "baby",
+      "play",
+      "kids"
+    ],
+    "brand": "Ambaz Baby toys shopify theme",
+    "availability": "in-stock",
+    "badge": null,
+    "description": "Fun baby water play toy for bath time.",
+    "features": [
+      "Non-toxic",
+      "Floating design",
+      "Easy to clean"
+    ],
+    "rating": 4.3,
+    "reviewCount": 15,
+    "reviews": [],
+    "relatedProducts": [
+      "25",
+      "28"
+    ],
+    "pairsWellWith": [],
+    "createdAt": "2024-07-01",
+    "sku": "BWP-001",
+    "countdownEnd": null,
+    "collections": ["socks"]
+  },
+  {
+    "id": "30",
+    "slug": "barrel-blaster-surfboard",
+    "name": "Barrel Blaster Surfboard",
+    "vendor": "SURF CO",
+    "price": 260,
+    "compareAtPrice": null,
+    "currency": "USD",
+    "images": [
+      {
+        "id": "30-img-1",
+        "src": "/fashion/products/products2.png",
+        "alt": "Barrel Blaster Surfboard - Multi"
+      },
+      {
+        "id": "30-img-2",
+        "src": "/fashion/products/products3.png",
+        "alt": "Barrel Blaster Surfboard - Blue"
+      },
+      {
+        "id": "30-img-3",
+        "src": "/fashion/products/products1.png",
+        "alt": "Barrel Blaster Surfboard - View 3"
+      },
+      {
+        "id": "30-img-4",
+        "src": "/fashion/products/products12.png",
+        "alt": "Barrel Blaster Surfboard - View 4"
+      },
+      {
+        "id": "30-img-5",
+        "src": "/fashion/products/products14.png",
+        "alt": "Barrel Blaster Surfboard - View 5"
+      },
+      {
+        "id": "30-img-6",
+        "src": "/fashion/products/products15.png",
+        "alt": "Barrel Blaster Surfboard - View 6"
+      },
+      {
+        "id": "30-img-7",
+        "src": "/fashion/products/products16.png",
+        "alt": "Barrel Blaster Surfboard - View 7"
+      },
+      {
+        "id": "30-img-8",
+        "src": "/fashion/products/products17.png",
+        "alt": "Barrel Blaster Surfboard - View 8"
+      },
+      {
+        "id": "30-img-9",
+        "src": "/fashion/products/products18.png",
+        "alt": "Barrel Blaster Surfboard - View 9"
+      },
+      {
+        "id": "30-img-10",
+        "src": "/fashion/products/products19.png",
+        "alt": "Barrel Blaster Surfboard - View 10"
+      }
+    ],
+    "variants": [
+      {
+        "id": "30-v1",
+        "color": "Multi",
+        "size": "7ft",
+        "price": 260,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products2.png",
+        "available": true,
+        "sku": "BBS-MLT-7"
+      },
+      {
+        "id": "30-v-blue",
+        "color": "Blue",
+        "size": "6ft",
+        "price": 260,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products3.png",
+        "available": true,
+        "sku": "BBS-001-BLU"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Multi",
+        "value": "#F97316",
+        "type": "hex"
+      },
+      {
+        "name": "Blue",
+        "value": "#3B82F6",
+        "type": "hex"
+      }
+    ],
+    "sizes": [
+      "6ft",
+      "7ft",
+      "8ft"
+    ],
+    "category": "Sports",
+    "tags": [
+      "surfboard",
+      "sports",
+      "outdoor"
+    ],
+    "brand": "Surf Co",
+    "availability": "in-stock",
+    "badge": "new",
+    "description": "High-performance surfboard designed for barrel riding.",
+    "features": [
+      "Epoxy construction",
+      "Tri-fin setup",
+      "Deck pad included"
+    ],
+    "rating": 4.9,
+    "reviewCount": 3,
+    "reviews": [],
+    "relatedProducts": [
+      "17",
+      "18"
+    ],
+    "pairsWellWith": [],
+    "createdAt": "2024-07-10",
+    "sku": "BBS-001",
+    "countdownEnd": null,
+    "collections": ["basketball"]
+  },
+  {
+    "id": "31",
+    "slug": "chiffon-maxi-dress",
+    "name": "Chiffon Maxi Dress",
+    "vendor": "ELEGANT FASHION",
+    "price": 24,
+    "compareAtPrice": 46,
+    "currency": "USD",
+    "images": [
+      {
+        "id": "31-img-1",
+        "src": "/fashion/products/products3.png",
+        "alt": "Chiffon Maxi Dress - Black"
+      },
+      {
+        "id": "31-img-2",
+        "src": "/fashion/products/products4.png",
+        "alt": "Chiffon Maxi Dress - White"
+      },
+      {
+        "id": "31-img-3",
+        "src": "/fashion/products/products1.png",
+        "alt": "Chiffon Maxi Dress - View 3"
+      },
+      {
+        "id": "31-img-4",
+        "src": "/fashion/products/products12.png",
+        "alt": "Chiffon Maxi Dress - View 4"
+      },
+      {
+        "id": "31-img-5",
+        "src": "/fashion/products/products14.png",
+        "alt": "Chiffon Maxi Dress - View 5"
+      },
+      {
+        "id": "31-img-6",
+        "src": "/fashion/products/products15.png",
+        "alt": "Chiffon Maxi Dress - View 6"
+      },
+      {
+        "id": "31-img-7",
+        "src": "/fashion/products/products16.png",
+        "alt": "Chiffon Maxi Dress - View 7"
+      },
+      {
+        "id": "31-img-8",
+        "src": "/fashion/products/products17.png",
+        "alt": "Chiffon Maxi Dress - View 8"
+      },
+      {
+        "id": "31-img-9",
+        "src": "/fashion/products/products18.png",
+        "alt": "Chiffon Maxi Dress - View 9"
+      },
+      {
+        "id": "31-img-10",
+        "src": "/fashion/products/products19.png",
+        "alt": "Chiffon Maxi Dress - View 10"
+      }
+    ],
+    "variants": [
+      {
+        "id": "31-v1",
+        "color": "Black",
+        "size": "S",
+        "price": 24,
+        "compareAtPrice": 46,
+        "image": "/fashion/products/products3.png",
+        "available": true,
+        "sku": "CMD-BLK-S"
+      },
+      {
+        "id": "31-v-white",
+        "color": "White",
+        "size": "S",
+        "price": 24,
+        "compareAtPrice": 46,
+        "image": "/fashion/products/products4.png",
+        "available": true,
+        "sku": "CMD-001-WHI"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Black",
+        "value": "#000000",
+        "type": "hex"
+      },
+      {
+        "name": "White",
+        "value": "#FFFFFF",
+        "type": "hex"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "category": "Dresses",
+    "tags": [
+      "dress",
+      "chiffon",
+      "maxi",
+      "women"
+    ],
+    "brand": "Ambaz fashion shopify theme",
+    "availability": "in-stock",
+    "badge": "sale",
+    "description": "Flowing chiffon maxi dress with elegant draping.",
+    "features": [
+      "Chiffon fabric",
+      "Floor length",
+      "Side slit"
+    ],
+    "rating": 4.4,
+    "reviewCount": 13,
+    "reviews": [],
+    "relatedProducts": [
+      "2",
+      "7",
+      "8",
+      "14"
+    ],
+    "pairsWellWith": [],
+    "createdAt": "2024-07-20",
+    "sku": "CMD-001",
+    "countdownEnd": null,
+    "collections": ["beauty"]
+  },
+  {
+    "id": "32",
+    "slug": "silk-harmony-blouse",
+    "name": "Silk Harmony Blouse",
+    "vendor": "ELEGANT FASHION",
+    "price": 48,
+    "compareAtPrice": null,
+    "currency": "USD",
+    "images": [
+      {
+        "id": "32-img-1",
+        "src": "/fashion/products/products4.png",
+        "alt": "Silk Harmony Blouse - White"
+      },
+      {
+        "id": "32-img-2",
+        "src": "/fashion/products/products5.png",
+        "alt": "Silk Harmony Blouse - Cream"
+      },
+      {
+        "id": "32-img-3",
+        "src": "/fashion/products/products1.png",
+        "alt": "Silk Harmony Blouse - View 3"
+      },
+      {
+        "id": "32-img-4",
+        "src": "/fashion/products/products12.png",
+        "alt": "Silk Harmony Blouse - View 4"
+      },
+      {
+        "id": "32-img-5",
+        "src": "/fashion/products/products14.png",
+        "alt": "Silk Harmony Blouse - View 5"
+      },
+      {
+        "id": "32-img-6",
+        "src": "/fashion/products/products15.png",
+        "alt": "Silk Harmony Blouse - View 6"
+      },
+      {
+        "id": "32-img-7",
+        "src": "/fashion/products/products16.png",
+        "alt": "Silk Harmony Blouse - View 7"
+      },
+      {
+        "id": "32-img-8",
+        "src": "/fashion/products/products17.png",
+        "alt": "Silk Harmony Blouse - View 8"
+      },
+      {
+        "id": "32-img-9",
+        "src": "/fashion/products/products18.png",
+        "alt": "Silk Harmony Blouse - View 9"
+      },
+      {
+        "id": "32-img-10",
+        "src": "/fashion/products/products19.png",
+        "alt": "Silk Harmony Blouse - View 10"
+      }
+    ],
+    "variants": [
+      {
+        "id": "32-v1",
+        "color": "White",
+        "size": "S",
+        "price": 48,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products4.png",
+        "available": true,
+        "sku": "SHB-WHT-S"
+      },
+      {
+        "id": "32-v2",
+        "color": "White",
+        "size": "M",
+        "price": 48,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products4.png",
+        "available": true,
+        "sku": "SHB-WHT-M"
+      },
+      {
+        "id": "32-v-cream",
+        "color": "Cream",
+        "size": "S",
+        "price": 48,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products5.png",
+        "available": true,
+        "sku": "SHB-001-CRE"
+      }
+    ],
+    "colors": [
+      {
+        "name": "White",
+        "value": "#FFFFFF",
+        "type": "hex"
+      },
+      {
+        "name": "Cream",
+        "value": "#FFFDD0",
+        "type": "hex"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "category": "Tops",
+    "tags": [
+      "blouse",
+      "silk",
+      "elegant",
+      "women"
+    ],
+    "brand": "Ambaz fashion shopify theme",
+    "availability": "in-stock",
+    "badge": null,
+    "description": "Luxurious silk blouse with a soft, flowing fit.",
+    "features": [
+      "Silk fabric",
+      "Button front",
+      "French cuffs"
+    ],
+    "rating": 4.6,
+    "reviewCount": 9,
+    "reviews": [],
+    "relatedProducts": [
+      "1",
+      "33",
+      "34"
+    ],
+    "pairsWellWith": [
+      "4",
+      "6"
+    ],
+    "createdAt": "2024-08-01",
+    "sku": "SHB-001",
+    "countdownEnd": null,
+    "collections": ["beauty", "backpack-fashion"]
+  },
+  {
+    "id": "33",
+    "slug": "velvet-crush-top",
+    "name": "Velvet Crush Top",
+    "vendor": "ELEGANT FASHION",
+    "price": 42,
+    "compareAtPrice": null,
+    "currency": "USD",
+    "images": [
+      {
+        "id": "33-img-1",
+        "src": "/fashion/products/products5.png",
+        "alt": "Velvet Crush Top - Purple"
+      },
+      {
+        "id": "33-img-2",
+        "src": "/fashion/products/products6.png",
+        "alt": "Velvet Crush Top - Burgundy"
+      },
+      {
+        "id": "33-img-3",
+        "src": "/fashion/products/products1.png",
+        "alt": "Velvet Crush Top - View 3"
+      },
+      {
+        "id": "33-img-4",
+        "src": "/fashion/products/products12.png",
+        "alt": "Velvet Crush Top - View 4"
+      },
+      {
+        "id": "33-img-5",
+        "src": "/fashion/products/products14.png",
+        "alt": "Velvet Crush Top - View 5"
+      },
+      {
+        "id": "33-img-6",
+        "src": "/fashion/products/products15.png",
+        "alt": "Velvet Crush Top - View 6"
+      },
+      {
+        "id": "33-img-7",
+        "src": "/fashion/products/products16.png",
+        "alt": "Velvet Crush Top - View 7"
+      },
+      {
+        "id": "33-img-8",
+        "src": "/fashion/products/products17.png",
+        "alt": "Velvet Crush Top - View 8"
+      },
+      {
+        "id": "33-img-9",
+        "src": "/fashion/products/products18.png",
+        "alt": "Velvet Crush Top - View 9"
+      },
+      {
+        "id": "33-img-10",
+        "src": "/fashion/products/products19.png",
+        "alt": "Velvet Crush Top - View 10"
+      }
+    ],
+    "variants": [
+      {
+        "id": "33-v1",
+        "color": "Purple",
+        "size": "S",
+        "price": 42,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products5.png",
+        "available": true,
+        "sku": "VCT-PRP-S"
+      },
+      {
+        "id": "33-v2",
+        "color": "Purple",
+        "size": "M",
+        "price": 42,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products5.png",
+        "available": true,
+        "sku": "VCT-PRP-M"
+      },
+      {
+        "id": "33-v-burgundy",
+        "color": "Burgundy",
+        "size": "S",
+        "price": 42,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products6.png",
+        "available": true,
+        "sku": "VCT-001-BUR"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Purple",
+        "value": "#7C3AED",
+        "type": "hex"
+      },
+      {
+        "name": "Burgundy",
+        "value": "#7F1D1D",
+        "type": "hex"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "category": "Tops",
+    "tags": [
+      "top",
+      "velvet",
+      "women"
+    ],
+    "brand": "Ambaz fashion shopify theme",
+    "availability": "in-stock",
+    "badge": null,
+    "description": "Plush velvet crop top with a modern fit.",
+    "features": [
+      "Velvet fabric",
+      "Crop length",
+      "Fitted"
+    ],
+    "rating": 4.3,
+    "reviewCount": 6,
+    "reviews": [],
+    "relatedProducts": [
+      "1",
+      "32",
+      "34"
+    ],
+    "pairsWellWith": [
+      "4"
+    ],
+    "createdAt": "2024-08-10",
+    "sku": "VCT-001",
+    "countdownEnd": null,
+    "collections": ["beauty", "backpack-fashion"]
+  },
+  {
+    "id": "34",
+    "slug": "striped-cotton-crop-top",
+    "name": "Striped Cotton Crop Top",
+    "vendor": "ELEGANT FASHION",
+    "price": 30,
+    "compareAtPrice": null,
+    "currency": "USD",
+    "images": [
+      {
+        "id": "34-img-1",
+        "src": "/fashion/products/products6.png",
+        "alt": "Striped Cotton Crop Top - Stripe"
+      },
+      {
+        "id": "34-img-2",
+        "src": "/fashion/products/products7.png",
+        "alt": "Striped Cotton Crop Top - White"
+      },
+      {
+        "id": "34-img-3",
+        "src": "/fashion/products/products1.png",
+        "alt": "Striped Cotton Crop Top - View 3"
+      },
+      {
+        "id": "34-img-4",
+        "src": "/fashion/products/products12.png",
+        "alt": "Striped Cotton Crop Top - View 4"
+      },
+      {
+        "id": "34-img-5",
+        "src": "/fashion/products/products14.png",
+        "alt": "Striped Cotton Crop Top - View 5"
+      },
+      {
+        "id": "34-img-6",
+        "src": "/fashion/products/products15.png",
+        "alt": "Striped Cotton Crop Top - View 6"
+      },
+      {
+        "id": "34-img-7",
+        "src": "/fashion/products/products16.png",
+        "alt": "Striped Cotton Crop Top - View 7"
+      },
+      {
+        "id": "34-img-8",
+        "src": "/fashion/products/products17.png",
+        "alt": "Striped Cotton Crop Top - View 8"
+      },
+      {
+        "id": "34-img-9",
+        "src": "/fashion/products/products18.png",
+        "alt": "Striped Cotton Crop Top - View 9"
+      },
+      {
+        "id": "34-img-10",
+        "src": "/fashion/products/products19.png",
+        "alt": "Striped Cotton Crop Top - View 10"
+      }
+    ],
+    "variants": [
+      {
+        "id": "34-v1",
+        "color": "Stripe",
+        "size": "S",
+        "price": 30,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products6.png",
+        "available": true,
+        "sku": "SCCT-STP-S"
+      },
+      {
+        "id": "34-v-white",
+        "color": "White",
+        "size": "S",
+        "price": 30,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products7.png",
+        "available": true,
+        "sku": "SCCT-001-WHI"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Stripe",
+        "value": "#000000",
+        "type": "hex"
+      },
+      {
+        "name": "White",
+        "value": "#FFFFFF",
+        "type": "hex"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "category": "Tops",
+    "tags": [
+      "top",
+      "crop",
+      "cotton",
+      "striped",
+      "women"
+    ],
+    "brand": "Ambaz fashion shopify theme",
+    "availability": "in-stock",
+    "badge": null,
+    "description": "Casual striped cotton crop top perfect for summer.",
+    "features": [
+      "100% cotton",
+      "Crop length",
+      "Relaxed fit"
+    ],
+    "rating": 4.1,
+    "reviewCount": 14,
+    "reviews": [],
+    "relatedProducts": [
+      "1",
+      "32",
+      "33"
+    ],
+    "pairsWellWith": [
+      "4",
+      "6"
+    ],
+    "createdAt": "2024-08-20",
+    "sku": "SCCT-001",
+    "countdownEnd": null,
+    "collections": ["basketball", "beauty", "backpack-fashion"]
+  },
+  {
+    "id": "35",
+    "slug": "coastal-curve-surfboard",
+    "name": "Coastal Curve Surfboard",
+    "vendor": "SURF CO",
+    "price": 380,
+    "compareAtPrice": null,
+    "currency": "USD",
+    "images": [
+      {
+        "id": "35-img-1",
+        "src": "/fashion/products/products7.png",
+        "alt": "Coastal Curve Surfboard - Multi"
+      },
+      {
+        "id": "35-img-2",
+        "src": "/fashion/products/products1.png",
+        "alt": "Coastal Curve Surfboard - View 2"
+      },
+      {
+        "id": "35-img-3",
+        "src": "/fashion/products/products12.png",
+        "alt": "Coastal Curve Surfboard - View 3"
+      },
+      {
+        "id": "35-img-4",
+        "src": "/fashion/products/products14.png",
+        "alt": "Coastal Curve Surfboard - View 4"
+      },
+      {
+        "id": "35-img-5",
+        "src": "/fashion/products/products15.png",
+        "alt": "Coastal Curve Surfboard - View 5"
+      },
+      {
+        "id": "35-img-6",
+        "src": "/fashion/products/products16.png",
+        "alt": "Coastal Curve Surfboard - View 6"
+      },
+      {
+        "id": "35-img-7",
+        "src": "/fashion/products/products17.png",
+        "alt": "Coastal Curve Surfboard - View 7"
+      },
+      {
+        "id": "35-img-8",
+        "src": "/fashion/products/products18.png",
+        "alt": "Coastal Curve Surfboard - View 8"
+      },
+      {
+        "id": "35-img-9",
+        "src": "/fashion/products/products19.png",
+        "alt": "Coastal Curve Surfboard - View 9"
+      },
+      {
+        "id": "35-img-10",
+        "src": "/fashion/products/products20.png",
+        "alt": "Coastal Curve Surfboard - View 10"
+      }
+    ],
+    "variants": [
+      {
+        "id": "35-v1",
+        "color": "Multi",
+        "size": "7ft",
+        "price": 380,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products7.png",
+        "available": true,
+        "sku": "CCS-MLT-7"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Multi",
+        "value": "#06B6D4",
+        "type": "hex"
+      }
+    ],
+    "sizes": [
+      "6ft",
+      "7ft",
+      "8ft"
+    ],
+    "category": "Sports",
+    "tags": [
+      "surfboard",
+      "sports",
+      "outdoor",
+      "surf"
+    ],
+    "brand": "Surf Co",
+    "availability": "in-stock",
+    "badge": null,
+    "description": "Performance surfboard with a classic longboard shape.",
+    "features": [
+      "Fiberglass construction",
+      "Single fin",
+      "Retro shape"
+    ],
+    "rating": 4.7,
+    "reviewCount": 5,
+    "reviews": [],
+    "relatedProducts": [
+      "30",
+      "17"
+    ],
+    "pairsWellWith": [],
+    "createdAt": "2024-09-01",
+    "sku": "CCS-001",
+    "countdownEnd": null,
+    "collections": ["basketball"]
+  },
+  {
+    "id": "36",
+    "slug": "cobalt-lace-dress",
+    "name": "Cobalt Lace Dress",
+    "vendor": "ELEGANT FASHION",
+    "price": 44,
+    "compareAtPrice": null,
+    "currency": "USD",
+    "images": [
+      {
+        "id": "36-img-1",
+        "src": "/fashion/products/products8.png",
+        "alt": "Cobalt Lace Dress - Blue"
+      },
+      {
+        "id": "36-img-2",
+        "src": "/fashion/products/products9.png",
+        "alt": "Cobalt Lace Dress - Black"
+      },
+      {
+        "id": "36-img-3",
+        "src": "/fashion/products/products1.png",
+        "alt": "Cobalt Lace Dress - View 3"
+      },
+      {
+        "id": "36-img-4",
+        "src": "/fashion/products/products12.png",
+        "alt": "Cobalt Lace Dress - View 4"
+      },
+      {
+        "id": "36-img-5",
+        "src": "/fashion/products/products14.png",
+        "alt": "Cobalt Lace Dress - View 5"
+      },
+      {
+        "id": "36-img-6",
+        "src": "/fashion/products/products15.png",
+        "alt": "Cobalt Lace Dress - View 6"
+      },
+      {
+        "id": "36-img-7",
+        "src": "/fashion/products/products16.png",
+        "alt": "Cobalt Lace Dress - View 7"
+      },
+      {
+        "id": "36-img-8",
+        "src": "/fashion/products/products17.png",
+        "alt": "Cobalt Lace Dress - View 8"
+      },
+      {
+        "id": "36-img-9",
+        "src": "/fashion/products/products18.png",
+        "alt": "Cobalt Lace Dress - View 9"
+      },
+      {
+        "id": "36-img-10",
+        "src": "/fashion/products/products19.png",
+        "alt": "Cobalt Lace Dress - View 10"
+      }
+    ],
+    "variants": [
+      {
+        "id": "36-v1",
+        "color": "Blue",
+        "size": "S",
+        "price": 44,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products8.png",
+        "available": true,
+        "sku": "CLD-BLU-S"
+      },
+      {
+        "id": "36-v-black",
+        "color": "Black",
+        "size": "S",
+        "price": 44,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products9.png",
+        "available": true,
+        "sku": "CLD-001-BLA"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Blue",
+        "value": "#2563EB",
+        "type": "hex"
+      },
+      {
+        "name": "Black",
+        "value": "#000000",
+        "type": "hex"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "category": "Dresses",
+    "tags": [
+      "dress",
+      "lace",
+      "cobalt",
+      "women"
+    ],
+    "brand": "Ambaz fashion shopify theme",
+    "availability": "in-stock",
+    "badge": null,
+    "description": "Stunning cobalt blue lace dress for evening occasions.",
+    "features": [
+      "Lace overlay",
+      "Fitted bodice",
+      "Flare skirt"
+    ],
+    "rating": 4.5,
+    "reviewCount": 8,
+    "reviews": [],
+    "relatedProducts": [
+      "2",
+      "3",
+      "8",
+      "16"
+    ],
+    "pairsWellWith": [],
+    "createdAt": "2024-09-10",
+    "sku": "CLD-001",
+    "countdownEnd": null,
+    "collections": ["beauty"]
+  },
+  {
+    "id": "37",
+    "slug": "attractive-red-bikini",
+    "name": "Attractive Red Bikini",
+    "vendor": "ELEGANT FASHION",
+    "price": 42,
+    "compareAtPrice": 52,
+    "currency": "USD",
+    "images": [
+      {
+        "id": "37-img-1",
+        "src": "/fashion/products/products9.png",
+        "alt": "Attractive Red Bikini - Red"
+      },
+      {
+        "id": "37-img-2",
+        "src": "/fashion/products/products10.png",
+        "alt": "Attractive Red Bikini - Yellow"
+      },
+      {
+        "id": "37-img-3",
+        "src": "/fashion/products/products1.png",
+        "alt": "Attractive Red Bikini - View 3"
+      },
+      {
+        "id": "37-img-4",
+        "src": "/fashion/products/products12.png",
+        "alt": "Attractive Red Bikini - View 4"
+      },
+      {
+        "id": "37-img-5",
+        "src": "/fashion/products/products14.png",
+        "alt": "Attractive Red Bikini - View 5"
+      },
+      {
+        "id": "37-img-6",
+        "src": "/fashion/products/products15.png",
+        "alt": "Attractive Red Bikini - View 6"
+      },
+      {
+        "id": "37-img-7",
+        "src": "/fashion/products/products16.png",
+        "alt": "Attractive Red Bikini - View 7"
+      },
+      {
+        "id": "37-img-8",
+        "src": "/fashion/products/products17.png",
+        "alt": "Attractive Red Bikini - View 8"
+      },
+      {
+        "id": "37-img-9",
+        "src": "/fashion/products/products18.png",
+        "alt": "Attractive Red Bikini - View 9"
+      },
+      {
+        "id": "37-img-10",
+        "src": "/fashion/products/products19.png",
+        "alt": "Attractive Red Bikini - View 10"
+      }
+    ],
+    "variants": [
+      {
+        "id": "37-v1",
+        "color": "Red",
+        "size": "S",
+        "price": 42,
+        "compareAtPrice": 52,
+        "image": "/fashion/products/products9.png",
+        "available": true,
+        "sku": "ARB-RED-S"
+      },
+      {
+        "id": "37-v-yellow",
+        "color": "Yellow",
+        "size": "S",
+        "price": 42,
+        "compareAtPrice": 52,
+        "image": "/fashion/products/products10.png",
+        "available": true,
+        "sku": "ARB-001-YEL"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Red",
+        "value": "#EF4444",
+        "type": "hex"
+      },
+      {
+        "name": "Yellow",
+        "value": "#FBBF24",
+        "type": "hex"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "category": "Swimwear",
+    "tags": [
+      "bikini",
+      "swimwear",
+      "red",
+      "women"
+    ],
+    "brand": "Ambaz fashion shopify theme",
+    "availability": "in-stock",
+    "badge": "sale",
+    "description": "Eye-catching red bikini set for beach days.",
+    "features": [
+      "Adjustable straps",
+      "Removable padding",
+      "Quick-dry"
+    ],
+    "rating": 4.4,
+    "reviewCount": 16,
+    "reviews": [],
+    "relatedProducts": [
+      "2",
+      "7",
+      "8"
+    ],
+    "pairsWellWith": [],
+    "createdAt": "2024-09-15",
+    "sku": "ARB-001",
+    "countdownEnd": null,
+    "collections": ["glasses", "backpack-fashion"]
+  },
+  {
+    "id": "38",
+    "slug": "elegant-knit-sweater",
+    "name": "Elegant Knit Sweater",
+    "vendor": "ELEGANT FASHION",
+    "price": 65,
+    "compareAtPrice": null,
+    "currency": "USD",
+    "images": [
+      {
+        "id": "38-img-1",
+        "src": "/fashion/products/products10.png",
+        "alt": "Elegant Knit Sweater - Cream"
+      },
+      {
+        "id": "38-img-2",
+        "src": "/fashion/products/products11.png",
+        "alt": "Elegant Knit Sweater - Grey"
+      },
+      {
+        "id": "38-img-3",
+        "src": "/fashion/products/products13.png",
+        "alt": "Elegant Knit Sweater - Black"
+      },
+      {
+        "id": "38-img-4",
+        "src": "/fashion/products/products1.png",
+        "alt": "Elegant Knit Sweater - View 4"
+      },
+      {
+        "id": "38-img-5",
+        "src": "/fashion/products/products12.png",
+        "alt": "Elegant Knit Sweater - View 5"
+      },
+      {
+        "id": "38-img-6",
+        "src": "/fashion/products/products14.png",
+        "alt": "Elegant Knit Sweater - View 6"
+      },
+      {
+        "id": "38-img-7",
+        "src": "/fashion/products/products15.png",
+        "alt": "Elegant Knit Sweater - View 7"
+      },
+      {
+        "id": "38-img-8",
+        "src": "/fashion/products/products16.png",
+        "alt": "Elegant Knit Sweater - View 8"
+      },
+      {
+        "id": "38-img-9",
+        "src": "/fashion/products/products17.png",
+        "alt": "Elegant Knit Sweater - View 9"
+      },
+      {
+        "id": "38-img-10",
+        "src": "/fashion/products/products18.png",
+        "alt": "Elegant Knit Sweater - View 10"
+      }
+    ],
+    "variants": [
+      {
+        "id": "38-v1",
+        "color": "Cream",
+        "size": "S",
+        "price": 65,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products10.png",
+        "available": true,
+        "sku": "EKS-CRM-S"
+      },
+      {
+        "id": "38-v2",
+        "color": "Cream",
+        "size": "M",
+        "price": 65,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products10.png",
+        "available": true,
+        "sku": "EKS-CRM-M"
+      },
+      {
+        "id": "38-v-grey",
+        "color": "Grey",
+        "size": "S",
+        "price": 65,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products11.png",
+        "available": true,
+        "sku": "EKS-001-GRE"
+      },
+      {
+        "id": "38-v-black",
+        "color": "Black",
+        "size": "S",
+        "price": 65,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products13.png",
+        "available": true,
+        "sku": "EKS-001-BLA"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Cream",
+        "value": "#FFFDD0",
+        "type": "hex"
+      },
+      {
+        "name": "Grey",
+        "value": "#6B7280",
+        "type": "hex"
+      },
+      {
+        "name": "Black",
+        "value": "#000000",
+        "type": "hex"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "category": "Knitwear",
+    "tags": [
+      "sweater",
+      "knit",
+      "elegant",
+      "women",
+      "winter"
+    ],
+    "brand": "Ambaz fashion shopify theme",
+    "availability": "in-stock",
+    "badge": null,
+    "description": "Cozy and elegant knit sweater with cable pattern.",
+    "features": [
+      "Cable knit",
+      "Crew neck",
+      "Relaxed fit",
+      "Soft wool blend"
+    ],
+    "rating": 4.7,
+    "reviewCount": 19,
+    "reviews": [],
+    "relatedProducts": [
+      "1",
+      "32",
+      "33"
+    ],
+    "pairsWellWith": [
+      "4",
+      "6"
+    ],
+    "createdAt": "2024-10-01",
+    "sku": "EKS-001",
+    "countdownEnd": null,
+    "collections": ["glasses", "socks"]
+  },
+  {
+    "id": "39",
+    "slug": "elevated-styles-wool-coat",
+    "name": "Elevated Styles Wool Coat",
+    "vendor": "ELEGANT FASHION",
+    "price": 120,
+    "compareAtPrice": null,
+    "currency": "USD",
+    "images": [
+      {
+        "id": "39-img-1",
+        "src": "/fashion/products/products11.png",
+        "alt": "Elevated Styles Wool Coat - Camel"
+      },
+      {
+        "id": "39-img-2",
+        "src": "/fashion/products/products13.png",
+        "alt": "Elevated Styles Wool Coat - Black"
+      },
+      {
+        "id": "39-img-3",
+        "src": "/fashion/products/products1.png",
+        "alt": "Elevated Styles Wool Coat - View 3"
+      },
+      {
+        "id": "39-img-4",
+        "src": "/fashion/products/products12.png",
+        "alt": "Elevated Styles Wool Coat - View 4"
+      },
+      {
+        "id": "39-img-5",
+        "src": "/fashion/products/products14.png",
+        "alt": "Elevated Styles Wool Coat - View 5"
+      },
+      {
+        "id": "39-img-6",
+        "src": "/fashion/products/products15.png",
+        "alt": "Elevated Styles Wool Coat - View 6"
+      },
+      {
+        "id": "39-img-7",
+        "src": "/fashion/products/products16.png",
+        "alt": "Elevated Styles Wool Coat - View 7"
+      },
+      {
+        "id": "39-img-8",
+        "src": "/fashion/products/products17.png",
+        "alt": "Elevated Styles Wool Coat - View 8"
+      },
+      {
+        "id": "39-img-9",
+        "src": "/fashion/products/products18.png",
+        "alt": "Elevated Styles Wool Coat - View 9"
+      },
+      {
+        "id": "39-img-10",
+        "src": "/fashion/products/products19.png",
+        "alt": "Elevated Styles Wool Coat - View 10"
+      }
+    ],
+    "variants": [
+      {
+        "id": "39-v1",
+        "color": "Camel",
+        "size": "S",
+        "price": 120,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products11.png",
+        "available": true,
+        "sku": "ESWC-CML-S"
+      },
+      {
+        "id": "39-v-black",
+        "color": "Black",
+        "size": "S",
+        "price": 120,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products13.png",
+        "available": true,
+        "sku": "ESWC-001-BLA"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Camel",
+        "value": "#C19A6B",
+        "type": "hex"
+      },
+      {
+        "name": "Black",
+        "value": "#000000",
+        "type": "hex"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "category": "Outerwear",
+    "tags": [
+      "coat",
+      "wool",
+      "elegant",
+      "women",
+      "winter"
+    ],
+    "brand": "Ambaz fashion shopify theme",
+    "availability": "in-stock",
+    "badge": null,
+    "description": "Premium wool coat with a tailored silhouette.",
+    "features": [
+      "Pure wool",
+      "Double-breasted",
+      "Satin lining",
+      "Belt included"
+    ],
+    "rating": 4.9,
+    "reviewCount": 4,
+    "reviews": [],
+    "relatedProducts": [
+      "38",
+      "15"
+    ],
+    "pairsWellWith": [
+      "32",
+      "4"
+    ],
+    "createdAt": "2024-10-15",
+    "sku": "ESWC-001",
+    "countdownEnd": null,
+    "collections": ["glasses", "backpack-fashion"]
+  },
+  {
+    "id": "40",
+    "slug": "trendy-accessories-set",
+    "name": "Trendy Accessories Set",
+    "vendor": "ELEGANT FASHION",
+    "price": 55,
+    "compareAtPrice": null,
+    "currency": "USD",
+    "images": [
+      {
+        "id": "40-img-1",
+        "src": "/fashion/products/products13.png",
+        "alt": "Trendy Accessories Set - Gold"
+      },
+      {
+        "id": "40-img-2",
+        "src": "/fashion/products/products1.png",
+        "alt": "Trendy Accessories Set - Silver"
+      },
+      {
+        "id": "40-img-3",
+        "src": "/fashion/products/products12.png",
+        "alt": "Trendy Accessories Set - View 3"
+      },
+      {
+        "id": "40-img-4",
+        "src": "/fashion/products/products14.png",
+        "alt": "Trendy Accessories Set - View 4"
+      },
+      {
+        "id": "40-img-5",
+        "src": "/fashion/products/products15.png",
+        "alt": "Trendy Accessories Set - View 5"
+      },
+      {
+        "id": "40-img-6",
+        "src": "/fashion/products/products16.png",
+        "alt": "Trendy Accessories Set - View 6"
+      },
+      {
+        "id": "40-img-7",
+        "src": "/fashion/products/products17.png",
+        "alt": "Trendy Accessories Set - View 7"
+      },
+      {
+        "id": "40-img-8",
+        "src": "/fashion/products/products18.png",
+        "alt": "Trendy Accessories Set - View 8"
+      },
+      {
+        "id": "40-img-9",
+        "src": "/fashion/products/products19.png",
+        "alt": "Trendy Accessories Set - View 9"
+      },
+      {
+        "id": "40-img-10",
+        "src": "/fashion/products/products20.png",
+        "alt": "Trendy Accessories Set - View 10"
+      }
+    ],
+    "variants": [
+      {
+        "id": "40-v1",
+        "color": "Gold",
+        "size": "One Size",
+        "price": 55,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products13.png",
+        "available": true,
+        "sku": "TAS-GLD-OS"
+      },
+      {
+        "id": "40-v-silver",
+        "color": "Silver",
+        "size": "One Size",
+        "price": 55,
+        "compareAtPrice": null,
+        "image": "/fashion/products/products1.png",
+        "available": true,
+        "sku": "TAS-001-SIL"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Gold",
+        "value": "#FFD700",
+        "type": "hex"
+      },
+      {
+        "name": "Silver",
+        "value": "#C0C0C0",
+        "type": "hex"
+      }
+    ],
+    "sizes": [
+      "One Size"
+    ],
+    "category": "Accessories",
+    "tags": [
+      "accessories",
+      "set",
+      "jewelry",
+      "women"
+    ],
+    "brand": "Ambaz fashion shopify theme",
+    "availability": "in-stock",
+    "badge": null,
+    "description": "Curated set of trendy accessories including necklace, bracelet, and earrings.",
+    "features": [
+      "3-piece set",
+      "Gold-plated",
+      "Hypoallergenic",
+      "Gift box included"
+    ],
+    "rating": 4.5,
+    "reviewCount": 11,
+    "reviews": [],
+    "relatedProducts": [
+      "19",
+      "20"
+    ],
+    "pairsWellWith": [
+      "2",
+      "3",
+      "16"
+    ],
+    "createdAt": "2024-11-01",
+    "sku": "TAS-001",
+    "countdownEnd": null,
+    "collections": ["glasses", "jewelry"]
+  }
+]

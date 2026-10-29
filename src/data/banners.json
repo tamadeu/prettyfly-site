@@ -1,0 +1,7 @@
+[
+  { "id": "b1", "title": "Women Summer Trend Style", "subtitle": "Introducing the Ambuz women's autumn / summer Fashion", "image": "/fashion/banners/hero-1.jpg", "link": "/shop", "buttonText": "Shop Collection" },
+  { "id": "b2", "title": "New Arrivals Collection", "subtitle": "Discover the latest fashion trends for this season", "image": "/fashion/banners/hero-2.jpg", "link": "/shop?sort=newest", "buttonText": "Discover Now" },
+  { "id": "b3", "title": "Top Fashion Deals", "subtitle": "Starting from $", "image": "/fashion/banners/promo-1.jpg", "link": "/shop", "buttonText": "Shop now" },
+  { "id": "b4", "title": "Trendy Eyewear", "subtitle": "Explore Now", "image": "/fashion/banners/promo-2.jpg", "link": "/shop?category=Accessories", "buttonText": "Explore Now" },
+  { "id": "b5", "title": "Hottest Sweater Trends", "subtitle": "Check it out", "image": "/fashion/banners/promo-3.jpg", "link": "/shop?category=Knitwear", "buttonText": "Check it out" }
+]
