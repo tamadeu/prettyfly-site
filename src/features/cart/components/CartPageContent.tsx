@@ -214,7 +214,7 @@ export function CartPageContent() {
                 </div>
               </div>
 
-              <p className="cp-tax-note">Frete e pagamento estarão disponíveis em breve.</p>
+              <p className="cp-tax-note">Consulte as opções de entrega no checkout.</p>
 
               <CartSaveStatus />
               <Link href="/checkout" className="cp-checkout-btn">

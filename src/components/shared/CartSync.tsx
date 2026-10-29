@@ -3,12 +3,15 @@
 import { useEffect } from 'react';
 import { useCartStore } from '@/store/cartStore';
 import { emptyCheckout, useCheckoutStore } from '@/store/checkoutStore';
+import { shippingInputKey } from '@/lib/shipping';
 import { AUTH_EVENT } from './WishlistSync';
 
 export const CART_RETRY_EVENT = 'pf-cart-retry';
 export const CART_FLUSH_EVENT = 'pf-cart-flush';
 let flushPending: (() => Promise<void>) | undefined;
 export async function flushCart() { await flushPending?.(); }
+let shippingAction: ((selection?: { quote_id: string; service_id: string }) => Promise<void>) | undefined;
+export async function requestShipping(selection?: { quote_id: string; service_id: string }) { await shippingAction?.(selection); }
 
 // Uma fila por página evita que respostas antigas sobrescrevam digitação ou quantidades novas.
 export function CartSync() {
@@ -52,7 +55,7 @@ export function CartSync() {
         const changedDuringLoad = sameOwner && before !== itemsKey();
         applying = true;
         if (!keepLocal && !changedDuringLoad) useCartStore.setState({ items: remote.items });
-        useCheckoutStore.setState({ draft: { ...emptyCheckout, ...remote.checkout }, ready: true });
+        useCheckoutStore.setState({ draft: { ...emptyCheckout, ...remote.checkout }, ready: true, shipping: remote.shipping ?? null, shippingStatus: 'idle', shippingError: '' });
         localStorage.setItem('pf-cart-owner', remote.owner);
         applying = false;
         version = remote.version;
@@ -101,6 +104,7 @@ export function CartSync() {
         if (itemsKey() === items) useCartStore.setState({ items: json.data.items });
         savedItems = JSON.stringify(json.data.items);
         savedDraft = draft;
+        useCheckoutStore.setState({ shipping: json.data.shipping ?? null });
         applying = false;
         status('saved');
       } catch (error) {
@@ -128,7 +132,7 @@ export function CartSync() {
       ready = false;
       applying = true;
       useCartStore.setState({ items: [] });
-      useCheckoutStore.setState({ ready: false, draft: { ...emptyCheckout } });
+      useCheckoutStore.setState({ ready: false, draft: { ...emptyCheckout }, shipping: null, shippingStatus: 'idle', shippingError: '' });
       applying = false;
       reload = true;
       void load();
@@ -137,6 +141,46 @@ export function CartSync() {
       clearTimeout(timer);
       while (busy && !disposed) await new Promise((resolve) => setTimeout(resolve, 25));
       await save();
+    };
+    shippingAction = async (selection) => {
+      const expectedKey = shippingInputKey(useCartStore.getState().items, useCheckoutStore.getState().draft.postal_code);
+      await flushCart();
+      while (busy && !disposed) await new Promise((resolve) => setTimeout(resolve, 25));
+      if (disposed || !ready || reload || blocked) return;
+      if (expectedKey !== shippingInputKey(useCartStore.getState().items, useCheckoutStore.getState().draft.postal_code)) return;
+      if (itemsKey() !== savedItems || draftKey() !== savedDraft) {
+        useCheckoutStore.setState({ shippingStatus: 'error', shippingError: 'Salve as alterações do carrinho antes de calcular o frete.' });
+        return;
+      }
+      busy = true;
+      useCheckoutStore.setState({ shippingStatus: selection ? 'selecting' : 'loading', shippingError: '' });
+      try {
+        const response = await fetch(selection ? '/api/cart/shipping/select' : '/api/cart/shipping', {
+          method: 'POST', signal: AbortSignal.timeout(20000),
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ version, owner, ...selection }),
+        });
+        const json = await response.json();
+        if (disposed || reload) return;
+        if (response.status === 401) { reload = true; return; }
+        if (response.status === 409) {
+          blocked = true;
+          status('conflict', 'O carrinho ou a cotação mudou. Recarregue os dados salvos para continuar.');
+          useCheckoutStore.setState({ shippingStatus: 'error', shippingError: 'Recarregue os dados salvos do carrinho para consultar o frete novamente.' });
+          return;
+        }
+        if (!response.ok) throw new Error(Object.values(json.errors ?? {}).flat()[0] as string || json.message || 'Não foi possível calcular o frete.');
+        version = json.data.version;
+        useCheckoutStore.setState({ shipping: json.data.shipping, shippingStatus: 'ready', shippingError: '' });
+      } catch (error) {
+        if (!disposed) useCheckoutStore.setState({ shippingStatus: 'error', shippingError: error instanceof Error ? error.message : 'Não foi possível consultar o frete. Tente novamente.' });
+      } finally {
+        busy = false;
+        if (!disposed) {
+          if (reload) void load();
+          else if (itemsKey() !== savedItems || draftKey() !== savedDraft) void save();
+        }
+      }
     };
     const retry = () => { if (!ready || blocked) void load(); else void save(); };
     const flush = () => { clearTimeout(timer); void save(); };
@@ -151,6 +195,7 @@ export function CartSync() {
     return () => {
       disposed = true;
       flushPending = undefined;
+      shippingAction = undefined;
       clearTimeout(timer);
       offCart(); offCheckout();
       window.removeEventListener(AUTH_EVENT, auth);

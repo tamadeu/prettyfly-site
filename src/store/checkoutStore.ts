@@ -23,7 +23,19 @@ export const emptyCheckout: CheckoutDraft = {
   complement: '', neighborhood: '', city: '', state: '', phone: '', email: '', notes: '',
 };
 
+export interface ShippingQuote {
+  quote_id: string;
+  input_key: string;
+  environment: 'sandbox' | 'production';
+  expires_at: string;
+  selected_id: string | null;
+  options: { id: string; name: string; company: string; price: number; delivery_days: number }[];
+}
+
 interface CheckoutState {
+  shipping: ShippingQuote | null;
+  shippingStatus: 'idle' | 'loading' | 'selecting' | 'ready' | 'error';
+  shippingError: string;
   draft: CheckoutDraft;
   ready: boolean;
   status: 'loading' | 'saved' | 'saving' | 'error' | 'conflict';
@@ -32,6 +44,7 @@ interface CheckoutState {
 }
 
 export const useCheckoutStore = create<CheckoutState>((set) => ({
+  shipping: null, shippingStatus: 'idle', shippingError: '',
   draft: { ...emptyCheckout }, ready: false, status: 'loading', message: '',
   update: (values) => set((s) => ({ draft: { ...s.draft, ...values } })),
 }));

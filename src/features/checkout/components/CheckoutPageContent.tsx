@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import { useCartStore } from '@/store/cartStore';
 import { useCheckoutStore, type CheckoutDraft } from '@/store/checkoutStore';
 import { CART_FLUSH_EVENT, CART_RETRY_EVENT } from '@/components/shared/CartSync';
+import { ShippingOptions } from './ShippingOptions';
 import { formatPrice } from '@/utils/formatPrice';
 
 const ACCENT = '#c96742';
@@ -106,7 +107,8 @@ export function CheckoutPageContent() {
             {status === 'loading' ? 'Recuperando seu carrinho…' : status === 'saving' ? 'Salvando alterações…' : status === 'error' || status === 'conflict' ? message : items.length ? 'Seu carrinho e seus dados estão salvos.' : 'Adicione produtos para iniciar seu carrinho.'}
           </p>
           {(status === 'error' || status === 'conflict') && <button className="co-explore-btn" style={{ width: '100%', marginBottom: '2rem' }} onClick={() => window.dispatchEvent(new Event(CART_RETRY_EVENT))}>{status === 'conflict' ? 'Recarregar dados salvos' : 'Tentar novamente'}</button>}
-          <p className="co-privacy">Frete e pagamento estarão disponíveis em breve. Nenhum pedido será enviado nesta etapa.</p>
+          <ShippingOptions />
+          <p className="co-privacy">O pagamento estará disponível em breve. Nenhum pedido será enviado nesta etapa.</p>
           <p className="co-privacy">Seus dados são salvos conforme você preenche, para continuar depois. Consulte nossa <Link href="/pages/privacy-policy" className="co-link">política de privacidade</Link>.</p>
           <Link href="/cart" className="co-link">Editar produtos do carrinho</Link>
         </aside>
