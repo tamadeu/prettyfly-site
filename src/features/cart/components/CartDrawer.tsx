@@ -8,6 +8,7 @@ import { useCartStore } from '@/store/cartStore';
 import { formatPrice } from '@/utils/formatPrice';
 import { useCheckoutStore } from '@/store/checkoutStore';
 import { CartSaveStatus } from '@/components/shared/CartSaveStatus';
+import { FreeShippingNotice } from '@/components/shared/FreeShippingNotice';
 import { getStorefrontFromPath, getStorefrontOfSlug, productHrefBaseFor, shopHrefFor } from '@/utils/storefront';
 
 /* ── Icons ── */
@@ -224,6 +225,7 @@ export function CartDrawer() {
                 <span style={{ fontSize: '26px', fontWeight: 700, color: '#222' }}>Subtotal</span>
                 <span style={{ fontSize: '20px', fontWeight: 600, color: '#222' }}>{formatPrice(subtotal, 'BRL')}</span>
               </div>
+              <FreeShippingNotice />
               <p style={{ fontSize: '15px', color: '#777', marginBottom: '18px' }}>Consulte as opções de entrega no checkout.</p>
 
               <div style={{ display: 'flex', gap: '12px' }}>

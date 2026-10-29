@@ -29,10 +29,11 @@ export interface ShippingQuote {
   environment: 'sandbox' | 'production';
   expires_at: string;
   selected_id: string | null;
-  options: { id: string; name: string; company: string; price: number; delivery_days: number }[];
+  options: { id: string; name: string; company: string; price: number; delivery_days: number; free_shipping?: boolean }[];
 }
 
 interface CheckoutState {
+  freeShippingPolicy: { minimum: number } | null;
   shipping: ShippingQuote | null;
   shippingStatus: 'idle' | 'loading' | 'selecting' | 'ready' | 'error';
   shippingError: string;
@@ -44,6 +45,7 @@ interface CheckoutState {
 }
 
 export const useCheckoutStore = create<CheckoutState>((set) => ({
+  freeShippingPolicy: null,
   shipping: null, shippingStatus: 'idle', shippingError: '',
   draft: { ...emptyCheckout }, ready: false, status: 'loading', message: '',
   update: (values) => set((s) => ({ draft: { ...s.draft, ...values } })),

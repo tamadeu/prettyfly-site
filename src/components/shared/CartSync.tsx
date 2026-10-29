@@ -55,7 +55,7 @@ export function CartSync() {
         const changedDuringLoad = sameOwner && before !== itemsKey();
         applying = true;
         if (!keepLocal && !changedDuringLoad) useCartStore.setState({ items: remote.items });
-        useCheckoutStore.setState({ draft: { ...emptyCheckout, ...remote.checkout }, ready: true, shipping: remote.shipping ?? null, shippingStatus: 'idle', shippingError: '' });
+        useCheckoutStore.setState({ draft: { ...emptyCheckout, ...remote.checkout }, ready: true, shipping: remote.shipping ?? null, freeShippingPolicy: remote.free_shipping_policy ?? null, shippingStatus: 'idle', shippingError: '' });
         localStorage.setItem('pf-cart-owner', remote.owner);
         applying = false;
         version = remote.version;
@@ -104,7 +104,7 @@ export function CartSync() {
         if (itemsKey() === items) useCartStore.setState({ items: json.data.items });
         savedItems = JSON.stringify(json.data.items);
         savedDraft = draft;
-        useCheckoutStore.setState({ shipping: json.data.shipping ?? null });
+        useCheckoutStore.setState({ shipping: json.data.shipping ?? null, freeShippingPolicy: json.data.free_shipping_policy ?? null });
         applying = false;
         status('saved');
       } catch (error) {
@@ -132,7 +132,7 @@ export function CartSync() {
       ready = false;
       applying = true;
       useCartStore.setState({ items: [] });
-      useCheckoutStore.setState({ ready: false, draft: { ...emptyCheckout }, shipping: null, shippingStatus: 'idle', shippingError: '' });
+      useCheckoutStore.setState({ ready: false, draft: { ...emptyCheckout }, shipping: null, freeShippingPolicy: null, shippingStatus: 'idle', shippingError: '' });
       applying = false;
       reload = true;
       void load();
@@ -171,7 +171,7 @@ export function CartSync() {
         }
         if (!response.ok) throw new Error(Object.values(json.errors ?? {}).flat()[0] as string || json.message || 'Não foi possível calcular o frete.');
         version = json.data.version;
-        useCheckoutStore.setState({ shipping: json.data.shipping, shippingStatus: 'ready', shippingError: '' });
+        useCheckoutStore.setState({ shipping: json.data.shipping, freeShippingPolicy: json.data.free_shipping_policy ?? null, shippingStatus: 'ready', shippingError: '' });
       } catch (error) {
         if (!disposed) useCheckoutStore.setState({ shippingStatus: 'error', shippingError: error instanceof Error ? error.message : 'Não foi possível consultar o frete. Tente novamente.' });
       } finally {

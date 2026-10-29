@@ -9,6 +9,7 @@ import { FeaturedSlider } from '@/features/home/components/FeaturedSlider';
 import { formatPrice } from '@/utils/formatPrice';
 import { useCheckoutStore } from '@/store/checkoutStore';
 import { CartSaveStatus } from '@/components/shared/CartSaveStatus';
+import { FreeShippingNotice } from '@/components/shared/FreeShippingNotice';
 
 const ACCENT = '#c96742';
 
@@ -214,6 +215,7 @@ export function CartPageContent() {
                 </div>
               </div>
 
+              <FreeShippingNotice />
               <p className="cp-tax-note">Consulte as opções de entrega no checkout.</p>
 
               <CartSaveStatus />

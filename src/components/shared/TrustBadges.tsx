@@ -1,5 +1,8 @@
 'use client';
 
+import { useCheckoutStore } from '@/store/checkoutStore';
+import { formatPrice } from '@/utils/formatPrice';
+
 /* ── SVG Icons ── */
 
 function IconFreeShipping() {
@@ -46,7 +49,7 @@ function IconMoneyGuarantee() {
 /* ── Data ── */
 
 const badges = [
-  { icon: <IconFreeShipping />, title: 'Frete grátis e devoluções', description: 'Frete grátis em pedidos acima de US$ 100' },
+  { icon: <IconFreeShipping />, title: 'Opções de entrega', description: 'Consulte o frete para seu CEP no checkout' },
   { icon: <IconOnlineSupport />, title: 'Suporte online', description: '24 horas por dia, 7 dias por semana' },
   { icon: <IconSecurePayment />, title: 'Pagamento seguro', description: 'Pague com diversos cartões de crédito' },
   { icon: <IconMoneyGuarantee />, title: 'Garantia de reembolso', description: 'Troque em até 30 dias' },
@@ -55,11 +58,16 @@ const badges = [
 /* ── Component ── */
 
 export function TrustBadges() {
+  const policy = useCheckoutStore((s) => s.freeShippingPolicy);
+  const displayedBadges = badges.map((badge, index) => index === 0 && policy ? {
+    ...badge, title: 'Frete grátis',
+    description: `${policy.minimum > 0 ? `A partir de ${formatPrice(policy.minimum, 'BRL')} em produtos` : 'Sem valor mínimo'}. Na opção mais barata disponível para seu CEP.`,
+  } : badge);
   return (
     <section className="tb-section">
       <div className="container-main">
         <div className="tb-grid">
-          {badges.map((badge) => (
+          {displayedBadges.map((badge) => (
             <div key={badge.title} className="tb-item">
               <div className="tb-icon">{badge.icon}</div>
               <div className="tb-text">
