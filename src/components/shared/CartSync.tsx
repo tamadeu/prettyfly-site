@@ -239,7 +239,12 @@ export function CartSync() {
         }
         if (!response.ok) {
           const firstError = Object.values(json.errors ?? {}).flat()[0] as string | undefined;
-          throw new Error(firstError || json.message || 'Não foi possível aplicar o cupom.');
+          const message = firstError || json.message || 'Não foi possível aplicar o cupom.';
+          if (response.status === 400 || response.status === 422) {
+            status('saved');
+            return { ok: false, message };
+          }
+          throw new Error(message);
         }
         version = json.data.version;
         syncCartPricing(json.data);
