@@ -32,7 +32,12 @@ export interface ShippingQuote {
   options: { id: string; name: string; company: string; price: number; delivery_days: number; free_shipping?: boolean }[];
 }
 
+export interface CouponSnapshot {
+  code: string; name: string; discount_type: 'percentage' | 'fixed'; discount_value: number;
+  subtotal: number; eligible_subtotal: number; discount_amount: number; expires_at?: string;
+}
 interface CheckoutState {
+  coupon: CouponSnapshot | null; cartSubtotal: number | null; couponDiscount: number; cartTotal: number | null;
   freeShippingPolicy: { minimum: number } | null;
   shipping: ShippingQuote | null;
   shippingStatus: 'idle' | 'loading' | 'selecting' | 'ready' | 'error';
@@ -45,6 +50,7 @@ interface CheckoutState {
 }
 
 export const useCheckoutStore = create<CheckoutState>((set) => ({
+  coupon: null, cartSubtotal: null, couponDiscount: 0, cartTotal: null,
   freeShippingPolicy: null,
   shipping: null, shippingStatus: 'idle', shippingError: '',
   draft: { ...emptyCheckout }, ready: false, status: 'loading', message: '',

@@ -6,6 +6,28 @@ import { emptyCheckout, useCheckoutStore } from '@/store/checkoutStore';
 import { shippingInputKey } from '@/lib/shipping';
 import { AUTH_EVENT } from './WishlistSync';
 
+interface CartPricingPayload {
+  coupon?: import('@/store/checkoutStore').CouponSnapshot | null;
+  subtotal?: number; discount?: number; total?: number;
+}
+function syncCartPricing(data: CartPricingPayload) {
+  useCheckoutStore.setState({
+    coupon: data.coupon ?? null,
+    cartSubtotal: typeof data.subtotal === 'number' ? data.subtotal : null,
+    couponDiscount: typeof data.discount === 'number' ? data.discount : 0,
+    cartTotal: typeof data.total === 'number' ? data.total : null,
+  });
+}
+let couponAction: ((code: string, remove?: boolean) => Promise<{ ok: boolean; message?: string }>) | undefined;
+export async function applyCartCoupon(code: string) {
+  if (!couponAction) return { ok: false, message: 'O carrinho ainda está inicializando. Tente novamente.' };
+  return couponAction(code, false);
+}
+export async function removeCartCoupon() {
+  if (!couponAction) return { ok: false, message: 'O carrinho ainda está inicializando. Tente novamente.' };
+  return couponAction('', true);
+}
+
 export const CART_RETRY_EVENT = 'pf-cart-retry';
 export const CART_FLUSH_EVENT = 'pf-cart-flush';
 let flushPending: (() => Promise<void>) | undefined;
@@ -56,6 +78,7 @@ export function CartSync() {
         applying = true;
         if (!keepLocal && !changedDuringLoad) useCartStore.setState({ items: remote.items });
         useCheckoutStore.setState({ draft: { ...emptyCheckout, ...remote.checkout }, ready: true, shipping: remote.shipping ?? null, freeShippingPolicy: remote.free_shipping_policy ?? null, shippingStatus: 'idle', shippingError: '' });
+        syncCartPricing(remote);
         localStorage.setItem('pf-cart-owner', remote.owner);
         applying = false;
         version = remote.version;
@@ -105,6 +128,7 @@ export function CartSync() {
         savedItems = JSON.stringify(json.data.items);
         savedDraft = draft;
         useCheckoutStore.setState({ shipping: json.data.shipping ?? null, freeShippingPolicy: json.data.free_shipping_policy ?? null });
+        syncCartPricing(json.data);
         applying = false;
         status('saved');
       } catch (error) {
@@ -132,7 +156,7 @@ export function CartSync() {
       ready = false;
       applying = true;
       useCartStore.setState({ items: [] });
-      useCheckoutStore.setState({ ready: false, draft: { ...emptyCheckout }, shipping: null, freeShippingPolicy: null, shippingStatus: 'idle', shippingError: '' });
+      useCheckoutStore.setState({ ready: false, draft: { ...emptyCheckout }, shipping: null, freeShippingPolicy: null, coupon: null, cartSubtotal: null, couponDiscount: 0, cartTotal: null, shippingStatus: 'idle', shippingError: '' });
       applying = false;
       reload = true;
       void load();
@@ -172,8 +196,64 @@ export function CartSync() {
         if (!response.ok) throw new Error(Object.values(json.errors ?? {}).flat()[0] as string || json.message || 'Não foi possível calcular o frete.');
         version = json.data.version;
         useCheckoutStore.setState({ shipping: json.data.shipping, freeShippingPolicy: json.data.free_shipping_policy ?? null, shippingStatus: 'ready', shippingError: '' });
+        syncCartPricing(json.data);
       } catch (error) {
         if (!disposed) useCheckoutStore.setState({ shippingStatus: 'error', shippingError: error instanceof Error ? error.message : 'Não foi possível consultar o frete. Tente novamente.' });
+      } finally {
+        busy = false;
+        if (!disposed) {
+          if (reload) void load();
+          else if (itemsKey() !== savedItems || draftKey() !== savedDraft) void save();
+        }
+      }
+    };
+    couponAction = async (code, remove = false) => {
+      await flushCart();
+      while (busy && !disposed) await new Promise((resolve) => setTimeout(resolve, 25));
+      if (disposed || !ready || blocked) return { ok: false, message: 'Recarregue o carrinho antes de aplicar o cupom.' };
+      if (itemsKey() !== savedItems || draftKey() !== savedDraft) {
+        await save();
+        while (busy && !disposed) await new Promise((resolve) => setTimeout(resolve, 25));
+      }
+      if (disposed || !ready || blocked || itemsKey() !== savedItems || draftKey() !== savedDraft) {
+        return { ok: false, message: 'Salve as alterações do carrinho antes de aplicar o cupom.' };
+      }
+      busy = true;
+      status('saving');
+      try {
+        const response = await fetch('/api/cart/coupon', {
+          method: remove ? 'DELETE' : 'POST', signal: AbortSignal.timeout(20000),
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ version, owner, ...(!remove ? { code: code.trim() } : {}) }),
+        });
+        const json = await response.json();
+        if (disposed || reload) return { ok: false, message: 'O carrinho está sendo atualizado. Tente novamente.' };
+        if (response.status === 409) {
+          blocked = true;
+          status('conflict', 'O carrinho mudou em outra sessão. Recarregue os dados para continuar.');
+          return { ok: false, message: 'O carrinho mudou em outra sessão. Recarregue os dados e tente novamente.' };
+        }
+        if (response.status === 401) {
+          reload = true;
+          return { ok: false, message: 'Sua sessão expirou. Atualize o carrinho e tente novamente.' };
+        }
+        if (!response.ok) {
+          const firstError = Object.values(json.errors ?? {}).flat()[0] as string | undefined;
+          const message = firstError || json.message || 'Não foi possível aplicar o cupom.';
+          if (response.status === 400 || response.status === 422) {
+            status('saved');
+            return { ok: false, message };
+          }
+          throw new Error(message);
+        }
+        version = json.data.version;
+        syncCartPricing(json.data);
+        status('saved');
+        return { ok: true };
+      } catch (error) {
+        const message = error instanceof Error ? error.message : 'Não foi possível aplicar o cupom.';
+        status('error', message);
+        return { ok: false, message };
       } finally {
         busy = false;
         if (!disposed) {
@@ -196,6 +276,7 @@ export function CartSync() {
       disposed = true;
       flushPending = undefined;
       shippingAction = undefined;
+      couponAction = undefined;
       clearTimeout(timer);
       offCart(); offCheckout();
       window.removeEventListener(AUTH_EVENT, auth);
