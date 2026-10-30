@@ -10,6 +10,7 @@ import { formatPrice } from '@/utils/formatPrice';
 import { useCheckoutStore } from '@/store/checkoutStore';
 import { CartSaveStatus } from '@/components/shared/CartSaveStatus';
 import { FreeShippingNotice } from '@/components/shared/FreeShippingNotice';
+import { CouponForm } from '@/features/cart/components/CouponForm';
 
 const ACCENT = '#c96742';
 
@@ -99,6 +100,11 @@ export function CartPageContent() {
   const { items, removeItem, updateQuantity, getSubtotal } = useCartStore();
   const { draft, update, ready } = useCheckoutStore();
   const subtotal = getSubtotal();
+  const serverSubtotal = useCheckoutStore((s) => s.cartSubtotal);
+  const couponDiscount = useCheckoutStore((s) => s.couponDiscount);
+  const cartTotal = useCheckoutStore((s) => s.cartTotal);
+  const displayedSubtotal = serverSubtotal ?? subtotal;
+  const displayedTotal = cartTotal ?? subtotal;
 
   /* ── Empty state ─────────────────────────────────── */
   if (items.length === 0) {
@@ -200,6 +206,8 @@ export function CartPageContent() {
               </div>
             </AccordionSection>
 
+            <CouponForm />
+
             {/* Order summary */}
             <div className="cp-summary">
               <h3 className="cp-summary-title">Resumo do pedido</h3>
@@ -207,11 +215,12 @@ export function CartPageContent() {
               <div className="cp-totals">
                 <div className="cp-total-row">
                   <span>Subtotal</span>
-                  <span>{formatPrice(subtotal, 'BRL')}</span>
+                  <span>{formatPrice(displayedSubtotal, 'BRL')}</span>
                 </div>
+                {couponDiscount > 0 && <div className="cp-total-row"><span>Desconto do cupom</span><span style={{ color: '#237a45' }}>−{formatPrice(couponDiscount, 'BRL')}</span></div>}
                 <div className="cp-total-row cp-total-bold">
                   <span>Total</span>
-                  <span>{formatPrice(subtotal, 'BRL')}</span>
+                  <span>{formatPrice(displayedTotal, 'BRL')}</span>
                 </div>
               </div>
 

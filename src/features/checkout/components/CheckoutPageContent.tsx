@@ -15,9 +15,15 @@ const STATES = 'AC AL AP AM BA CE DF ES GO MA MT MS MG PA PB PR PE PI RJ RN RS R
 export function CheckoutPageContent() {
   const items = useCartStore((s) => s.items);
   const { draft, update, ready, status, message } = useCheckoutStore();
+  const serverSubtotal = useCheckoutStore((s) => s.cartSubtotal);
+  const coupon = useCheckoutStore((s) => s.coupon);
+  const couponDiscount = useCheckoutStore((s) => s.couponDiscount);
+  const cartTotal = useCheckoutStore((s) => s.cartTotal);
   const [cepStatus, setCepStatus] = useState('');
   const [lookupCep, setLookupCep] = useState('');
   const subtotal = items.reduce((sum, item) => sum + item.price * item.quantity, 0);
+  const displayedSubtotal = serverSubtotal ?? subtotal;
+  const displayedTotal = cartTotal ?? subtotal;
 
   useEffect(() => {
     const cep = lookupCep.replace(/\D/g, '');
@@ -100,7 +106,9 @@ export function CheckoutPageContent() {
                 <span className="co-order-name">{item.name} <span className="co-order-qty">× {item.quantity}</span><br /><small>{[item.color, item.size].filter(Boolean).join(' / ')}</small></span>
                 <span className="co-order-price">{formatPrice(item.price * item.quantity, 'BRL')}</span>
               </div>)}
-              <div className="co-order-subtotal"><span>Subtotal dos produtos</span><span>{formatPrice(subtotal, 'BRL')}</span></div>
+              <div className="co-order-subtotal"><span>Subtotal dos produtos</span><span>{formatPrice(displayedSubtotal, 'BRL')}</span></div>
+              {coupon && <div className="co-order-subtotal"><span>Cupom {coupon.code}</span><span style={{ color: '#237a45' }}>−{formatPrice(couponDiscount, 'BRL')}</span></div>}
+              <div className="co-order-subtotal" style={{ fontWeight: 700, borderTop: '1px solid #ddd', paddingTop: '1.2rem' }}><span>Total dos produtos</span><span>{formatPrice(displayedTotal, 'BRL')}</span></div>
             </>}
           </div>
           <p role="status" aria-live="polite" className="co-privacy">
